@@ -1,9 +1,9 @@
-let userage = prompt("Enter your age");
+const userage = prompt("Enter your age");
 var msg="";
 var age=parseInt(userage);
 console.log(age);
 {
-// switch (true){
+// switch (age){
     
 //     case (age < 18):
 //     console.log("two young");
@@ -26,7 +26,7 @@ console.log(age);
 //                 msg="e";
 //              //   document.getElementById("agestatu").innerHTML=msg
 // }
-
+const checkAge=()=>{
 if (age<18)
 {        msg="two young";
 }
@@ -45,6 +45,10 @@ if (age<18)
     {
         msg="Too aged";
     }
+   
     console.log(msg);
 document.getElementById("agestatu").innerHTML=String(msg);
+return msg;
+};
+checkAge();
 }

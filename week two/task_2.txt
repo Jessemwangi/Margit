@@ -1,0 +1,39 @@
+// Guess what answers you would get if you ran this in the Javascript Console.
+//Once you have an answer to the questions then check them by copying them and running it in the console yourself line by line 
+
+
+//Evaluate the below:
+something! //
+3 + "65"  //the result will be cohesed to 68 result was 365
+7 - "3" //4
+15 % 5 // the mode will be 0
+5 % 15 // the mode will have a value but i can know the value as of now, found the mode to be 5
+"Java" + "Script"  //should concatinate to Javascript
+"Java" - "Script" //am not sure the result the result is Nan
+" " + " " //the result should two empty space due to html display
+" " + 0 // the result will be a space and 0
+true + true //true  right ans =2
+true + false //false right ans =1
+false + true //false riight ans =1
+false - true //didnt know the ans. and found out -1
+3 - 4 //should give -1
+
+
+//Evaluate the below comparisons:
+4 >= 2 //this should be true
+6 === 2 //this should be false
+3 <= 1 // this should be false
+1 != 1 //should be false
+"A" > "B" //True just tested and its false
+"B" < "C" // false
+"a" > "A" //should be true
+"b" < "A" //should be true find out its false
+true === false //false
+true != true  //false
+
+
+// Make the string: 
+// "Go To Helsinki Business College," they said. "It'll Will Be "Fun"," they said.
+// by using the + sign:
+var msg ='"Go To Helsinki Business College,"' +' they said. "' +"It'll Will Be "+ '"Fun"," they said.'
+console.log(msg);
