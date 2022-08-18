@@ -1,24 +1,22 @@
 let hoursworked=parseInt(prompt("enter hours worked"));
-const workinghouse=7;
-let salary=9,bonus=0,Wbonus2=0;
+const workinghours=7; //hours per day
+let WkBonus=0;//100%
+let salary=9,Wbonus2=0; //bounus 50%
+{
 var  caculatesalary=()=>{
-if (hoursworked-workinghouse>0 && hoursworked-workinghouse<=2)
+if ((hoursworked-workinghours)<=2){
+    Wbonus2=hoursworked-workinghours;
+    WkBonus=0;
+} else if(hoursworked-(workinghours+2)>0)
 {
-    // let whours=7+2;
-    // salary=9 * whours
-    bonus=(salary*2/2);
-    console.log(bonus);
-    Wbonus2=hoursworked-workinghouse;
+    //10-9=1 then take the rest to 100%     else     procced to 50 %
+   WkBonus=(hoursworked-(workinghours+2)); //100%
+   Wbonus2=hoursworked-WkBonus-workinghours; //get less than two *50%
 }
-else if (Wbonus2 >=1 )
-{
-    let Bhours=hoursworked-(2+workinghouse);
-    //salary=9 * whours
-
-    bonus=bonus + (salary*Bhours);
-    console.log(bonus);
-}
-let earning=((salary*workinghouse) + bonus);
+let earning=(salary * hoursworked)+(Wbonus2*salary/2)+(WkBonus*salary);
+console.log(WkBonus);
+console.log(Wbonus2);
 console.log(earning);
 };
 caculatesalary();
+}
