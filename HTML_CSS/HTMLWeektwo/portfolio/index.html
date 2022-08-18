@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head >
+    <link rel="stylesheet" href="folio.css" style="css/text">
+    <title>Jesse portfolio</title>
+    <meta http-equiv="Expire" content="0" />
+
+         
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+<header>
+<div id="logo">
+    <img src="LOGO.jpg" width="120" alt="logo" >
+    <br/><Label ID="lblDate" runat="server"></Label>
+</div>
+<FONT COLOR="#1a6827"> 
+<h2><center>WELCOME TO MY PORTFOLIO</h2></CENTER></FONT>
+ 
+ <nav>
+ <ul>
+<li> </li> 
+<li> <a href="/">HOME</a></li>
+<li> <a href="projects.html">projects</a></li>
+<li> <a href="experience.html">experience</a></li>
+<li> <a href="Skills.html">Skills</a></li>
+     <li> <a href="achievement.html">achievement</a></li>
+    </ul>
+</nav>
+</header>
+<aside>
+    <h3>Programming language checklist</h3>
+    <div id="asidecontent">
+        <ul>
+            <li>php, level of study, intermidiary</li>
+            <li>php, level of study, intermidiary</li>
+            <li>php, level of study, intermidiary</li>
+            <li>php, level of study, intermidiary</li>
+            <li>php, level of study, intermidiary</li>
+            <li>php, level of study, intermidiary</li>
+        </ul>
+    </div></aside>
+<section>
+    <article><p>c# abc ksdnksd</p></article>
+    <article><p>c# abc ksdnksd</p></article>
+    <article><p>c# abc ksdnksd</p></article>
+</section>
+                  <Footer><center>
+                        <strong><em>©Copyright <Label ID="lblDate2" runat="server"></Label> - jesse mwangi - All Rights Reserved</em></strong></center>
+                                                 </Footer>
+    </div>
+    </form>
+    <script>
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date+' '+time;
+document.getElementById("lblDate").innerHTML=dateTime;
+document.getElementById("lblDate2").innerHTML=dateTime;
+    </script>
+</body>
+</html>

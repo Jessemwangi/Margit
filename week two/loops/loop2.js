@@ -19,19 +19,23 @@ let result="";
 let Distance =0;
 let speed=0;
 do {
-    let Distance = parseInt(prompt("enter Distance"));
+     Distance = parseInt(prompt("enter Distance"));
 let Hours= parseInt(prompt("enter speed"));
     speed = Distance / Hours;
     console.log(speed);
   //result +=  string(speed);
 } while (Distance > 0);
+// _____________________________________________________________________  or wanted to try another approach
+let counter = 0;
+let Total=0;
 
-let Distance = parseInt(prompt("enter Distance"));
-let Hours= parseInt(prompt("enter speed"));
-
-while (Distance > 0) {
-    speed = Distance / Hours;
-    console.log(speed);
+while (counter <= 3) {
+  let value= parseInt(prompt("enter value"));
+    if (value%2==0){
+      Total+=1
+    }
+    console.log(Total);
+    counter ++;
 }
 // result += `${speed} `;
 // console.log(result);
