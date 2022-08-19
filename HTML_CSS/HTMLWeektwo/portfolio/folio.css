@@ -6,6 +6,7 @@ table
 }
 body
 {
+	padding-top: 0.5%;
 	background:#dcd9cd;
 	margin-top:0;/*to remove the default margin so that wrapper start from the very top edge*/
 }
@@ -17,7 +18,7 @@ body
 }
 
 header {
-	/* color: #ffffff; */
+	 color: #ffffff; 
 	/* background-color: rgb(237, 242, 247); */
 	background-image: url("wallpaper.jpg"); 
 	background-repeat: no-repeat; 
@@ -69,37 +70,51 @@ nav ul
 }
 nav ul li
 {opacity: 1;
-	display:inline;
+	display:inline-block;
 	padding:0;
 	margin:0;
+	background:#fcfcfc;
+	padding: 10px;
+   
+   width: 5%;
 
 }
 nav ul li:hover
 {
+	color:#ffffff;
+background:#FFA500;
 }
 nav ul li a
 {
-	background:#1a6827;
-	 padding: 10px;
-	color:#FFA500;
+	color:#0d0900;
 	font-size:13px;
 	/*font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;*/
 	text-decoration:none;
-	border-radius:8px;
+	/* border-radius:8px;
 	text-decoration:em;
-	
+	width: 3%; */
 }
 nav ul li a:hover
 {
-color:#ffffff;
-background:#FFA500;
-}
-#imagearea
-{width:100%;
-margin-bottom:5px;
-float:left;
-height:350px;
 
+}
+#hero
+{align-items: center;
+	justify-content: center;
+	display: flex;
+	width:100%;
+	margin-top: 1%;
+margin-bottom:2%;
+text-align: center;
+float:left;
+height:150px;
+background-color: #eadbf9;
+}
+#hero p{
+	width: 25%;
+	text-align: center;
+	background-color: #ff0000;
+	display: block;
 }
 #imagearea img
 {
@@ -135,6 +150,21 @@ article p
 	word-wrap:break-word;
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
+article img
+{
+	width: 32%;
+	margin: 1%;
+	border:  solid 10px white;
+	height:250px;
+}
+.imgright
+{
+	float: right;
+}
+.imgleft
+{
+	float: left;
+}
 aside
 {
 
@@ -166,6 +196,13 @@ aside h3
 aside div
 {
 	background-color: #dcd9cd;
+	padding: 2px;
+}
+#asidecontent ul li
+{
+	margin: 4% 2% 0 0;
+	text-align: justify;
+	
 }
 
 /* __________________________________________________________________________________ */
@@ -226,6 +263,10 @@ aside div
 		width:96%;
 		height:auto;
 	}
+	article img
+{
+	width: 98%;
+}
 	aside
 	{
 		width:98%;
