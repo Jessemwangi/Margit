@@ -100,6 +100,7 @@ let nsums =0;
   }
   alert("25 values entered, maximum reached");
 };
+//7 task seven
 let averagewithyesno=()=>
 {
   let numbers = 0;
@@ -116,15 +117,13 @@ let nsums =0;
         console.log(result);
       } while (continueadd)
 };
+//8 task eight
 let Smallestinlist=()=>
 {
 let numbers =  parseInt(prompt("how many number do you wish to enter")); 
 const arr1=[];
 for(n=0;n<numbers;n++)
 {
-
-//   const arr2 = [1, 2, 3];
-// const arr3 = arr2.map(element => `_${element}_`);
 let values= prompt("enter any number");
 arr1[n]=values
 console.log(arr1)
@@ -136,5 +135,25 @@ function smallinarr(arr1)
 var smallest = arr1.sort((a, b) => a - b);
 
 return smallest[0];
+}
+};
+//9 task number nine
+let biggestinlist=()=>{
+let numbers = 10; 
+const arr1=[];
+for(n=0;n<numbers;n++)
+{
+let values= prompt("enter any number");
+arr1[n]=values
+//console.log(arr1)
+}
+var nm1=biginarr(arr1)
+console.log(nm1);
+console.log(nm1[0],nm1[1]);
+function biginarr(arr1)
+{
+var biggest = arr1.sort((a, b) => b - a);
+
+return biggest;// + '${biggest[1]}';
 }
 };

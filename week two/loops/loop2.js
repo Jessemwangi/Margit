@@ -72,14 +72,21 @@ for(n=0;n<numbers;n++)
   arr1[n]=values
   console.log(arr1)
 }
-console.log(smallinarr(arr1));
+var nm1=biginarr(arr1)
+console.log(nm1[0],nm1[1]);
+function biginarr(arr1)
+{
+  var biggest = arr1.sort((a, b) => b - a);
 
+return biggest;// + '${biggest[1]}';
+}
 function smallinarr(arr1)
 {
 var smallest = arr1.sort((a, b) => a - b);
 
 return smallest[0];
 }
+
 
 function smallestNumber(number){
   let min = number[0];
