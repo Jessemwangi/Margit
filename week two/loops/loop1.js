@@ -39,7 +39,7 @@ do {
 
 let Hours= parseInt(prompt("enter speed"));
 
-    speed = Distance / Hours;
+    speed = division(Distance , Hours);
 
     console.log(speed);
 
@@ -77,7 +77,7 @@ let averagetill0=()=>
     numbers = parseInt(prompt("enter any number")); 
     ncounter+=1
     nsums+=numbers
-      let result=nsums/ncounter
+      let result=division(nsums,ncounter);
         console.log(result);
       //result +=  string(result) + " , ";
    // document.getElementById("agestatu").innerHTML=string(result);
@@ -94,7 +94,7 @@ let nsums =0;
     numbers = parseInt(prompt("enter any number")); 
     ncounter+=1;
     nsums+=numbers;
-      let result=nsums/ncounter;
+      let result=division(nsums,ncounter);
         console.log(result);
         n++;
   }
@@ -113,7 +113,7 @@ let nsums =0;
       continueadd = confirm("Do you want to add another number?");
         ncounter+=1;
     nsums+=numbers;
-      let result=nsums/ncounter;
+      let result=division(nsums,ncounter);
         console.log(result);
       } while (continueadd)
 };
@@ -130,13 +130,13 @@ console.log(arr1)
 }
 console.log(smallinarr(arr1));
 
+
+};
 function smallinarr(arr1)
 {
 var smallest = arr1.sort((a, b) => a - b);
-
 return smallest[0];
 }
-};
 //9 task number nine
 let biggestinlist=()=>{
 let numbers = 10; 
@@ -150,10 +150,35 @@ arr1[n]=values
 var nm1=biginarr(arr1)
 console.log(nm1);
 console.log(nm1[0],nm1[1]);
+
+};
+function division(s,t){
+let devide=s/t;
+return devide;
+}
+
+let AllSummaryCalc=()=>{
+let nsums =0;
+  let ncounter = 0;
+  let numbers=0;
+  const arr1=[];
+  for (n=0;n<10;n++) {
+  
+    numbers = parseInt(prompt("enter any number")); 
+    ncounter+=1
+    nsums+=numbers  //get sum
+      let result=division(nsums,ncounter);///get average
+        console.log('the sum is : ',nsums , '& average is ',result);
+        arr1[n]=numbers;
+    var smallvalue=smallinarr(arr1);
+    var bigvalue=biginarr(arr1);
+    console.log(arr1);
+    console.log(bigvalue[0]);
+    console.log('the biggest value is :',bigvalue[0],'and the smallest value is : ',smallinarr(arr1))
+  } 
+};
 function biginarr(arr1)
 {
 var biggest = arr1.sort((a, b) => b - a);
-
 return biggest;// + '${biggest[1]}';
 }
-};
