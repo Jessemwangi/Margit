@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+.inputArea
+{
+    background-color: cornsilk;
+    width: 100%;
+    border-radius: 3px;
+}
+h2{
+ color:#8ebf42;
+}
+.row1
+{ 
+    
+    margin-top: 1.5%;
+    width: 100%;
+    padding-top:10px;padding-bottom: 10px;
+    display: flex;
+}
+.row1 input[type=number]
+{
+width: 60%;
+height: 30px;
+border-radius: 5px;
+border-color: #8ebf42;
+vertical-align: middle;
+}
+.labels
+{
+    text-align: right;
+    width: 20%;
+    color:#8ebf42;
+    vertical-align: middle;
+}
+
+.main
+{ border: solid #8ebf42 2px;
+    width: 46%;
+    margin: 0 auto 0 auto;
+    padding: 2%;
+    text-align: justify;
+    background-color: aliceblue;
+    font-family: Roboto, Arial, sans-serif;
+}
+label
+{
+    margin-right: 2%;
+}
+.btncalc{
+width: 40%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #8ebf42;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.btncalc:hover
+{
+    background-color: #82b534;
+}
+hr
+{
+    width: 100%;
+    background-color: #8ebf42;
+    height: 2px;
+    border-radius: 2px;
+}
+.dispResult
+{
+    padding: 2px;
+    text-align: justify;
+    word-wrap: break-word;
+  }

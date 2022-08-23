@@ -159,23 +159,25 @@ end -=2;
 function Smallestinlist()
  {
   let Sm =0;
-let lsm=0;
 let numbers =  parseInt(prompt("how many number do you wish to enter")); 
 //const arr1=[];
 for(n=0;n<numbers;n++)
 {
 let values= prompt("enter any number");//10,7,11,8,
-Sm=values; //sm=10
-if (n>=1){
-sm=lsm;
-console.log(sm);
+if (values>=0 && Sm==0){
+  Sm=values;
 }
-if (Sm<=values){
-lsm=values;
-console.log(lsm);
-}//10
+console.log(sm,values);
+if (values<sm) sm=values;
+
+console.log(sm, 'small',values);
+}
+//10
 //arr1[n]=values
 }
 console.log(lsm);
- }
+ 
  Smallestinlist();
+
+
+ 
