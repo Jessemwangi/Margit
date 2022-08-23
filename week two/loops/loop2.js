@@ -142,3 +142,40 @@ let averagetill0=()=>
 
   alert("0 entered, program will terminate")
 };
+
+
+console.log(smallinarr(arr1));
+document.getElementById("agestatu").innerHTML="in this array " +arr1 + " the smallest is :" + smallinarr(arr1);
+divscroll();
+};
+
+result +=' ' + i + '';
+result +=' ' + end + '';
+end -=2;
+
+
+
+
+function Smallestinlist()
+ {
+  let Sm =0;
+let lsm=0;
+let numbers =  parseInt(prompt("how many number do you wish to enter")); 
+//const arr1=[];
+for(n=0;n<numbers;n++)
+{
+let values= prompt("enter any number");//10,7,11,8,
+Sm=values; //sm=10
+if (n>=1){
+sm=lsm;
+console.log(sm);
+}
+if (Sm<=values){
+lsm=values;
+console.log(lsm);
+}//10
+//arr1[n]=values
+}
+console.log(lsm);
+ }
+ Smallestinlist();

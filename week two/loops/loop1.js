@@ -6,54 +6,60 @@ for (let numbers=0;numbers<=100;numbers ++)
     if (numbers % 2 >0){
         console.log(numbers);  
 }
-   
+   }};
 
-}};
+// ***********************************************************************************************************
 //2 task tw0
-let positiveEvenNo=()=>{
-
+let positiveEvenNo=()=>
 {
-for (let numbers=0;numbers<=100;numbers ++)
+  let final=98;
+for (let numbers=0;numbers<=final;numbers +=2)
 { 
-    if (numbers % 2 ==0){
-    result=result +=  " " +String(numbers)  + " " +String(100-numbers);
-    document.getElementById("agestatu").innerHTML=string(result);
-}}
+      result=result +=  " " +String(numbers)  + " " +String(final-numbers);
+     document.getElementById("agestatu").innerHTML=result;
+//   let final=98;
+//   for (let numbers=0;numbers<=final;numbers +=2){
+//   result +=' ' + final; + '';
+// result +=' ' + end + '';
+// end -=2;}
+//     if (numbers % 2 ==0){
+//     result=result +=  " " +String(numbers)  + " " +String(final-numbers);
+//     document.getElementById("agestatu").innerHTML=result;
+// }
+}
 console.log(result);
-// document.getElementById("agestatu").innerHTML=string(result);
-$('html,body').animate({
-    scrollTop: $("agestatu").offset().top},
-    'slow');
-//console.log(100-numbers);
-}};
-//console.log(100-numbers);
+divscroll();
+};
+
+//*************************************************************************************************************************
 //3 task three
 let CalcSpeed=()=>{
-    let Distance =0;
-
-let speed=0;
-
+  let Distance =0;
+  let speed=0;
 do {
-
-     Distance = parseInt(prompt("enter Distance"));
-
-let Hours= parseInt(prompt("enter speed"));
-
+    Distance = parseInt(prompt("enter Distance"));
+    if (Distance ==0)
+    {
+      alert("0 entered, program will terminate");
+      break; 
+    }
+    let Hours= parseInt(prompt("enter speed"));
     speed = division(Distance , Hours);
-
     console.log(speed);
+    result += "0 , "+ speed ;
+    document.getElementById("agestatu").innerHTML=result;
+   
+} while (Distance != 0);
+divscroll();
 
-  result +=  speed + " , ";
- // document.getElementById("agestatu").innerHTML=string(result);
-} while (Distance > 0);
-alert("0 entered, program will terminate")
 };
+
+// ********************************************************************************************************************************
 //4 task 4
 let twentyevenNo=()=>
 {
 let counter = 0;
 let Total=0;
-
 while (counter <20) {
   let value= parseInt(prompt("enter value"));
     if (value%2==0){
@@ -61,29 +67,33 @@ while (counter <20) {
     }
     console.log(Total);
     counter ++;
-    //document.getElementById("agestatu").innerHTML=string(Total);
+    //document.getElementById("agestatu").innerHTML=Total;
 }
+//divscroll();
 alert("20 numbers entered, thats the maxmum allowed");
 };
+
+// *****************************************************************************************************************************
 //5 task 5
 let averagetill0=()=>
 {
   let nsums =0;
   let ncounter = 0;
-  let numbers=0;
-  
-  do {
-  
-    numbers = parseInt(prompt("enter any number")); 
+  let numbers=0;  
+  do {  
+    numbers = parseInt(prompt("average calc: Enter any number")); 
     ncounter+=1
     nsums+=numbers
-      let result=division(nsums,ncounter);
-        console.log(result);
-      //result +=  string(result) + " , ";
-   // document.getElementById("agestatu").innerHTML=string(result);
-  } while (numbers > 0);
+    let result1=division(nsums,ncounter);
+    console.log(result1);
+    result +=  " "+ result1 + " , ";
+   document.getElementById("agestatu").innerHTML=result;
+  } while (numbers != 0);
+  divscroll();
   alert("0 entered, program will terminate")
-};
+  };
+  averagetill0();
+  // *******************************************************************************************************************************
 //6 task six
 let averagetill25=()=>{
 let nsums =0;
@@ -94,12 +104,16 @@ let nsums =0;
     numbers = parseInt(prompt("enter any number")); 
     ncounter+=1;
     nsums+=numbers;
-      let result=division(nsums,ncounter);
-        console.log(result);
-        n++;
+    let result=division(nsums,ncounter);
+    console.log(result);
+    document.getElementById("agestatu").innerHTML=result;
+    n++;
   }
+  divscroll();
   alert("25 values entered, maximum reached");
 };
+
+// ****************************************************************************************************************************
 //7 task seven
 let averagewithyesno=()=>
 {
@@ -111,12 +125,17 @@ let nsums =0;
     {
       numbers = parseInt(prompt("enter any number")); 
       continueadd = confirm("Do you want to add another number?");
-        ncounter+=1;
-    nsums+=numbers;
+      ncounter+=1;
+      nsums+=numbers;
       let result=division(nsums,ncounter);
-        console.log(result);
+      console.log(result);
+      document.getElementById("agestatu").innerHTML=result;
       } while (continueadd)
+      divscroll();
+      alert("thank you for your time");
 };
+
+// **************************************************************************************************************************
 //8 task eight
 let Smallestinlist=()=>
 {
@@ -129,14 +148,10 @@ arr1[n]=values
 console.log(arr1)
 }
 console.log(smallinarr(arr1));
-
-
+document.getElementById("agestatu").innerHTML="in this array " +arr1 + " the smallest is :" + smallinarr(arr1);
+divscroll();
 };
-function smallinarr(arr1)
-{
-var smallest = arr1.sort((a, b) => a - b);
-return smallest[0];
-}
+// ************************************************************************************************************************
 //9 task number nine
 let biggestinlist=()=>{
 let numbers = 10; 
@@ -157,6 +172,7 @@ let devide=s/t;
 return devide;
 }
 
+//10 task ten
 let AllSummaryCalc=()=>{
 let nsums =0;
   let ncounter = 0;
@@ -182,3 +198,32 @@ function biginarr(arr1)
 var biggest = arr1.sort((a, b) => b - a);
 return biggest;// + '${biggest[1]}';
 }
+
+function divscroll()
+{ // document.getElementById("agestatu").scrollIntoView({behavior: "smooth", block: "center"});
+  var divElement = document.getElementById("agestatu");
+divElement.scrollIntoView({
+	top: divElement.scrollHeight,//scroll to the bottom of the element
+	behavior: 'smooth' //auto, smooth, initial, inherit
+});
+divElement.style.backgroundColor="#00FF00";
+}
+function smallinarr(arr1)
+{
+var smallest = arr1.sort((a, b) => a - b);
+return smallest[0];
+}
+// function scrolltodiv()
+// {
+//   var $root = $('html, body');
+//   $('a[href^="#agestatu"]').click(function () {
+//       var href = $.attr(this, 'href');
+//       $root.animate({
+//           scrollTop: $(href).offset().top
+//       }, 500, function () {
+//           window.location.hash = href;
+//       });
+
+//       return false;
+//   });
+//}
