@@ -5,7 +5,6 @@ let cel=0, far=0,kel=0;
 selectcel.addEventListener('change', inputCel);
 selectkel.addEventListener('change',inputkel);
 selectfar.addEventListener('change',inputfar);
-selectcel.value='';selectfar.value='';selectkel.value='';
 function inputCel(e)
 {
     cel=e.target.value;
