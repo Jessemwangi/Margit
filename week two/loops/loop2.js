@@ -180,4 +180,22 @@ console.log(lsm);
  Smallestinlist();
 
 
- 
+ function printMin() {
+  let i = +prompt('How many numbers would you like to give?');
+
+  if (i < 1) return;
+
+  let num;
+
+  let min = +prompt('Enter a number');
+
+  while (--i) {
+    num = +prompt('Enter a number');
+
+    if (num < min) min = num;
+  }
+
+  alert(`The smallest number that you gave was ${min}`);
+}
+
+printMin();
