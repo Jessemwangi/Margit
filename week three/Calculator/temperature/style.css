@@ -1,0 +1,30 @@
+ .wrapper input[type="number"]
+{
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle;
+width: 40%;
+
+}
+.wrapper
+{
+    width:30%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background-color: #e9e3e3;
+   padding: 2% 5% 2% 5%;
+    }
+    body{
+        background-color: #F9F9F9;
+        padding-top: 2%;
+    }
+    label
+    {
+        display: inline-block;
+    margin-bottom: 0.5em;
+    width: 40%;
+    text-align: left;
+    margin-left: 2%;
+    }
