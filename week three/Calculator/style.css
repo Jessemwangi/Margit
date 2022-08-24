@@ -8,7 +8,9 @@ body
 {
     background-color: cornsilk;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: solid #8ebf42 3px;
+    padding-top:6px;
 }
 h2{
  color:#8ebf42;
