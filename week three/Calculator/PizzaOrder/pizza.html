@@ -5,44 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="pizza.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
     Based on users’ choices, display on the page: Customers' name, 
     pizza size, selected toppings, delivery method and price.
-    <div id="main">
-        <label for="for2">For 2, the price is 7,50€</label>
-        <input type="radio" name="Psize" id="for2" value="2">
-        <label for="for4">For 4, the price is 10,50€</label>
-        <input type="radio" name="Psize" id="for4" value="4"> 
-        <label for="for6">For 6, the price is 12,50€</label>
-        <input type="radio" name="Psize" id="for6" value="6">
-        <label for="8">For 8, the price is 15,50€</label>
-        <input type="radio" name="Psize" id="for8" value="8">
-        
-        <label for="Pepperoni">Pepperoni.</label><input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" > 
-        <label for="Mushroom">Mushroom</label> <input type="checkbox" id="Mushroom" name="Mushroom"  value="Mushroom" > 
-       <label for="Extracheese">Extra cheese</label> <input type="checkbox" id="Extracheese" name="Extracheese" value="Extracheese" > 
-        <label for="Sausage">Sausage</label> <input type="checkbox" id="Sausage" name="Sausage" value="Sausage" > 
-        <label for="Onion">Onion</label> <input type="checkbox" id="Onion" name="Onion" value="Onion" > 
-        <label for="Blackolives">Black olives</label> <input type="checkbox" id="Blackolives" name="Blackolives" value="Blackolives"> 
-        <label for="Greenpepper">Green pepper</label> <input type="checkbox" id="Greenpepper" name="Greenpepper" value="Greenpepper"> 
-        <label for="Freshgarlic">Fresh garlic</label> <input type="checkbox" id="Freshgarlic" name="Freshgarlic" value="Freshgarlic"> 
-        <label for="Tomato">Tomato</label> <input type="checkbox" id="Tomato" name="Tomato" value="Tomato" > 
-        <label for="Freshbasil">Fresh basil</label> <input type="checkbox" id="Freshbasil" name="Freshbasil" value="Freshbasil"> 
+    <div class="main">
+        <div class="sizes">
+            <div class="Inputs"> <label for="for2">For 2, the price is 7,50€
 
-        <select name="delivery" id="deliver">
-            <option value="Delivery home, +5">Delivery home, +5</option>
-            <option value="">Eat In</option>
-            <option value="">Pickup food g</option>
-        </select>
+            </label><input type="radio" name="Psize" id="for2" value="2"></div>
+            <div class="Inputs"> <label for="for4">For 4, the price is 10,50€</label>
+             <input type="radio" name="Psize" id="for4" value="4"> </div>
+            <div class="Inputs"> <label for="for6">For 6, the price is 12,50€</label>
+            <input type="radio" name="Psize" id="for6" value="6"></div>
+            <div class="Inputs"> <label for="8">For 8, the price is 15,50€</label>
+            <input type="radio" name="Psize" id="for8" value="8"></div>
+        </div>
 
+  
+            <div class="topping">
+                <div class="Inputs"> <label for="Pepperoni">Pepperoni.</label><input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" > </div>
+                <div class="Inputs"> <label for="Mushroom">Mushroom</label> <input type="checkbox" id="Mushroom" name="Mushroom"  value="Mushroom" > </div>
+                <div class="Inputs"><label for="Extracheese">Extra cheese</label> <input type="checkbox" id="Extracheese" name="Extracheese" value="Extracheese" > </div>
+                <div class="Inputs"> <label for="Sausage">Sausage</label> <input type="checkbox" id="Sausage" name="Sausage" value="Sausage" > </div>
+                <div class="Inputs"> <label for="Onion">Onion</label> <input type="checkbox" id="Onion" name="Onion" value="Onion" > </div>
+                <div class="Inputs"> <label for="Blackolives">Black olives</label> <input type="checkbox" id="Blackolives" name="Blackolives" value="Blackolives"> </div>
+                <div class="Inputs"><label for="Greenpepper">Green pepper</label> <input type="checkbox" id="Greenpepper" name="Greenpepper" value="Greenpepper"> </div>
+                <div class="Inputs"><label for="Freshgarlic">Fresh garlic</label> <input type="checkbox" id="Freshgarlic" name="Freshgarlic" value="Freshgarlic"> </div>
+                <div class="Inputs"><label for="Tomato">Tomato</label> <input type="checkbox" id="Tomato" name="Tomato" value="Tomato" > </div>
+                <div class="Inputs"> <label for="Freshbasil">Fresh basil</label> <input type="checkbox" id="Freshbasil" name="Freshbasil" value="Freshbasil"> </div>
+    </div>
+    <div class="delivery">
+
+        <div class="Inputs"> <select name="delivery" id="deliver" onchange="delivery()">
+            <option value="">select Pickup</option>
+            <option value="5">Delivery home, +5</option>
+            <option value="1">Eat In</option>
+            <option value="2">Pickup food</option>
+        </select></div>
+    </div>
+    
     </div>
     <h2>PIZZA ORDER SUMMARY</h2>
-    <p>Pizza Select size</p>
+    <p>Pizza Selected size</p>
     <div id="Ordersize"></div>
-    <p>Pizza Toppings</p>
+    <p>Pizza Customized Toppings</p>
     <div id="toppings"></div>
+    <p>Pizza Pickup Option choosed</p>
+    <div id="pickup"></div>
+    <hr>
+    Payment Due is : 
     <div id="Ptotalcost"></div>
 
     <script src="pizza.js"></script>
