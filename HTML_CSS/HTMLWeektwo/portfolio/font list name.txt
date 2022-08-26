@@ -1,0 +1,35 @@
+serif
+    Playfair Display //articles
+    Roboto Slab //articles
+    Rokkitt  //comments
+    Roboto Serif // paraghraph
+    Newsreader // information and margazine
+san serif
+    Open Sans // official communication
+    Josefin Sans certificate documents
+    Cairo
+    Maven Pro //seems light
+    Urbanist //
+handwritten
+    Edu VIC WA NT Beginner
+    Edu SA Beginner
+    Edu NSW ACT Foundation
+    Ballet // romantic invitation
+    Edu QLD Beginner
+display
+    Big Shoulders Text
+    Red Rose
+    Baloo Bhaina 2
+    Lemonada
+    Arima
+monotype
+    Noto Sans Mono
+    Inconsolata
+    Roboto Mono
+    Fira Code
+    Azeret Mono
+
+
+1D91ED blue
+F5F3C4 yellow
+D6CAE8 pinkish
