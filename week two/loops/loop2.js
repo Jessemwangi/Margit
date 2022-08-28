@@ -147,7 +147,7 @@ let averagetill0=()=>
 console.log(smallinarr(arr1));
 document.getElementById("agestatu").innerHTML="in this array " +arr1 + " the smallest is :" + smallinarr(arr1);
 divscroll();
-};
+
 
 result +=' ' + i + '';
 result +=' ' + end + '';
@@ -198,4 +198,38 @@ console.log(lsm);
   alert(`The smallest number that you gave was ${min}`);
 }
 
-printMin();
+printMin2();
+
+let printminimum2=()=>{
+  let min = 0,min2=0;
+  let input = prompt('How many numbers you want to input?');
+  
+  for (let n = 0; n < input; n++) {
+    let num = Number(prompt('Enter number'));
+    if (num >= 0 && min == 0) {
+      min = num;
+      min2=num;
+    } else if (num < min) {
+      min2=min;
+      min = num;
+    }
+  }
+  console.log(min,min2);
+  };
+let Print2Max=()=>{
+  let max1 = 0,max2=0;
+  let input = prompt('How many numbers you want to input?');
+  
+  for (let n = 0; n < input; n++) {
+    let num = Number(prompt('Enter number'));
+    if (num >= 0 && max1 == 0 && max2==0) {
+      max1 = num;
+      max2=num;
+    } else if (num > max1) {
+      max2=max1;
+      max1 = num;
+    }
+  }
+  console.log(max1,max2);
+}
+Print2Max();
