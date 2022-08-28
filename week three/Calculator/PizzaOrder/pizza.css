@@ -39,7 +39,15 @@ body{
     width: 20%;
     background-color: rgb(230, 222, 222);
 }
-
+h2{
+    text-align: center;
+}
+.ordersum
+{
+    width: 100;
+    text-align: center;
+    background-color: beige;
+}
 .Inputs 
 {
    margin: 2%;

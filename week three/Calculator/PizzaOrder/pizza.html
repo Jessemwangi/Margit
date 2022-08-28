@@ -13,6 +13,7 @@
     pizza size, selected toppings, delivery method and price.
     <div class="main">
         <div class="sizes">
+            <h2>share with friends</h2>
             <div class="Inputs"> <label for="for2">For 2, the price is 7,50€
 
             </label><input type="radio" name="Psize" id="for2" value="2"></div>
@@ -26,6 +27,7 @@
 
   
             <div class="topping">
+                <h2>add flavor to your pizza</h2>
                 <div class="Inputs"> <label for="Pepperoni">Pepperoni.</label><input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" > </div>
                 <div class="Inputs"> <label for="Mushroom">Mushroom</label> <input type="checkbox" id="Mushroom" name="Mushroom"  value="Mushroom" > </div>
                 <div class="Inputs"><label for="Extracheese">Extra cheese</label> <input type="checkbox" id="Extracheese" name="Extracheese" value="Extracheese" > </div>
@@ -38,7 +40,7 @@
                 <div class="Inputs"> <label for="Freshbasil">Fresh basil</label> <input type="checkbox" id="Freshbasil" name="Freshbasil" value="Freshbasil"> </div>
     </div>
     <div class="delivery">
-
+<h2>Select pick up method</h2>
         <div class="Inputs"> <select name="delivery" id="deliver" onchange="delivery()">
             <option value="">select Pickup</option>
             <option value="5">Delivery home, +5</option>
@@ -48,6 +50,7 @@
     </div>
     
     </div>
+    <div class="ordersum">
     <h2>PIZZA ORDER SUMMARY</h2>
     <p>Pizza Selected size</p>
     <div id="Ordersize"></div>
@@ -58,6 +61,7 @@
     <hr>
     Payment Due is : 
     <div id="Ptotalcost"></div>
+    </div>
 
     <script src="pizza.js"></script>
 </body>
