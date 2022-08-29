@@ -1,5 +1,6 @@
 let toppingcost=0, totalcost=0,deliverycost=0;pcikupmethod="", toppingcount=0;
-let topplist="", choicesizecost=0,choicesname="" , choiceprizecost=0;
+let topplist="", choicesizecost=0,choicesname="" ,welcome="", choiceprizecost=0;
+let hellomessage= document.querySelector('#hellomasg');
 const elementsArray = document.querySelectorAll('input[type="checkbox"]');
 const radioelement=document.querySelectorAll('input[type="radio"]');
 elementsArray.forEach(function(elem) {
@@ -41,12 +42,26 @@ function checkboxes(){
 calculatecost(choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod);}
 let calculatecost= (choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod)=>
 {
+    if (welcome=="" || welcome ==null)
+        {
+            hellomessage.textContent="please Enter your name first";
+             document.getElementById('customername').focus();
+             return false;
+        }
     if (toppingcount>4) {
         toppingcost=((toppingcount-4)*0.5);}
     else{ toppingcost=0;}
     totalcost=(toppingcost)+choiceprizecost+deliverycost;
-document.querySelector('#Ordersize').textContent=choicesname;
+let choices = document.querySelector('#Ordersize');
+choices.textContent=choicesname;
+
 document.querySelector('#toppings').textContent=topplist;
-document.querySelector('#Ptotalcost').textContent=totalcost;
+document.querySelector('#Ptotalcost').textContent='Hi '+welcome +', pizza cost is :' + totalcost +'€';
 document.querySelector ('#pickup').textContent=pcikupmethod;
 };
+function getname(e)
+{
+    welcome=document.querySelector('#customername').value;
+    hellomessage.textContent='Welcome '+ welcome +', Select you Pizza option bellow:';
+console.log(welcome);
+}

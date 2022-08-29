@@ -11,7 +11,11 @@
 <div class="wrapper">
    <p class="taskdesc">Based on users’ choices, display on the page: Customers' name, 
     pizza size, selected toppings, delivery method and price.</p> 
+   <div class="welcomecust"> <label for="customername">Enter your name to make a purchase</label>
+     <input type="text" id="customername" placeholder="Enter Full Names" onchange="getname()" required><br/>
+<span id="hellomasg"></span></div>
     <div class="main">
+
         <div class="sizes">
             <h2>share with friends</h2>
             <div class="Inputs"> <label for="for2">For 2, the price is 7,50€
@@ -27,7 +31,7 @@
 
   
             <div class="topping">
-                <h2>add flavor to your pizza</h2>
+                <h2>Add Topping to your pizza</h2>
                 <div class="Inputs"> <label for="Pepperoni">Pepperoni.</label><input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" > </div>
                 <div class="Inputs"> <label for="Mushroom">Mushroom</label> <input type="checkbox" id="Mushroom" name="Mushroom"  value="Mushroom" > </div>
                 <div class="Inputs"><label for="Extracheese">Extra cheese</label> <input type="checkbox" id="Extracheese" name="Extracheese" value="Extracheese" > </div>
@@ -51,7 +55,7 @@
     
     </div>
     <div class="ordersum">
-    <h2>PIZZA ORDER SUMMARY</h2>
+    <h2><u></u>PIZZA ORDER SUMMARY AND TOTAL COST</u></h2>
     <p>Pizza Selected size</p>
     <div id="Ordersize"></div>
     <p>Pizza Customized Toppings</p>
