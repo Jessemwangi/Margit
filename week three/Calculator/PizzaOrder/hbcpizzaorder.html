@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="hbcpizza.css" />
+    <script src="hbcpizza.js" async></script>
+  </head>
+  <body>
+    <container class="container">
+      <section class="header">
+        <h1 class="header__h1">Pizza order</h1>
+        <p class="header__p">Create the pizza of your dreams</p>
+      </section>
+      <form class="form">
+        <div class="form__wrapper">
+          <h2 class="form__h2">Fill the details</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="form__wrapper">
+          <label for="name">Name</label>
+          <input id="name" class="name" type="text" />
+        </div>
+        <div class="divider"></div>
+        <div class="form__wrapper" id="radiosection">
+          <p for="form__radio-wrapper">Choose the size of the Pizza</p>
+          <div id="form__radio-wrapper" class="form__radio-wrapper">
+            <div class="form__size-wrapper">
+              <input name="pizza-size" type="radio" id="pizza-size-2" value="2"/>
+              <label for="pizza-size-2" class="Pizza2_image"></label><br/> For 2 @ 7,50€
+            </div>
+            <div class="form__size-wrapper">
+              <input name="pizza-size" type="radio" id="pizza-size-4" value="4" />
+              <label for="pizza-size-4" class="Pizza4_image"></label><br/>For 4 | 10,50€
+            </div>
+            <div class="form__size-wrapper">
+              <input name="pizza-size" type="radio" id="pizza-size-6" value="6" />
+              <label for="pizza-size-6" class="Pizza6_image"></label><br/>For 6 | 12,50€
+            </div>
+            <div class="form__size-wrapper">
+              <input name="pizza-size" type="radio" id="pizza-size-8" value="8"/>
+              <label for="pizza-size-8" class="Pizza8_image"></label><br/>For 8 | 15,50€
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="form__checkbox-wrapper">
+          <label for="">Toppings</label>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-pepperoni"
+              id="toppings-pepperoni"
+            />
+            <label for="toppings-pepperoni">pepperoni</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-sausage"
+              id="toppings-sausage"
+            />
+            <label for="toppings-sausage">sausage</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-mushrooms"
+              id="toppings-mushrooms"
+            />
+            <label for="toppings-mushrooms">mushrooms</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input type="checkbox" name="toppings-bacon" id="toppings-bacon" />
+            <label for="toppings-bacon">bacon</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-onions"
+              id="toppings-onions"
+            />
+            <label for="toppings-onions">onions</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-extra-cheese"
+              id="toppings-extra-cheese"
+            />
+            <label for="toppings-extra-cheese">extra cheese</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-peppers"
+              id="toppings-peppers"
+            />
+            <label for="toppings-peppers">peppers</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-chicken"
+              id="toppings-chicken"
+            />
+            <label for="toppings-chicken">chicken</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-olives"
+              id="toppings-olives"
+            />
+            <label for="toppings-olives">olives</label>
+          </div>
+          <div class="form__toppings-wrapper">
+            <input
+              type="checkbox"
+              name="toppings-spinach"
+              id="toppings-spinach"
+            />
+            <label for="toppings-spinach">spinach</label>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="form__wrapper">
+          <label for="delivery" class="form__label">Delivery</label>
+          <select name="delivery" id="delivery">
+            <option value="delivery-home">Delivery home, +5€</option>
+            <option value="eat-in">Eat in</option>
+            <option value="pickup">pickup food</option>
+          </select>
+        </div>
+        <div class="divider"></div>
+        <input
+          class="form__button"
+          type="button"
+          value="Submit"
+          onclick="priceCalculator(), orderSummary()"
+        />
+      </form>
+      <section class="output">
+        <h2 class="output__h2">Order Summary</h2>
+        <div class="divider"></div>
+
+        <div class="output__wrapper">
+          <h3 class="output__h3">Name:</h3>
+          <p class="output__p" id="output__pN">test</p>
+        </div>
+        <div class="output__wrapper">
+          <h3 class="output__h3">Pizza Size:</h3>
+          <p class="output__p" id="output__pS">test</p>
+        </div>
+        <div class="output__wrapper">
+          <h3 class="output__h3">Toppings:</h3>
+          <p class="output__p" id="output__pT">test</p>
+        </div>
+        <div class="output__wrapper">
+          <h3 class="output__h3">Delivery:</h3>
+          <p class="output__p" id="output__pD">test</p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="output__wrapper">
+          <h3 class="output__h3">Total</h3>
+          <p class="output__p" id="output__p">test</p>
+        </div>
+      </section>
+    </container>
+  </body>
+</html>
