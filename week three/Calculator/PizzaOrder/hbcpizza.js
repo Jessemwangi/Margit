@@ -38,7 +38,7 @@ function checkboxes(){
         topplist+=inputElems[i].value +", ";  
         toppingcount=count; 
     }
-    console.log('topping list :',toppingcount);
+    console.log('topping list :',toppingcount, topplist);
 }
 calculatecost(choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod);}
 let calculatecost= (choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod)=>
@@ -55,9 +55,9 @@ let calculatecost= (choicesname,choiceprizecost,topplist,toppingcount,deliveryco
     totalcost=(toppingcost)+choiceprizecost+deliverycost;
 let choices = document.querySelector('#output__pS');
 choices.textContent=choicesname;
-document.querySelector('#output__pT').textContent+=topplist;
-document.querySelector('#output__p').textContent+='Hi '+welcome +', pizza cost is :' + totalcost +'€';
-document.querySelector ('#output__pD').textContent+=pcikupmethod;
+document.querySelector('#output__pT').value=topplist;
+document.getElementById('output__pTT').innerHTML='Hi '+welcome +', pizza cost is :' + totalcost +'€';
+document.getElementById ('output__pD').innerHTML=pcikupmethod;
 };
 function getname(e)
 {
