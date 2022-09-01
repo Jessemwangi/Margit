@@ -8,7 +8,7 @@ h3{
 .container
 {
     width: 80%;
-    background-color: #4781d280;
+    background-color: aliceblue;
     border: double solid snow;
     padding: 2%;
     position: absolute;
@@ -16,8 +16,8 @@ h3{
 .herobanner
 {
     width: 96%;
-    background-color: white;
-    margin: 1% 0 2% 0;
+    /* background-color: white; */
+    margin: 1% 0 0% 0;
     border-radius: 4px;
 }
 .herobanner h1{
@@ -39,14 +39,14 @@ h3{
     width: 49%;
     background-color: aliceblue;
     padding: 0 5px 0 5px;
-    margin: 2%;
+    margin: 0 2% 2% 2%;
     box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 .outputdiv
 {border-radius: 8px;
     width: 44%;
-    margin: 2%;
+    margin: 0 2% 2% 2%;
     
     padding: 0 5px 0 5px;
     box-sizing: border-box;
