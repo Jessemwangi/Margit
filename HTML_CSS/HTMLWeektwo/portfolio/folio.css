@@ -7,13 +7,13 @@ table
 body
 {
 	padding-top: 0.5%;
-	background:#dcd9cd;
+	
 	margin-top:0;/*to remove the default margin so that wrapper start from the very top edge*/
 }
 #wrapper
 {
 	width:100%;
-	height:auto;
+	height:100vh;
 	margin:auto;
 }
 
@@ -59,7 +59,6 @@ nav
 {
 	opacity: 1;
 	text-align:center;
-	background-color: ;
 	color:#FFA500;
 }
 nav ul
@@ -75,9 +74,7 @@ nav ul li
 	margin:0;
 	background:#fcfcfc;
 	padding: 10px;
-   
    width: 5%;
-
 }
 nav ul li:hover
 {
@@ -99,22 +96,22 @@ nav ul li a:hover
 
 }
 #hero
-{align-items: center;
-	justify-content: center;
+{
 	display: flex;
+	flex-direction: column;
 	width:100%;
 	margin-top: 1%;
 margin-bottom:2%;
-text-align: center;
-float:left;
 height:150px;
 background-color: #eadbf9;
 }
+#hero h2{
+
+}
 #hero p{
-	width: 25%;
+	
 	text-align: center;
-	background-color: #ff0000;
-	display: block;
+	
 }
 #imagearea img
 {
@@ -171,31 +168,28 @@ aside
 	margin:0 1% 0% 1%;
 	padding:1%;
 	width:26%;
-	background-image: url("coding.jpg");
+	/* background-image: url("coding.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* background:#F4E8FF; */
 	float:left;
 	border-radius:10px;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	opacity: 0.7;
+	
 	font-size:100%;	
 	word-wrap:break-word;/*contain word within the div aside*/
 	
 }
 aside h3
-{background-color: #dcd9cd;
+{background-color: #85ccef80;
 	border-radius: 5px 5px 0 0;
 	text-align: center;
-		font-size:4vmin;/*to make your font size respond to the device size we can use the viewpoint size, 
-	1vw=1% of the viewport width
-	1vh=1% of viewport height
-	1vmin=1% of viewport width or height whichever is smaller or bigger
-	1vmax= 1% of viewport width or height whichever is smaller or bigger*//* CSS Document */
+		font-size:4vmin;
+		color: red;
 }
 aside div
 {
-	background-color: #dcd9cd;
+	background-color: #85ccef80;
 	padding: 2px;
 }
 #asidecontent ul li
@@ -274,9 +268,10 @@ box-sizing: border-box;
 	color: #000000;
 	font-size: 12px;
   }
+
   .Contact_box form .send {
 	position: relative;
-	display:inline-flex;
+	
 	padding: 10px 20px;
 	color: #03e9f4;
 	font-size: 16px;

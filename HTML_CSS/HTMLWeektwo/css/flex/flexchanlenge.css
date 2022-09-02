@@ -8,13 +8,18 @@ body{
 }
 header{
     display: flex;
+    padding: 1rem;
 }
 .ptitle{
     background: yellow;
-    flex:2;
+    flex: 1;
+    height: 15vh;
 }
 nav{
     display: flex;
+    flex: 2;
+    /* justify-content: flex-end; */
+   
 }
 ul{
     list-style: none;
@@ -25,9 +30,13 @@ ul{
 }
 li{
     background: #e49ef876;
+    margin-right: 1rem;
+    width: 18vw;
 }
 li a{
     text-decoration: none;
+    padding: 3rem;
+    margin: 2rem;
 }
 main{
     display: flex;
@@ -35,8 +44,9 @@ main{
 }
 section{
     display: flex;
-    flex: 4;
+    flex: 3;
 flex-direction: row;
+flex-direction: column;
 
 }
 .posttitle{
