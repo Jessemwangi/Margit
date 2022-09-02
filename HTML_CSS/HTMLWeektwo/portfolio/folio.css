@@ -79,7 +79,8 @@ nav ul li
 nav ul li:hover
 {
 	color:#ffffff;
-background:#FFA500;
+background:#eadbf9;
+box-shadow: 2px 0 2px 0 whitesmoke;
 }
 nav ul li a
 {
@@ -214,7 +215,7 @@ aside div
 	width: 35%;
 	padding: 40px;
 	transform: translate(-50%, -0%);
-	background: #4781d280;
+	background: #6cb7f5;
 	box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0,0,0,.6);
 	border-radius: 10px;
