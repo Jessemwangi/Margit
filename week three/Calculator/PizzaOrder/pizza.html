@@ -11,25 +11,34 @@
 <div class="wrapper">
    <p class="taskdesc">Based on users’ choices, display on the page: Customers' name, 
     pizza size, selected toppings, delivery method and price.</p> 
-   <div class="welcomecust"> <label for="customername">Enter your name to make a purchase</label>
-     <input type="text" id="customername" placeholder="Enter Full Names" onchange="getname()" required><br/>
-<span id="hellomasg"></span></div>
+    <form id="pizzaform">
     <div class="main">
-
+        
         <div class="sizes">
-            <h2>share with friends</h2>
-            <div class="Inputs"> <label for="for2">For 2, the price is 7,50€
+           
+            <div class="welcomecust"> 
+                <label for="customername" width="30rem">Enter your name to begin</label><br/>
+              <input type="text" id="customername" placeholder="Enter Full Names" onchange="getname()" required><br/>
+         <span id="hellomasg"></span></div>
+        <hr> <p style="color:aqua;padding-left: 2rem;padding-right: 2rem;">size based on number of people:</p>
+         
+            <div class="Inputs"> 
 
-            </label><input type="radio" name="Psize" id="for2" value="2"></div>
-            <div class="Inputs"> <label for="for4">For 4, the price is 10,50€</label>
-             <input type="radio" name="Psize" id="for4" value="4"> </div>
-            <div class="Inputs"> <label for="for6">For 6, the price is 12,50€</label>
-            <input type="radio" name="Psize" id="for6" value="6"></div>
-            <div class="Inputs"> <label for="8">For 8, the price is 15,50€</label>
-            <input type="radio" name="Psize" id="for8" value="8"></div>
+            </label><input type="radio" name="Psize" id="for2" value="2" >
+            <label for="for2" class="Pizza2_image"></label>For 2, the price is 7,50€
+        </div>
+            <div class="Inputs"> 
+             <input type="radio" name="Psize" id="for4" value="4" >
+             <label for="for4" class="Pizza4_image"></label> For 4, the price is 10,50€</div>
+            <div class="Inputs"> 
+            <input type="radio" name="Psize" id="for6" value="6" >
+            <label for="for6" class="Pizza6_image"></label>For 6, the price is 12,50€</div>
+            <div class="Inputs"> 
+            <input type="radio" name="Psize" id="for8" value="8" >
+            <label for="for8" class="Pizza8_image"></label>For 8, the price is 15,50€</div>
         </div>
 <div class="topping">
-                <h2>Add Topping to your pizza</h2>
+                <h3>Add Toppings to flavor your pizza</h3>
                 <div class="Inputs"> <label for="Pepperoni">Pepperoni.</label><input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" > </div>
                 <div class="Inputs"> <label for="Mushroom">Mushroom</label> <input type="checkbox" id="Mushroom" name="Mushroom"  value="Mushroom" > </div>
                 <div class="Inputs"><label for="Extracheese">Extra cheese</label> <input type="checkbox" id="Extracheese" name="Extracheese" value="Extracheese" > </div>
@@ -42,28 +51,32 @@
                 <div class="Inputs"> <label for="Freshbasil">Fresh basil</label> <input type="checkbox" id="Freshbasil" name="Freshbasil" value="Freshbasil"> </div>
     </div>
     <div class="delivery">
-<h2>Select pick up method</h2>
-        <div class="Inputs"> <select name="delivery" id="deliver" onchange="delivery()">
+<h3>Select pick up method</h3>
+        <div class="Inputs"> <select name="delivery" id="deliver" onchange="pickuploc()">
             <option value="">select Pickup</option>
             <option value="5">Delivery home, +5</option>
             <option value="1">Eat In</option>
             <option value="2">Pickup food</option>
         </select></div>
+        <div class="ordersum">
+        <h5><u></u>PIZZA ORDER SUMMARY AND TOTAL COST</u></h5>
+        <p>Pizza Selected size</p>
+        <div id="Ordersize"></div>
+        <p>Pizza Customized Toppings</p>
+        <div id="toppings"></div>
+        <p>Pizza Pickup Option choosed</p>
+        <div id="pickup"></div>
+        <hr>
+        Payment Due is : 
+        <div id="Ptotalcost" style="text-align:center ;"></div>
+        <div class="Inputs" style="text-align:center ;">
+            <input type="button" class="getpizza" value="Get Me That Pizza" >
+        </div>
+        </div>
     </div>
     
     </div>
-    <div class="ordersum">
-    <h2><u></u>PIZZA ORDER SUMMARY AND TOTAL COST</u></h2>
-    <p>Pizza Selected size</p>
-    <div id="Ordersize"></div>
-    <p>Pizza Customized Toppings</p>
-    <div id="toppings"></div>
-    <p>Pizza Pickup Option choosed</p>
-    <div id="pickup"></div>
-    <hr>
-    Payment Due is : 
-    <div id="Ptotalcost"></div>
-    </div>
+</form>
 </div>
     <script src="pizza.js"></script>
 </body>

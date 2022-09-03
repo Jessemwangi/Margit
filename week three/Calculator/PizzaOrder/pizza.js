@@ -1,7 +1,9 @@
 let toppingcost=0, totalcost=0,deliverycost=0;pcikupmethod="", toppingcount=0;
 let topplist="", choicesizecost=0,choicesname="" , choiceprizecost=0;
 const elementsArray = document.querySelectorAll('input[type="checkbox"]');
+let hellomessage= document.querySelector('#hellomasg');
 const radioelement=document.querySelectorAll('input[type="radio"]');
+const getpiza=document.querySelector('input[type="button"]');
 elementsArray.forEach(function(elem) {
     elem.addEventListener("change", function() {
               checkboxes();
@@ -19,11 +21,11 @@ radioelement.forEach(function(elem){
         calculatecost(choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod);
     });
 });
-let delivery=(e)=>{
-    e = document.querySelector("#deliver");
-    if(e.value==5){ deliverycost=5}
+function pickuploc(){
+    let ev = document.querySelector("#deliver");
+    if(ev.value==5){ deliverycost=5}
     else{deliverycost=0}
-pcikupmethod = e.options[e.selectedIndex].text;  
+pcikupmethod = ev.options[ev.selectedIndex].text;  
 calculatecost(choicesname,choiceprizecost,topplist,toppingcount,deliverycost,pcikupmethod);
 }
 function checkboxes(){
@@ -47,6 +49,19 @@ let calculatecost= (choicesname,choiceprizecost,topplist,toppingcount,deliveryco
     totalcost=(toppingcost)+choiceprizecost+deliverycost;
 document.querySelector('#Ordersize').textContent=choicesname;
 document.querySelector('#toppings').textContent=topplist;
-document.querySelector('#Ptotalcost').textContent=totalcost;
+document.querySelector('#Ptotalcost').textContent=totalcost +"€";
 document.querySelector ('#pickup').textContent=pcikupmethod;
 };
+getpiza.addEventListener('click',function(e){
+    // let e=document.querySelector('.getpizza');
+    e.preventDefault;
+    document.getElementById('pizzaform').reset();
+    alert('order placed, your order number is 7 stay put');
+console.log(e);
+});
+function getname(e)
+{
+    welcome=document.querySelector('#customername').value;
+    hellomessage.textContent='Welcome '+ welcome +', Select you Pizza option bellow:';
+console.log(welcome);
+}

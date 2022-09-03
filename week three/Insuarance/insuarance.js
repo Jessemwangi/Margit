@@ -8,6 +8,7 @@ const advertarea= document.querySelector('#outputadvert');
 
 names.addEventListener('change',function(e){
 namevalue=e.target.value;
+displaystatistics(namevalue,agecost,healthvalue,healthtext,habbitvalue,habbittext)
 console.log(namevalue);
 });
 age.addEventListener('change',function(e){
@@ -18,9 +19,8 @@ calcAgeCost(agevalue);
 habbit.forEach( function(chkhabbit){
     chkhabbit.addEventListener('change', function(){
         console.log(habbit);
-        habbitvalue="";habbitpct=0;habbittext='';
-        for (var i=0; i<habbit.length; i++) {
-            
+        habbitvalue=0;habbitpct=0;habbittext='';
+        for (var i=0; i<habbit.length; i++) {            
             if (habbit[i].type === "checkbox" && habbit[i].checked === true){ 
                 habbittext+=habbit[i].value +", "; 
                 if (habbit[i].value =='Daily exercise'){
@@ -37,7 +37,7 @@ habbit.forEach( function(chkhabbit){
 });
 health.forEach(function(chkhealth){
     chkhealth.addEventListener('change',function(){
-        healthvalue='';let counter=0;healthtext='';
+        healthvalue=0;let counter=0;healthtext='';
         for(i=0;i<health.length;i++)
         {
             if (health[i].type=='checkbox' && health[i].checked===true){
@@ -61,12 +61,12 @@ agecost=(insurancepct*210/100).toFixed(2);
 displaystatistics(namevalue,agecost,healthvalue,healthtext,habbitvalue,habbittext)
 console.log(agecost);
 }
-function displaystatistics(namevalue,agecost,healthvalue,healthtext,habbitvalue,habbittext)
+let displaystatistics=(namevalue,agecost,healthvalue,healthtext,habbitvalue,habbittext)=>
 {
     advertarea.style.height="29vh";
     outputinfo.style.display='block';
     outputinfo.style.background="red";
-    var totalcost=insurancepct+agecost+healthvalue+habbitvalue;
+    var totalcost=Number.parseInt(insurancepct) +Number.parseInt(agecost)+Number.parseInt(healthvalue)+Number.parseInt(habbitvalue);
     let testing="Hello "+namevalue +", the following details will be used to create your insuarance Profile :- Your Age "
     + agevalue +" : this cost for this age category is " + agecost +", Habbits : "
     + habbittext + " which will cost you additional "+ habbitvalue+". The status of your relative Health as indicated by you :" 
@@ -75,11 +75,11 @@ function displaystatistics(namevalue,agecost,healthvalue,healthtext,habbitvalue,
 outputinfo.textContent=testing;
 console.log(testing);
 }
-function sendit(){
+let sendit=()=>{
     alert('your record have been saved and send, welcome next time ' + namevalue);
     outputinfo.style.display = '';
-    advertarea.style.height="59vh";
+    advertarea.style.height="100vh";
     document.getElementById('form1').reset();
-};
+}
 
 
