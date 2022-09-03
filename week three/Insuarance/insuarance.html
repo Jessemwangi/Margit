@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="insuarance.css">
 </head>
 <body>
+    
     <div class="container">
         <div class="herobanner"><h1>Welcome</h1>
         </div>
         <div   class="main">
             <div class="wrapper">
+                <form id="form1" >
                 <div class="textinput">
                    <div class="textinputbody">
 
@@ -48,15 +50,16 @@
                 </div>
                 <div class="textinput">
                     <div class="btnsub">
-                        <input type="button"  class="Btnsend" id="Btnsend"  value="Submit"> 
+                        <input type="button"  class="Btnsend" id="Btnsend"  value="Submit" onclick="sendit()"> 
                      </div>
             </div>
+        </form>
             </div>
-            <div class="outputdiv" hidden>
-                test
-                <div class="outputname" ></div>
-                <div class="outputmessage" ></div>
-                <div class="outputadvert"></div>
+            <div class="outputdiv" >
+               
+                <div class="outputname"  ><h2>Quality transparent services</h2></div>
+                <div class="outputmessage" id="outputmessage" hidden ></div>
+                <div class="outputadvert" id="outputadvert"></div>
             </div>
         </div>
     </div>
