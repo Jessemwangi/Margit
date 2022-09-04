@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+table
+{
+	margin:0 auto;
+}
+body
+{
+	padding-top: 0.5%;
+	
+	margin-top:0;/*to remove the default margin so that wrapper start from the very top edge*/
+}
+#wrapper
+{
+	width:100%;
+	height:100vh;
+	margin:auto;
+}
+
+header {
+	 color: #ffffff; 
+	/* background-color: rgb(237, 242, 247); */
+	background-image: url("assets/wallpaper.jpg"); 
+	background-repeat: no-repeat; 
+	background-size: 100%;
+	background-position: bottom;
+	/* opacity: 0.4; */
+	width:100%;
+	/* height: 150px; */
+	/*background:#1a6827;*/
+	border-bottom: solid 2px #0C018F;
+	margin-bottom: 5px;
+	float: left;
+}
+#logo
+{
+
+	position: relative;
+	color:#000000;
+	/* background:#ffffff; */
+	/* padding:5px; */
+	/* margin-bottom:5px; */
+	float:left;
+	overflow:hidden;
+	
+}
+#lblDate
+{
+	color: #ffffff;
+}
+#Title_head
+{
+width:100%;
+background:white;
+
+}
+
+nav
+{
+	opacity: 1;
+	text-align:center;
+	color:#FFA500;
+}
+nav ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+nav ul li
+{opacity: 1;
+	display:inline-block;
+	padding:0;
+	margin:0;
+	background:#fcfcfc;
+	padding: 10px;
+   width: 5%;
+}
+nav ul li:hover
+{
+	color:#ffffff;
+background:#eadbf9;
+box-shadow: 2px 0 2px 0 whitesmoke;
+}
+nav ul li a
+{
+	color:#0d0900;
+	font-size:13px;
+	/*font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+	text-decoration:none;
+	/* border-radius:8px;
+	text-decoration:em;
+	width: 3%; */
+}
+nav ul li a:hover
+{
+
+}
+#hero
+{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	margin-top: 1%;
+margin-bottom:2%;
+height:150px;
+background-color: #eadbf9;
+}
+#hero h2{
+
+}
+#hero p{
+	
+	text-align: center;
+	
+}
+#imagearea img
+{
+	width:100%;
+	
+}
+section
+{
+	width:68%;
+	height:auto;
+	padding:1%;
+	float:left;
+	background:#fcfcfc;
+}
+article
+{
+	word-wrap:break-word;
+	width:96%;
+	margin:1%;
+	padding:1%;
+	background:#F4E8FF;
+	height:auto;
+	border-radius:10px;
+		
+}
+article h3
+{
+	color:#ff0000;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+article p
+{
+	word-wrap:break-word;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+article img
+{
+	width: 32%;
+	margin: 1%;
+	border:  solid 10px white;
+	height:250px;
+}
+.imgright
+{
+	float: right;
+}
+.imgleft
+{
+	float: left;
+}
+aside
+{
+
+	margin:0 1% 0% 1%;
+	padding:1%;
+	width:26%;
+	/* background-image: url("coding.jpg"); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background:#F4E8FF; */
+	float:left;
+	border-radius:10px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+	font-size:100%;	
+	word-wrap:break-word;/*contain word within the div aside*/
+	
+}
+aside h3
+{background-color: #85ccef80;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+		font-size:4vmin;
+		color: red;
+}
+aside div
+{
+	background-color: #85ccef80;
+	padding: 2px;
+}
+#asidecontent ul li
+{
+	margin: 4% 2% 0 0;
+	text-align: justify;
+	
+}
+
+
+/* ___________________________________________________________________________________________ */
+
+  /* for contact page */
+/* ************************************************************ */
+
+  .Contact_box {
+	
+	position: absolute;
+	display: block;
+	top: 35%;
+	left: 50%;
+	width: 35%;
+	padding: 40px;
+	transform: translate(-50%, -0%);
+	background: #6cb7f5;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+	margin-bottom: 2%;
+	margin-top: 2rem;
+  }
+   
+  .Contact_box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+  }
+  
+  .Contact_box .user-box {
+	position: relative;
+  }
+  .Contact_box .user-box textarea
+  {
+overflow: hidden;
+border-bottom: #038188 solid 3px;
+color:#03e9f4;
+width: 100%;
+box-sizing: border-box;
+  }
+  .Contact_box .user-box input {
+	width: 97%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+  }
+  .Contact_box .user-box label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .Contact_box .user-box input:focus ~ label
+  {
+	top: -20px;
+	left: 0;
+	color: #000000;
+	font-size: 12px;
+  }
+
+  .Contact_box form .send {
+	position: relative;
+	
+	padding: 10px 20px;
+	color: #03e9f4;
+	font-size: 16px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 40px;
+	letter-spacing: 4px;
+	width:70%;
+	margin-left: 12%;
+	border-radius: 5px;
+	text-align: center;
+  }
+  
+  .Contact_box .send:hover {
+	background: #03e9f4;
+	color: #fff;
+	border-radius: 5px;
+	
+  }
+  
+  .Contact_box .send span {
+	position: absolute;
+	display: block;
+  }
+  
+  .Contact_box .send span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+	0% {
+	  left: -100%;
+	}
+	50%,100% {
+	  left: 100%;
+	}
+  }
+  
+  .Contact_box .send span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #03e9f4);
+	animation: btn-anim2 1s linear infinite;
+	animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+	0% {
+	  top: -100%;
+	}
+	50%,100% {
+	  top: 100%;
+	}
+  }
+  .disclaimer a
+  {
+text-decoration: none;
+color: red;
+  }
+  
+
+/* __________________________________________________________________________________ */
+@media only screen and (max-width:480px)
+{
+	header{
+		float:left;
+		margin-bottom:5px;
+		padding:0px;
+		background-image: url();
+	}
+	nav{
+		margin:0;
+		width:100%;
+		float:left;
+		clear:left;/*ti bring it under logo div*/
+		height:auto;
+		background:#1a6827;
+	}
+	nav ul li{
+		clear:left;/*each nav item will come under each other like a verticle menu bar*/
+		padding:1%;
+	}
+	nav ul li a{
+		width:90%;
+		padding:1%;
+		margin:0px auto;
+		display:block;
+		height:auto;
+		border-bottom:solid 2px #0C018F;
+		background:#dcd9cd;
+		color:#128f01;
+		text-align:center;
+		border-radius:0px;
+	}
+    #logo{
+		width:98%;
+		padding:1%;
+		height:auto;
+		float:left;
+		text-align:center;
+		margin-bottom:10px;
+		background:#414A4C;
+	}
+	#logo img {
+		width:98%;
+	}
+	section
+	{
+		width:100%;
+		float:left;
+		height:auto;
+	}
+	article
+	{
+		padding:1%;
+		margin:1%;
+		width:96%;
+		height:auto;
+	}
+	article img
+{
+	width: 98%;
+}
+	aside
+	{
+		width:98%;
+		margin: 1% 0 1% 0 ;
+		padding:0;
+		float:left;
+		padding:1%;
+		background-image: url("coding.jpg");
+		background-size: cover;
+		height:auto;
+	}
+}
