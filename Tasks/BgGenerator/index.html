@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="herobanner"><h1>Welcome</h1>
+        </div>
+        <div   class="main">
+            <div class="wrapper">
+               <div class="selectorinput">
+                   <div class="selectorinputbody">
+Linear gradient generator
+                </div>
+                <div class="selectorinputbody">
+                    <input type="color" class="color1" id="color1">
+                    <input type="color" class="color1" id="color2">
+                </div>
+                </div>
+                <div class="Radioheader"><h3>select gradient direction</h3>
+                <div class="checkradioinput">
+                    <div class="controlsector"> 
+                        <input type="radio" name="topcolor" id="SE" value="SE" >
+                        <label for="SE" class="SE"></label>
+                        <input type="radio" name="topcolor" id="DS" value="DS" ><!--  down South -->
+                        <label for="DS" class="DS"></label>
+                        <input type="radio" name="topcolor" id="Sw" value="Sw" >
+                        <label for="Sw" class="Sw"></label>
+                    </div>
+                    <div class="controlsector"> 
+                        <input type="radio" name="middlecolor" id="Dright" value="Dright" >
+                        <label for="Dright" class="Dright"></label> 
+                        <label for="" class="blanklb" hidden></label>
+                        <input type="radio" name="middlecolor" id="Dleft" value="Dleft" >
+                        <label for="Dleft" class="Dleft"></label>
+                    </div>
+                    <div class="controlsector"> 
+                        <input type="radio" name="bottomcolor" id="NE" value="NE" >
+                        <label for="NE" class="NE"></label>
+                        <input type="radio" name="bottomcolor" id="DW" value="DW" >
+                        <label for="DW" class="DW"></label>
+                        <input type="radio" name="bottomcolor" id="NW" value="NW" >
+                        <label for="NW" class="NW"></label>
+                    </div>
+                
+
+                </div>
+                </div>
+                <div class="textinput">
+                    <div class="btnsub">
+                        <input type="button"  class="Btnsend" id="Btnsend"  value="Submit" onclick="sendit()"> 
+                     </div>
+            </div>
+       
+            </div>
+            <div class="outputdiv" >
+               
+                <div class="outputname"  ><h2>Quality transparent services</h2></div>
+                <div class="outputmessage" id="outputmessage" hidden ></div>
+                <div class="outputadvert" id="outputadvert"></div>
+            </div>
+        </div>
+    </div>
+    <script src="insuarance.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    font-size: 14px;
+  }
+body{
+    font-family:Titillium Web,Roboto ,'Open Sans', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3{
+    padding: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container
+{
+    width: 80%;
+    background-color: aliceblue;
+    border: double solid snow;
+    padding: 2%;
+    position: absolute;
+}
+.herobanner
+{
+    width: 96%;
+    /* background-color: white; */
+    margin: 1% 0 0% 0;
+    border-radius: 4px;
+}
+.herobanner h1{
+    margin: 0 0 30px;
+	padding: 0;
+	color: #055ac9;
+	text-align: center;
+}
+.main{
+    border-radius: 8px;
+    width: 96%;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+.wrapper{
+    border-radius: 8px;
+    flex: 2;
+    background-color: aliceblue;
+    padding: 0 5px 0 5px;
+    margin: 0 2% 2% 2%;
+    box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.selectorinput{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+ .selectorinputbody{
+    padding-top: 5px;
+    background-color: white;
+    position: relative;
+}
+.Radioheader{
+    display: flex;
+    flex-direction: column;
+}
+.checkradioinput
+{
+    display: flex;
+    flex-direction: column;
+}
+.controlsector{
+    display: flex;
+    flex-direction: row;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    position: fixed;
+}
+.controlsector label{
+        display: inline-block; 
+width: 40px;
+height: 40px;
+border-radius: 5px;
+margin: 1rem;
+background-color: #00000054;
+cursor: pointer;
+background-position: center;
+background-size: cover;
+}
+.SE{
+    background: url('assets/south_east.svg') no-repeat;
+  
+}
+.DS{
+    background: url('assets/arrow_downward.svg') no-repeat;
+}
+.Sw{
+    background: url('assets/south_west.svg') no-repeat;
+}
+
+.Dright
+{
+    background: url('assets/arrow_forward.svg') no-repeat;
+}
+.Dleft
+{
+    background:url('assets/arrow_back.svg') no-repeat;
+}
+blanklb{
+    background: white;
+}
+.NE{
+    background: url('assets/north_east.svg') no-repeat;
+}
+
+.DW{
+    background: url('assets/arrow_upward.svg') no-repeat;
+}
+.NW{
+    background: url('assets/north_west.svg') no-repeat;
+}
+
+.textinput .textinputbody input:focus ~ label{
+    top: -20px;
+	left: 0;
+	color: #000000;
+	font-size: 12px;
+}
+
+.Radioheader
+{
+    width: 100%;
+    background: white;
+}
+.Radioheader h3{
+    padding: 0;
+
+}
+.checkradioinput
+{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-top: #4781d280 solid 2px;
+    border-radius: 5px 5px 0 0;
+    padding: 2%;
+
+}
+
+.checkradioinput .chkpartition label{
+    display: block;
+    width: 25%;
+}
+.btnsub
+{
+    margin-bottom: 2%;
+    padding: 4px;
+    text-align: center;
+}
+.Btnsend
+{
+    width: 20%;
+    padding: 5px;
+    background: #4781d280;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+.Btnsend:hover{
+border-bottom: 5px solid #055ac9;
+}
+.outputname
+{
+    border-bottom: solid 2px #055ac9;
+}
+.outputname h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3e76c0;
+    font-weight: bold;
+}
+
+.outputadvert
+{
+    background: url('pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 63vh;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.outputmessage
+{   padding: 4px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1265d1;
+    font-size:medium;
+}
+.outputdiv
+{border-radius: 8px;
+    width: 44%;
+    margin: 0 2% 2% 2%;
+    padding: 0 5px 0 5px;
+    box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
