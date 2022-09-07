@@ -48,9 +48,13 @@ h3{
     flex-direction: row;
 }
 .wrapper{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
     border-radius: 8px;
     flex: 2;
-    background-color: aliceblue;
+    
     padding: 0 5px 0 5px;
     margin: 0 2% 2% 2%;
     box-sizing: border-box;
@@ -66,6 +70,14 @@ h3{
     padding-top: 5px;
     background-color: white;
     position: relative;
+}
+.selectorinputbody input[type="color"]
+{
+    border: none;
+    display: inline-block;
+    width: 5rem;
+    height: 5vh;
+    border-radius: 6px;
 }
 .Radioheader{
     display: flex;
@@ -86,7 +98,7 @@ input[type="radio"] {
     position: fixed;
 }
 .controlsector label{
-        display: inline-block; 
+display: inline-block; 
 width: 40px;
 height: 40px;
 border-radius: 5px;
@@ -95,6 +107,10 @@ background-color: #00000054;
 cursor: pointer;
 background-position: center;
 background-size: cover;
+}
+.controlsector input[type="radio"]:checked + label{
+    /* background-color:#bfb; */
+    background-color: #b9dab9;
 }
 .SE{
     background: url('assets/south_east.svg') no-repeat;
@@ -129,13 +145,6 @@ blanklb{
     background: url('assets/north_west.svg') no-repeat;
 }
 
-.textinput .textinputbody input:focus ~ label{
-    top: -20px;
-	left: 0;
-	color: #000000;
-	font-size: 12px;
-}
-
 .Radioheader
 {
     width: 100%;
@@ -143,7 +152,6 @@ blanklb{
 }
 .Radioheader h3{
     padding: 0;
-
 }
 .checkradioinput
 {
@@ -153,70 +161,13 @@ blanklb{
     border-top: #4781d280 solid 2px;
     border-radius: 5px 5px 0 0;
     padding: 2%;
-
 }
 
-.checkradioinput .chkpartition label{
-    display: block;
-    width: 25%;
-}
-.btnsub
-{
-    margin-bottom: 2%;
-    padding: 4px;
-    text-align: center;
-}
-.Btnsend
-{
-    width: 20%;
-    padding: 5px;
-    background: #4781d280;
-    color: white;
-    border-radius: 5px;
-    border-style: none;
-    cursor: pointer;
-}
-.Btnsend:hover{
-border-bottom: 5px solid #055ac9;
-}
-.outputname
-{
-    border-bottom: solid 2px #055ac9;
-}
-.outputname h2{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #3e76c0;
-    font-weight: bold;
-}
-
-.outputadvert
-{
-    background: url('pic.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 63vh;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-.outputmessage
-{   padding: 4px;
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    color: #1265d1;
-    font-size:medium;
-}
 .outputdiv
 {border-radius: 8px;
-    width: 44%;
     margin: 0 2% 2% 2%;
-    padding: 0 5px 0 5px;
     box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0,0,0,.6);
     display: flex;
     flex: 6;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
 }

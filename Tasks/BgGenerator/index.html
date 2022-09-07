@@ -26,47 +26,40 @@ Linear gradient generator
                 <div class="Radioheader"><h3>select gradient direction</h3>
                 <div class="checkradioinput">
                     <div class="controlsector"> 
-                        <input type="radio" name="topcolor" id="SE" value="SE" >
+                        <input type="radio" name="gradcolor" id="SE" value="SE" >
                         <label for="SE" class="SE"></label>
-                        <input type="radio" name="topcolor" id="DS" value="DS" ><!--  down South -->
+                        <input type="radio" name="gradcolor" id="DS" value="DS" ><!--  down South -->
                         <label for="DS" class="DS"></label>
-                        <input type="radio" name="topcolor" id="Sw" value="Sw" >
+                        <input type="radio" name="gradcolor" id="Sw" value="Sw" >
                         <label for="Sw" class="Sw"></label>
                     </div>
                     <div class="controlsector"> 
-                        <input type="radio" name="middlecolor" id="Dright" value="Dright" >
+                        <input type="radio" name="gradcolor" id="Dright" value="Dright" >
                         <label for="Dright" class="Dright"></label> 
                         <label for="" class="blanklb" hidden></label>
-                        <input type="radio" name="middlecolor" id="Dleft" value="Dleft" >
+                        <input type="radio" name="gradcolor" id="Dleft" value="Dleft" >
                         <label for="Dleft" class="Dleft"></label>
                     </div>
                     <div class="controlsector"> 
-                        <input type="radio" name="bottomcolor" id="NE" value="NE" >
+                        <input type="radio" name="gradcolor" id="NE" value="NE" >
                         <label for="NE" class="NE"></label>
-                        <input type="radio" name="bottomcolor" id="DW" value="DW" >
+                        <input type="radio" name="gradcolor" id="DW" value="DW" >
                         <label for="DW" class="DW"></label>
-                        <input type="radio" name="bottomcolor" id="NW" value="NW" >
+                        <input type="radio" name="gradcolor" id="NW" value="NW" >
                         <label for="NW" class="NW"></label>
                     </div>
                 
 
                 </div>
                 </div>
-                <div class="textinput">
-                    <div class="btnsub">
-                        <input type="button"  class="Btnsend" id="Btnsend"  value="Submit" onclick="sendit()"> 
-                     </div>
-            </div>
+
        
             </div>
-            <div class="outputdiv" >
+            <canvas class="outputdiv" id="outputdiv" width="400" height="400" >
                
-                <div class="outputname"  ><h2>Quality transparent services</h2></div>
-                <div class="outputmessage" id="outputmessage" hidden ></div>
-                <div class="outputadvert" id="outputadvert"></div>
-            </div>
+            </canvas>
         </div>
     </div>
-    <script src="insuarance.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
