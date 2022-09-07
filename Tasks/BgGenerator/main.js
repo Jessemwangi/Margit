@@ -10,31 +10,30 @@ let selectedradio=e.target.value;
 switch (selectedradio){
 
     case 'SE'://direction south east 
-    loadgradient(0,0,400,400);
+    loadgradient(0,0,300,150);
         break;
-        case 'DS'://direction south
-        loadgradient(400,0,400,400);
-
-            break;
+            case 'DS'://direction south
+            loadgradient(150,0,150,150);
+        break;
             case 'Sw'://direction south west
-            loadgradient(400,0,0,400);
+            loadgradient(300,0,150,150);
 
                 break;
     case 'Dright'://direction right
-    loadgradient(0,400,400,400);
+    loadgradient(0,75,300,75);
 break;
 case 'Dleft'://direction left
-    loadgradient(400,400,0,400);
+    loadgradient(300,75,0,75);
     break;
     case 'NE'://direction north east
-    loadgradient(0,400,400,0);
+    loadgradient(0,150,300,0);
     break;
-    case 'DW'://direction left
-    loadgradient(400,400,400,0);
+    case 'DW'://direction north
+    loadgradient(150,75,150,0);
     break;
     case 'NW'://direction north west
     console.log(selectedradio);
-    loadgradient(400,400,0,0);
+    loadgradient(300,150,0,0);
     break;
             default:
 }
@@ -45,5 +44,5 @@ let loadgradient=(x0,yo,x1,y1)=>{
     colorgrade.addColorStop(0,startcolor.value);
     colorgrade.addColorStop(1,endcolor.value);
     fillzone.fillStyle = colorgrade;
-    fillzone.fillRect(0,0,400,400);
+    fillzone.fillRect(0,0,300,150);
 }

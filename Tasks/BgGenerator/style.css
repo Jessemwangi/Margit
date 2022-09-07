@@ -75,9 +75,10 @@ h3{
 {
     border: none;
     display: inline-block;
-    width: 5rem;
-    height: 5vh;
+    width: 6rem;
+    height: 40px;
     border-radius: 6px;
+    margin-left: 2rem;
 }
 .Radioheader{
     display: flex;
