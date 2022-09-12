@@ -66,4 +66,11 @@ cell1.innerHTML = licence;
         cell6.innerHTML = carcolor;
  }
 }
-forms.addEventListener('submit',savecar)
+const valueReset=(e)=>{
+e.preventDefault;
+for(x=table1.rows.length-1;x>0;x--){
+       table1.deleteRow(x);
+}
+}
+forms.addEventListener('submit',savecar);
+forms.addEventListener('reset',valueReset);

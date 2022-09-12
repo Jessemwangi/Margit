@@ -35,7 +35,7 @@ habbit.forEach( function(chkhabbit){
         displaystatistics(namevalue,agecost,healthvalue,healthtext,habbitvalue,habbittext);
     });
 });
-health.forEach(function(chkhealth){
+health.forEach(chkhealth=>{
     chkhealth.addEventListener('change',function(){
         healthvalue=0;let counter=0;healthtext='';
         for(i=0;i<health.length;i++)
