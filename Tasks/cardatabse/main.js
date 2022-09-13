@@ -7,6 +7,17 @@ let table1=document.querySelector('#database');
  let owner=document.querySelector('#carowner').value;
  let carprice=document.querySelector('#carprice').value;
  let carcolor=document.querySelector('#carcolor').value;
+ class Cars{
+       constructor(licence,maker,model,owner,carprice,carcolor)
+              {
+              this.licence=licence,
+              this.maker=maker,
+              this.model=model,
+              this.owner=owner,
+              this.carprice=carprice,
+              this.carcolor=carcolor
+              }       
+       }
  
 let savecar=(e)=>{
         let licence=document.querySelector('#licenceNumber').value;
@@ -48,7 +59,8 @@ let savecar=(e)=>{
        return false;
  }
  else{
-
+const carRecords=new Cars;
+       carRecords.maker=maker;carRecords.model=model;
 
     e.preventDefault();
     console.log(licence,maker,model,owner);
