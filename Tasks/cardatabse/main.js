@@ -1,3 +1,4 @@
+let formssearch=document.querySelector('#form1');
 let forms=document.querySelector('#form');
 let table1=document.querySelector('#database');
  let licence=document.querySelector('#licenceNumber').value;
