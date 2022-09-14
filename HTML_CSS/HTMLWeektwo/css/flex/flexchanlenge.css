@@ -45,9 +45,6 @@ main{
 section{
     display: flex;
     flex: 3;
-flex-direction: row;
-flex-direction: column;
-
 }
 .posttitle{
     background: rgb(106, 104, 104);

@@ -70,7 +70,6 @@ nav ul
 nav ul li
 {opacity: 1;
 	display:inline-block;
-	padding:0;
 	margin:0;
 	background:#fcfcfc;
 	padding: 10px;
@@ -105,9 +104,6 @@ nav ul li a:hover
 margin-bottom:2%;
 height:150px;
 background-color: #eadbf9;
-}
-#hero h2{
-
 }
 #hero p{
 	

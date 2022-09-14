@@ -1,174 +1,166 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  html {
-    font-size: 14px;
-  }
-body{
-    font-family:Titillium Web,Roboto ,'Open Sans', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(red, green);
-    background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
+}
+body {
+  font-family: Titillium Web, Roboto, "Open Sans", sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue";
+  background-image: linear-gradient(red, green);
+  background-size: cover;
   background-attachment: fixed;
 }
-h3{
-    padding: 3px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h3 {
+  padding: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container
-{
-    width: 80%;
-    background-color: aliceblue;
-    border: double solid snow;
-    padding: 2%;
-    position: absolute;
+.container {
+  width: 80%;
+  background-color: aliceblue;
+  border: double solid snow;
+  padding: 2%;
+  position: absolute;
 }
-.herobanner
-{
-    width: 96%;
-    margin: 1% 0 0% 0;
-    border-radius: 4px;
+.herobanner {
+  width: 96%;
+  margin: 1% 0 0% 0;
+  border-radius: 4px;
 }
-.herobanner h1{
-    margin: 0 0 30px;
-	padding: 0;
-	color: #055ac9;
-	text-align: center;
+.herobanner h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #055ac9;
+  text-align: center;
 }
-.main{
-    border-radius: 8px;
-    width: 96%;
-    background-color: white;
-    padding: 5px;
-    display: flex;
-    align-content: center;
-    flex-direction: row;
+.main {
+  border-radius: 8px;
+  width: 96%;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
 }
-.wrapper{
-    display: flex;
-    align-content: space-between;
-    justify-content: space-evenly;
-    flex-direction: column;
-    border-radius: 8px;
-    flex: 2;
-    padding: 0 5px 0 5px;
-    margin: 0 2% 2% 2%;
-    box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+.wrapper {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 8px;
+  flex: 2;
+  padding: 0 5px 0 5px;
+  margin: 0 2% 2% 2%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
-.selectorinput{
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+.selectorinput {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
- .selectorinputbody{
-    padding-top: 5px;
-    background-color: white;
-    position: relative;
+.selectorinputbody {
+  padding-top: 5px;
+  background-color: white;
+  position: relative;
 }
-.selectorinputbody input[type="color"]
-{
-    border: none;
-    display: inline-block;
-    width: 6rem;
-    height: 40px;
-    border-radius: 6px;
-    margin-left: 2rem;
+.selectorinputbody input[type="color"] {
+  border: none;
+  display: inline-block;
+  width: 6rem;
+  height: 40px;
+  border-radius: 6px;
+  margin-left: 2rem;
 }
-.Radioheader{
-    display: flex;
-    flex-direction: column;
+.Radioheader {
+  display: flex;
+  flex-direction: column;
 }
-.checkradioinput
-{
-    display: flex;
-    flex-direction: column;
+.checkradioinput {
+  display: flex;
+  flex-direction: column;
 }
-.controlsector{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.controlsector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    position: fixed;
+  -webkit-appearance: none;
+  appearance: none;
+  position: fixed;
 }
-.controlsector label{
-display: inline-block; 
-width: 70px;
-height: 70px;
-border-radius: 5px;
-margin: 1rem;
-background-color: #00000054;
-cursor: pointer;
-background-position: center;
-background-size: cover;
+.controlsector label {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  margin: 1rem;
+  background-color: #00000054;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
 }
-.controlsector input[type="radio"]:checked + label{
-    background-color: #b9dab9;
+.controlsector input[type="radio"]:checked + label {
+  background-color: #b9dab9;
 }
-.SE{
-    background: url('assets/south_east.svg') no-repeat;
-  
+.SE {
+  background: url("assets/south_east.svg") no-repeat;
 }
-.DS{
-    background: url('assets/arrow_downward.svg') no-repeat;
+.DS {
+  background: url("assets/arrow_downward.svg") no-repeat;
 }
-.Sw{
-    background: url('assets/south_west.svg') no-repeat;
-}
-
-.Dright
-{
-    background: url('assets/arrow_forward.svg') no-repeat;
-}
-.Dleft
-{
-    background:url('assets/arrow_back.svg') no-repeat;
-}
-blanklb{
-    background: white;
-}
-.NE{
-    background: url('assets/north_east.svg') no-repeat;
+.Sw {
+  background: url("assets/south_west.svg") no-repeat;
 }
 
-.DW{
-    background: url('assets/arrow_upward.svg') no-repeat;
+.Dright {
+  background: url("assets/arrow_forward.svg") no-repeat;
 }
-.NW{
-    background: url('assets/north_west.svg') no-repeat;
+.Dleft {
+  background: url("assets/arrow_back.svg") no-repeat;
 }
-
-.Radioheader
-{
-    width: 100%;
-    background: white;
+blanklb {
+  background: white;
 }
-.Radioheader h3{
-    padding: 0;
-}
-.checkradioinput
-{
-    display: flex;
-    flex-direction: column;
-    background: white;
-    border-top: #4781d280 solid 2px;
-    border-radius: 5px 5px 0 0;
-    padding: 2%;
+.NE {
+  background: url("assets/north_east.svg") no-repeat;
 }
 
-.outputdiv
-{border-radius: 8px;
-    margin: 0 2% 2% 2%;
-    box-sizing: border-box;
-	box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    display: flex;
-    flex: 6;
+.DW {
+  background: url("assets/arrow_upward.svg") no-repeat;
+}
+.NW {
+  background: url("assets/north_west.svg") no-repeat;
+}
+
+.Radioheader {
+  width: 100%;
+  background: white;
+}
+.Radioheader h3 {
+  padding: 0;
+}
+.checkradioinput {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-top: #4781d280 solid 2px;
+  border-radius: 5px 5px 0 0;
+  padding: 2%;
+}
+
+.outputdiv {
+  border-radius: 8px;
+  margin: 0 2% 2% 2%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex: 6;
 }

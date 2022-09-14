@@ -1,112 +1,106 @@
 //1 task 0ne
-let result="";
-let positiveOddNo=()=>{
-for (let numbers=0;numbers<=100;numbers ++)
-{ 
-    if (numbers % 2 >0){
-        console.log(numbers);  
-}
-   }};
+let result = "";
+let positiveOddNo = () => {
+  for (let numbers = 0; numbers <= 100; numbers++) {
+    if (numbers % 2 > 0) {
+      console.log(numbers);
+    }
+  }
+};
 
 // ***********************************************************************************************************
 //2 task tw0
-let positiveEvenNo=()=>
-{
-  let final=98;
-for (let numbers=0;numbers<=final;numbers +=2)
-{ 
-      result=result +=  " " +String(numbers)  + " " +String(final-numbers);
-     document.getElementById("agestatu").innerHTML=result;
-//   let final=98;
-//   for (let numbers=0;numbers<=final;numbers +=2){
-//   result +=' ' + final; + '';
-// result +=' ' + end + '';
-// end -=2;}
-//     if (numbers % 2 ==0){
-//     result=result +=  " " +String(numbers)  + " " +String(final-numbers);
-//     document.getElementById("agestatu").innerHTML=result;
-// }
-}
-console.log(result);
-divscroll();
+let positiveEvenNo = () => {
+  let final = 98;
+  for (let numbers = 0; numbers <= final; numbers += 2) {
+    result = result += " " + String(numbers) + " " + String(final - numbers);
+    document.getElementById("agestatu").innerHTML = result;
+    //   let final=98;
+    //   for (let numbers=0;numbers<=final;numbers +=2){
+    //   result +=' ' + final; + '';
+    // result +=' ' + end + '';
+    // end -=2;}
+    //     if (numbers % 2 ==0){
+    //     result=result +=  " " +String(numbers)  + " " +String(final-numbers);
+    //     document.getElementById("agestatu").innerHTML=result;
+    // }
+  }
+  console.log(result);
+  divscroll();
 };
 
 //*************************************************************************************************************************
 //3 task three
-let CalcSpeed=()=>{
-  let Distance =0;
-  let speed=0;
-do {
+let CalcSpeed = () => {
+  let Distance = 0;
+  let speed = 0;
+  do {
     Distance = parseInt(prompt("enter Distance"));
-    if (Distance ==0)
-    {
+    if (Distance == 0) {
       alert("0 entered, program will terminate");
-      break; 
+      break;
     }
-    let Hours= parseInt(prompt("enter speed"));
-    speed = division(Distance , Hours);
+    let Hours = parseInt(prompt("enter speed"));
+    speed = division(Distance, Hours);
     console.log(speed);
-    result += "0 , "+ speed ;
-    document.getElementById("agestatu").innerHTML=result;
-   
-} while (Distance != 0);
-divscroll();
+    result += "0 , " + speed;
+    document.getElementById("agestatu").innerHTML = result;
+
+  } while (Distance != 0);
+  divscroll();
 
 };
 
 // ********************************************************************************************************************************
 //4 task 4
-let twentyevenNo=()=>
-{
-let counter = 0;
-let Total=0;
-while (counter <20) {
-  let value= parseInt(prompt("enter value"));
-    if (value%2==0){
-      Total+=1
+let twentyevenNo = () => {
+  let counter = 0;
+  let Total = 0;
+  while (counter < 20) {
+    let value = parseInt(prompt("enter value"));
+    if (value % 2 == 0) {
+      Total += 1
     }
     console.log(Total);
-    counter ++;
+    counter++;
     //document.getElementById("agestatu").innerHTML=Total;
-}
-//divscroll();
-alert("20 numbers entered, thats the maxmum allowed");
+  }
+  //divscroll();
+  alert("20 numbers entered, thats the maxmum allowed");
 };
 
 // *****************************************************************************************************************************
 //5 task 5
-let averagetill0=()=>
-{
-  let nsums =0;
+let averagetill0 = () => {
+  let nsums = 0;
   let ncounter = 0;
-  let numbers=0;  
-  do {  
-    numbers = parseInt(prompt("average calc: Enter any number")); 
-    ncounter+=1
-    nsums+=numbers
-    let result1=division(nsums,ncounter);
+  let numbers = 0;
+  do {
+    numbers = parseInt(prompt("average calc: Enter any number"));
+    ncounter += 1
+    nsums += numbers
+    let result1 = division(nsums, ncounter);
     console.log(result1);
-    result +=  " "+ result1 + " , ";
-   document.getElementById("agestatu").innerHTML=result;
+    result += " " + result1 + " , ";
+    document.getElementById("agestatu").innerHTML = result;
   } while (numbers != 0);
   divscroll();
   alert("0 entered, program will terminate")
-  };
-  averagetill0();
-  // *******************************************************************************************************************************
+};
+averagetill0();
+// *******************************************************************************************************************************
 //6 task six
-let averagetill25=()=>{
-let nsums =0;
+let averagetill25 = () => {
+  let nsums = 0;
   let ncounter = 0;
   let n = 0;
-  while(n<25)
-  {
-    numbers = parseInt(prompt("enter any number")); 
-    ncounter+=1;
-    nsums+=numbers;
-    let result=division(nsums,ncounter);
+  while (n < 25) {
+    numbers = parseInt(prompt("enter any number"));
+    ncounter += 1;
+    nsums += numbers;
+    let result = division(nsums, ncounter);
     console.log(result);
-    document.getElementById("agestatu").innerHTML=result;
+    document.getElementById("agestatu").innerHTML = result;
     n++;
   }
   divscroll();
@@ -115,137 +109,129 @@ let nsums =0;
 
 // ****************************************************************************************************************************
 //7 task seven
-let averagewithyesno=()=>
-{
+let averagewithyesno = () => {
   let numbers = 0;
-let nsums =0;
+  let nsums = 0;
   let ncounter = 0;
-  let continueadd=0;
-    do
-    {
-      numbers = parseInt(prompt("enter any number")); 
-      continueadd = confirm("Do you want to add another number?");
-      ncounter+=1;
-      nsums+=numbers;
-      let result=division(nsums,ncounter);
-      console.log(result);
-      document.getElementById("agestatu").innerHTML=result;
-      } while (continueadd)
-      divscroll();
-      alert("thank you for your time");
+  let continueadd = 0;
+  do {
+    numbers = parseInt(prompt("enter any number"));
+    continueadd = confirm("Do you want to add another number?");
+    ncounter += 1;
+    nsums += numbers;
+    let result = division(nsums, ncounter);
+    console.log(result);
+    document.getElementById("agestatu").innerHTML = result;
+  } while (continueadd)
+  divscroll();
+  alert("thank you for your time");
 };
 
 // **************************************************************************************************************************
 //8 task eight
-let Smallestinlist=()=>
-{
-let numbers =  parseInt(prompt("how many number do you wish to enter")); 
-const arr1=[];
-for(n=0;n<numbers;n++)
-{
-let values= prompt("enter any number");
-arr1[n]=values
-console.log(arr1)
-}
-console.log(smallinarr(arr1));
-document.getElementById("agestatu").innerHTML="in this array " +arr1 + " the smallest is :" + smallinarr(arr1);
-divscroll();
+let Smallestinlist = () => {
+  let numbers = parseInt(prompt("how many number do you wish to enter"));
+  const arr1 = [];
+  for (n = 0; n < numbers; n++) {
+    let values = prompt("enter any number");
+    arr1[n] = values
+    console.log(arr1)
+  }
+  console.log(smallinarr(arr1));
+  document.getElementById("agestatu").innerHTML = "in this array " + arr1 + " the smallest is :" + smallinarr(arr1);
+  divscroll();
 };
 // """"""""""""""""""""""""""""""""""""""""""""""""
 // lecturer solution
-let printminimum=()=>{
-let min = 0;
-let input = prompt('How many numbers you want to input?');
+let printminimum = () => {
+  let min = 0;
+  let input = prompt('How many numbers you want to input?');
 
-for (let n = 0; n < input; n++) {
-  let num = Number(prompt('Enter number'));
-  if (num >= 0 && min == 0) {
-    min = num;
-  } else if (num < min) {
-    min = num;
+  for (let n = 0; n < input; n++) {
+    let num = Number(prompt('Enter number'));
+    if (num >= 0 && min == 0) {
+      min = num;
+    } else if (num < min) {
+      min = num;
+    }
   }
-}
 };
 // ************************************************************************************************************************
 //9 task number nine
-let biggestinlist=()=>{
-let numbers = 10; 
-const arr1=[];
-for(n=0;n<numbers;n++)
-{
-let values= prompt("enter any number");
-arr1[n]=values
-//console.log(arr1)
-}
-var nm1=biginarr(arr1)
-console.log(nm1);
-console.log(nm1[0],nm1[1]);
+let biggestinlist = () => {
+  let numbers = 10;
+  const arr1 = [];
+  for (n = 0; n < numbers; n++) {
+    let values = prompt("enter any number");
+    arr1[n] = values
+    //console.log(arr1)
+  }
+  var nm1 = biginarr(arr1)
+  console.log(nm1);
+  console.log(nm1[0], nm1[1]);
 
 };
 //task 9 without array
-let Print2Max=()=>{
-  let max1 = 0,max2=0;
+let Print2Max = () => {
+  let max1 = 0, max2 = 0;
   let input = prompt('How many numbers you want to input?');
-  
+
   for (let n = 0; n < input; n++) {
     let num = Number(prompt('Enter number'));
-    if (num >= 0 && max1 == 0 && max2==0) {
+    if (num >= 0 && max1 == 0 && max2 == 0) {
       max1 = num;
-      max2=num;
+      max2 = num;
     } else if (num > max1) {
-      max2=max1;
+      max2 = max1;
       max1 = num;
     }
   }
-  console.log(max1,max2);
+  console.log(max1, max2);
 };
 
 
-function division(s,t){
-let devide=s/t;
-return devide;
+function division(s, t) {
+  let devide = s / t;
+  return devide;
 }
 
 //10 task ten
-let AllSummaryCalc=()=>{
-let nsums =0;
+let AllSummaryCalc = () => {
+  let nsums = 0;
   let ncounter = 0;
-  let numbers=0;
-  const arr1=[];
-  for (n=0;n<10;n++) {
-  
-    numbers = parseInt(prompt("enter any number")); 
-    ncounter+=1
-    nsums+=numbers  //get sum
-      let result=division(nsums,ncounter);///get average
-        console.log('the sum is : ',nsums , '& average is ',result);
-        arr1[n]=numbers;
-    var smallvalue=smallinarr(arr1);
-    var bigvalue=biginarr(arr1);
+  let numbers = 0;
+  const arr1 = [];
+  for (n = 0; n < 10; n++) {
+
+    numbers = parseInt(prompt("enter any number"));
+    ncounter += 1
+    nsums += numbers  //get sum
+    let result = division(nsums, ncounter);///get average
+    console.log('the sum is : ', nsums, '& average is ', result);
+    arr1[n] = numbers;
+    var smallvalue = smallinarr(arr1);
+    var bigvalue = biginarr(arr1);
     console.log(arr1);
     console.log(bigvalue[0]);
-    console.log('the biggest value is :',bigvalue[0],'and the smallest value is : ',smallinarr(arr1))
-  } 
+    console.log('the biggest value is :', bigvalue[0], 'and the smallest value is : ', smallinarr(arr1))
+  }
 };
-function biginarr(arr1)
-{
-var biggest = arr1.sort((a, b) => b - a);
-return biggest;// + '${biggest[1]}';
+function biginarr(arr1) {
+  var biggest = arr1.sort((a, b) => b - a);
+  return biggest;// + '${biggest[1]}';
 }
 
-function divscroll()
-{ // document.getElementById("agestatu").scrollIntoView({behavior: "smooth", block: "center"});
+function divscroll() { // document.getElementById("agestatu").scrollIntoView({behavior: "smooth", block: "center"});
   var divElement = document.getElementById("agestatu");
-divElement.scrollIntoView({
-	top: divElement.scrollHeight,//scroll to the bottom of the element
-	behavior: 'smooth' //auto, smooth, initial, inherit
-});
-divElement.style.backgroundColor="#00FF00";
+  divElement.scrollIntoView({
+    top: divElement.scrollHeight,//scroll to the bottom of the element
+    behavior: 'smooth' //auto, smooth, initial, inherit
+  });
+  divElement.style.backgroundColor = "#00FF00";
 }
-function smallinarr(arr1)
-{
-var smallest = arr1.sort((a, b) => a - b);
-return smallest[0];
+function smallinarr(arr1) {
+  var smallest = arr1.sort((a, b) => a - b);
+  return smallest[0];
 }
 // function scrolltodiv()
 // {

@@ -92,10 +92,6 @@ nav ul li a
 	text-decoration:em;
 	width: 3%; */
 }
-nav ul li a:hover
-{
-
-}
 #hero
 {
 	display: flex;
@@ -409,7 +405,6 @@ color: red;
 	{
 		width:98%;
 		margin: 1% 0 1% 0 ;
-		padding:0;
 		float:left;
 		padding:1%;
 		background-image: url("coding.jpg");
