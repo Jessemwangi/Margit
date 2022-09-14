@@ -45,6 +45,10 @@ color: black;
 {
     width: 50%;
 }
+#mobilebtn
+{
+     display: none;
+}
 ul{
     display: flex;
     list-style: none;
@@ -132,6 +136,41 @@ background-color: red;
 .modal, .modal-contents, .close{
     display: none;
 }
+@media only screen and (max-width: 800px)
+    
+{
+    
+    nav ul{
+        display: none;
+    }
 
+    #mobilebtn{
+        display: block;
+        border: none;
+        padding: 1rem;
+        background-color: transparent;
+       
+    }
+    #mobilebtn span{
+        background-color: black;
+        color: white;
+    }
+
+    bg span {
+background: white;
+color: black;
+    }
+    nav.responsive ul{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 85px;
+        background: red;
+color:black;
+    }
+    nav.responsive ul li{
+display: block;
+    }
+}
 
 
