@@ -41,7 +41,7 @@ let savecar=(e)=>{
        return false;
  }
  else if(!model) {
-        alert('Value missing, , Enter maker');
+        alert('Value missing, , Enter model');
         document.querySelector('#carmodel').focus();
        return false;
  }
@@ -62,8 +62,8 @@ let savecar=(e)=>{
  }
  else{
 const cars=new Cars;
-cars.licence; cars.maker=maker;cars.model=model;cars.owner=owner;cars.carprice;
-cars.carcolor;
+cars.licence=licence; cars.maker=maker;cars.model=model;cars.owner=owner;cars.carprice=carprice;
+cars.carcolor=carcolor;
 carArrays.push(cars);
 
     e.preventDefault();
@@ -93,6 +93,7 @@ e.preventDefault;//use bellow to empty the table
 }
 let searchcar = (e) =>{
        e.preventDefault;
+       for(const searchedcar to carArrays)
        console.table(carArrays);
        const searchObject = carArrays.find((car) => car==searchPlate.value)
        const {licence,maker,owner,carprice,model,carcolor}=searchcar;

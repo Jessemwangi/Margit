@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    overscroll-behavior: none;
+  }
+body{
+    font-family:Titillium Web,Roboto , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.logo{
+    flex: 3; /* split screen to size maybe 1/3 */
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-items:center;
+  justify-content:flex-start;
+
+}
+.imglogo
+{
+    width: 50%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+a{
+    text-decoration: none;
+color:#fff;
+}
+ul li{
+    padding: 2rem;
+    color: #fff;
+}
+ul li:hover{
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    background-color: #24287e;
+    border-bottom: double 1px solid;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+section{
+    height: 50vh;
+    color: #fff;
+    padding :2rem 0 0 2rem ;
+}
+section.first{
+    background-color: #546cac;
+    margin-top: 7vh;
+}
+
+.modalpop
+{
+    font-family: sans-serif,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 4px;
+}
+section.second{
+background-color: #0e0e2bde;
+}
+section.three
+{
+    background-color: #5050dfde;   
+}
+.modal{
+     
+}
+@media screen and (max-width:600px) { 
+    .logo h2{
+        font-size: 12px;
+    }
+}
+
