@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="container">
-        <header class="mainheader">
+        <header>
             
             <div id="logo" class="logo"><a href="" type="image/x-icon">
             <img src="assets/logo.png" alt="LOGO" class="imglogo" id="imglogo" srcset="">
@@ -22,9 +22,9 @@
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">first</a></li>
-                    <li><a href="">second</a></li>
-                    <li><a href="">third</a></li>
+                    <li><a href="#first">first</a></li>
+                    <li><a href="#second">second</a></li>
+                    <li><a href="#three">third</a></li>
                     <li><a href="">Contact</a></li>
 
                 </ul>
@@ -32,19 +32,20 @@
         </header>
         <div id="wrapper" class="wrapper">
 
-            <section class="first">
+            <section class="first" id="first">
                 <h3>first</h3>
-                <input type="button" id="modalpop" class="modalpop" value="Do not click me" ></button>
+                <input type="button" id="modalbtn" class="modalbtn btn" value="Do not click me" ></button>
             </section>
-            <section class="second">
+            <section class="second" id="second">
                 <h3>second</h3>
             </section>
-            <section class="three">
+            <section class="three" id="three">
                 <h3>third</h3>
             </section>
         </div>
         <footer>
 <p>copyright &copy; 2022</p>
+<button    id="backtoptop" id="backtoptop" class="backtoptop">back to top</button>
         </footer>
     </div>
     <div class="modal" id="modal">
@@ -53,8 +54,21 @@
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
     tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
     blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
+    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
+    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
+    tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
+    blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
+    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
+    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
 </p>
+<button class="close btn">X</button>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -9,18 +9,28 @@
   
   html {
     overscroll-behavior: none;
+    scroll-behavior: smoothπ;
   }
 body{
     font-family:Titillium Web,Roboto , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+h3{
+    margin: 2rem;
+}
 header{
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     background-color: black;
     color: white;
+}
+.bg{
+    background-color: #fff;
+    color: black;
+}
+.bg a{
+color: black;
 }
 .logo{
     flex: 3; /* split screen to size maybe 1/3 */
@@ -60,36 +70,68 @@ ul li:hover{
 {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
 }
 section{
-    height: 50vh;
+    
+    min-height: 50vh;
     color: #fff;
     padding :2rem 0 0 2rem ;
 }
-section.first{
+section:first-child{
     background-color: #546cac;
-    margin-top: 7vh;
 }
 
-.modalpop
+/*   for button */
+.btn
 {
-    font-family: sans-serif,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    padding: 4px;
+    cursor: pointer;
+    font-family: sans-serif,Cambria, Cochin;
+    padding: 1rem;
+    border-radius: 5px;
 }
-section.second{
+section:nth-child(2){
 background-color: #0e0e2bde;
 }
-section.three
+section:last-child
 {
     background-color: #5050dfde;   
 }
+.backtoptop{
+    position: fixed;
+    bottom: 2rem;
+}
 .modal{
-     
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+     background-color: #7a88ad;
 }
-@media screen and (max-width:600px) { 
-    .logo h2{
-        font-size: 12px;
-    }
+.modal-contents{
+    position: relative;
+    background-color: #fff;
+    min-height: 50vh;
+    min-width: 50vw;
+    padding: 3rem;
+    border-radius: 10px;
 }
+.close{
+    position: absolute;
+    top: 20px;
+right:20px;
+background-color: red;
+
+}
+.backtoptop{
+    display: none;
+}
+.modal, .modal-contents, .close{
+    display: none;
+}
+
+
 
