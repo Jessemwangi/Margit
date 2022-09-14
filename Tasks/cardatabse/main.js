@@ -12,13 +12,13 @@ let carcolor = document.querySelector('#carcolor').value;
 const carArrays = [];
 
 class Cars {
-       constructor(licence, maker, model, owner, carprice, carcolor) {
-              this.licence = licence,
-                     this.maker = maker,
-                     this.model = model,
-                     this.owner = owner,
-                     this.carprice = carprice,
-                     this.carcolor = carcolor
+       constructor(cLicence, cmaker, cmodel, cowner, ccarprice, ccarcolor) {
+              this.licence = cLicence,
+                     this.maker = cmaker,
+                     this.model = cmodel,
+                     this.owner = cowner,
+                     this.carprice = ccarprice,
+                     this.carcolor = ccarcolor
        }
 }
 

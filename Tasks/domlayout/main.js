@@ -36,7 +36,7 @@ const mobileMenu = () => {
         document.body.style.overflow = 'hidden';
     }
 }
-const amobileMenu = () =>{
+const amobileMenu = () => { 
 
 }
 
