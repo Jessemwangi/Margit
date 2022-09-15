@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: cyan;
+  font-family: Titillium Web, Roboto, "Open Sans", sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue";
+}
+div{
+    border-radius: 8px;
+}
+.grid-container {
+    padding: 1rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      "stitle stitle stitle navf secnav lastnav"
+      "ptitle ptitle ptitle ptitle ptitle sidebar"
+      "meta content content content content sidebar"
+      "meta content content content content ads"
+      "meta image image image image ads"
+      "meta image image image image stuff"
+      "meta image image image image stuff"
+      "footer footer footer footer footer footer"
+      ;
+    grid-auto-rows: 1fr;
+  }
+.item{
+    min-height: 50px;
+    padding: 2rem;
+}
+.Stitle {
+  grid-area: stitle;
+  background-color: black;
+  color: white;
+  min-height: 70px;
+}
+.nav {
+  background-color: #e4c8a4;
+}
+.nav:first-child {
+  grid-area: navf;
+}
+.nav:nth-child(2) {
+  grid-area: secnav;
+}
+.nav:last-child {
+  grid-area: lastnav;
+}
+.Ptitle {
+  grid-area: ptitle;
+  background-color: #4cdf4c;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: yellowgreen;
+}
+.meta {
+  grid-area: meta;
+  background-color: blanchedalmond;
+}
+.content {
+  grid-area: content;background-color: whitesmoke;
+}
+.ads {
+  grid-area: ads;
+  background-color: blue;
+  color: white;
+}
+.image {
+  grid-area: image;
+  background-color: burlywood;
+}
+.stuff {
+  grid-area: stuff;
+  background-color: #573304;
+}
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+}

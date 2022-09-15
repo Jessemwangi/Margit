@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: cyan;
+  font-family: Titillium Web, Roboto, "Open Sans", sans-serif, system-ui,
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue";
+}
+.item
+{
+    border-radius: 8px;
+    padding: 1rem;
+}
+.grid-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: repeat(9, 70px);
+    grid-gap: 1rem;
+    margin: 4px;
+    grid-auto-rows: 1fr;
+}
+.Stitle{
+    background: black;
+    color: white;
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+}
+.nav{
+    background-color: #F5F3C4;
+}
+
+.nav:first-child{
+   
+    grid-column: 4 / span 3;
+    grid-row: 1 / 1;
+
+}
+.Ptitle{
+    background-color: #1D91ED;
+    grid-column: 1 / span 5;
+
+}
+.sidebar{
+    background-color: yellowgreen;
+    grid-column: 6/ span 1;
+    grid-row: 2 /span 2;
+}
+.meta{
+    background-color: #D6CAE8;
+    grid-column: 1/span 1;
+    grid-row: 3 / span 5;
+}
+.content{
+    background-color: whitesmoke;
+    grid-column: 2 /span 4;
+    grid-row: 3 / span 2;
+}
+.ads{
+    background-color: black;
+    color: white;
+    grid-column: 6 /span 1;
+    grid-row: 4 / span 2;
+}
+.image{
+    background-color: yellow;
+    grid-column: 2 / span 4;
+    grid-row: 5 / span 3;
+    
+}
+.stuff{
+background-color: rgb(33, 95, 33);
+grid-row: 6 / span 2;
+}
+.footer{
+    grid-column: 1 / span 6;
+    background-color: black;
+    color: white;
+}
