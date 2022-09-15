@@ -100,10 +100,11 @@ let searchcar = (e) =>{
        console.log(searchObject, carArrays[searchObject].clcarcolor);
 
        const {cllicence,clmaker,clowner,clcarprice,clmodel,carcolor}=carArrays[searchObject];
-       displaysearch.attributes
-       displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}`;
+       displaysearch.style.background="green";
+       displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}€`;
        }
        else{
+              displaysearch.style.background="red";
               displaysearch.innerHTML = "sorry no car was found in our database, please add it first";
        }
  }

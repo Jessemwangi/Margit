@@ -14,6 +14,10 @@ body {
   font-family: Titillium Web, Roboto, "Open Sans", sans-serif, system-ui,
     -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue";
 }
+h2{
+  padding: 2rem;
+  font-size:20px;
+}
 h3 {
   padding: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,6 +56,21 @@ h3 {
   display: flex;
   align-content: center;
   flex-direction: row;
+}
+#displaysearch
+{
+  padding: 0.4rem;
+  margin: 1rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-weight: 700;
+}
+#startsearching{
+  margin: 1rem;
+  padding: 0.7rem;
+  background-color: #ccf9fa;
+  border-radius: 4px;
 }
 .wrapper {
   display: flex;
