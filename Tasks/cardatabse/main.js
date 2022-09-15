@@ -8,17 +8,17 @@ let model = document.querySelector('#carmodel').value;
 let owner = document.querySelector('#carowner').value;
 let carprice = document.querySelector('#carprice').value;
 let carcolor = document.querySelector('#carcolor').value;
-
+let displaysearch=document.querySelector('#displaysearch');
 const carArrays = [];
 
 class Cars {
        constructor(cLicence, cmaker, cmodel, cowner, ccarprice, ccarcolor) {
-              this.licence = cLicence,
-                     this.maker = cmaker,
-                     this.model = cmodel,
-                     this.owner = cowner,
-                     this.carprice = ccarprice,
-                     this.carcolor = ccarcolor
+              this.cllicence = cLicence,
+                     this.clmaker = cmaker,
+                     this.clmodel = cmodel,
+                     this.clowner = cowner,
+                     this.clcarprice = ccarprice,
+                     this.clcarcolor = ccarcolor
        }
 }
 
@@ -61,8 +61,8 @@ let savecar = (e) => {
        }
        else {
               const cars = new Cars;
-              cars.licence = licence; cars.maker = maker; cars.model = model; cars.owner = owner; cars.carprice = carprice;
-              cars.carcolor = carcolor;
+              cars.cllicence = licence; cars.clmaker = maker; cars.clmodel = model; cars.clowner = owner; cars.clcarprice = carprice;
+              cars.clcarcolor = carcolor;
               carArrays.push(cars);
 
               e.preventDefault();
@@ -90,15 +90,24 @@ const valueReset = (e) => {
        //        table1.deleteRow(x);
        //}
 }
-// let searchcar = (e) =>{
-//        e.preventDefault;
+let searchcar = (e) =>{
+       e.preventDefault;
 //        for(const searchedcar to carArrays)
-//        console.table(carArrays);
-//        const searchObject = carArrays.find((car) => car==searchPlate.value)
-//        const {licence,maker,owner,carprice,model,carcolor}=searchcar;
-//        console.log(`Car with plate ${licence} is ${maker} ${owner}`);
-//        console.log(`${carcolor} ${model} is priced at ${carprice}`);
-// }
+       console.table(carArrays);
+       const searchObject = carArrays.findIndex(car => car.cllicence == searchPlate.value)
+       if (searchObject!=-1)
+       {
+       console.log(searchObject, carArrays[searchObject].clcarcolor);
+
+       const {cllicence,clmaker,clowner,clcarprice,clmodel,carcolor}=carArrays[searchObject];
+       displaysearch.attributes
+       displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}`;
+       }
+       else{
+              displaysearch.innerHTML = "sorry no car was found in our database, please add it first";
+       }
+ }
+
 forms.addEventListener('submit', savecar);
 forms.addEventListener('reset', valueReset);
 form1.addEventListener('submit', searchcar);
