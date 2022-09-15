@@ -91,10 +91,7 @@ nav ul li a
 	text-decoration:em;
 	width: 3%; */
 }
-nav ul li a:hover
-{
 
-}
 #hero
 {
 	display: flex;
@@ -345,11 +342,11 @@ color: red;
 	header{
 		float:left;
 		margin-bottom:5px;
-		padding:0px;
+		
 		background-image: url();
 	}
 	nav{
-		margin:0;
+		
 		width:100%;
 		float:left;
 		clear:left;/*ti bring it under logo div*/
@@ -370,7 +367,7 @@ color: red;
 		background:#dcd9cd;
 		color:#128f01;
 		text-align:center;
-		border-radius:0px;
+		
 	}
     #logo{
 		width:98%;

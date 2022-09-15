@@ -2,13 +2,7 @@ let form1 = document.querySelector('#form1');
 let forms = document.querySelector('#form');
 let searchPlate = document.querySelector('#searchvalue');
 let table1 = document.querySelector('#database');
-let licence = document.querySelector('#licenceNumber').value;
-let maker = document.querySelector('#Carmaker').value;
-let model = document.querySelector('#carmodel').value;
-let owner = document.querySelector('#carowner').value;
-let carprice = document.querySelector('#carprice').value;
-let carcolor = document.querySelector('#carcolor').value;
-let displaysearch=document.querySelector('#displaysearch');
+let displaysearch = document.querySelector('#displaysearch');
 const carArrays = [];
 
 class Cars {
@@ -90,24 +84,23 @@ const valueReset = (e) => {
        //        table1.deleteRow(x);
        //}
 }
-let searchcar = (e) =>{
+let searchcar = (e) => {
        e.preventDefault;
-//        for(const searchedcar to carArrays)
+       //        for(const searchedcar to carArrays)
        console.table(carArrays);
        const searchObject = carArrays.findIndex(car => car.cllicence == searchPlate.value)
-       if (searchObject!=-1)
-       {
-       console.log(searchObject, carArrays[searchObject].clcarcolor);
+       if (searchObject != -1) {
+              console.log(searchObject, carArrays[searchObject].clcarcolor);
 
-       const {cllicence,clmaker,clowner,clcarprice,clmodel,carcolor}=carArrays[searchObject];
-       displaysearch.style.background="green";
-       displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}€`;
+              const { cllicence, clmaker, clowner, clcarprice, clmodel, carcolor } = carArrays[searchObject];
+              displaysearch.style.background = "green";
+              displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}€`;
        }
-       else{
-              displaysearch.style.background="red";
+       else {
+              displaysearch.style.background = "red";
               displaysearch.innerHTML = "sorry no car was found in our database, please add it first";
        }
- }
+}
 
 forms.addEventListener('submit', savecar);
 forms.addEventListener('reset', valueReset);

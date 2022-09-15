@@ -19,15 +19,13 @@ body
 
 header {
 	 color: #ffffff; 
-	/* background-color: rgb(237, 242, 247); */
 	background-image: url("assets/wallpaper.jpg"); 
 	background-repeat: no-repeat; 
 	background-size: 100%;
 	background-position: bottom;
-	/* opacity: 0.4; */
+	
 	width:100%;
-	/* height: 150px; */
-	/*background:#1a6827;*/
+
 	border-bottom: solid 2px #0C018F;
 	margin-bottom: 5px;
 	float: left;
@@ -37,9 +35,7 @@ header {
 
 	position: relative;
 	color:#000000;
-	/* background:#ffffff; */
-	/* padding:5px; */
-	/* margin-bottom:5px; */
+
 	float:left;
 	overflow:hidden;
 	
@@ -345,11 +341,11 @@ color: red;
 	header{
 		float:left;
 		margin-bottom:5px;
-		padding:0px;
+		padding:1px;
 		background-image: url();
 	}
 	nav{
-		margin:0;
+		margin:none;
 		width:100%;
 		float:left;
 		clear:left;/*ti bring it under logo div*/
