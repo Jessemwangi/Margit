@@ -90,7 +90,7 @@ let searchcar = (e) => {
        console.table(carArrays);
        const searchObject = carArrays.findIndex(car => car.cllicence == searchPlate.value)
        if (searchObject != -1) {
-              console.log(searchObject, carArrays[searchObject].clcarcolor);
+              // console.log(searchObject, carArrays[searchObject].clcarcolor);
 
               const { cllicence, clmaker, clowner, clcarprice, clmodel, carcolor } = carArrays[searchObject];
               displaysearch.style.background = "green";
