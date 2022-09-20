@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    font-size: 14px;
+  }
+  body {
+    font-family: Roboto, "Open Sans", sans-serif, system-ui,
+      -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue";
+       background:url('assets/rainy.gif') no-repeat center/cover; */
+      /* opacity: 0.8; */
+  }
+.introtext{
+    padding-top: 3rem;
+}
+  h2{
+    font-family:'Press Start 2P', sans-serif;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .container{
+
+    padding: 2rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  .getiphone{
+    
+  }
+
+.press{
+    margin: 7rem 0rem 0rem 5rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+    
+}
+.press > div{
+    
+    margin-bottom: 0.5em;
+    background-color: rgb(206, 14, 14);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+   margin-left: 2rem;
+    border-radius: 75px;
+}
+.gamespeed{
+    background: url('assets/autumn.jpeg') no-repeat center ;
+}
+.gamespeed2{
+background: url('assets/winter.jpeg') no-repeat center ;
+}
+.gamespeed3{
+background: url('assets/Spring.webp') no-repeat center ;
+}
+.gamespeed4{
+background: url('assets/summer.jpeg') no-repeat center ;
+}
+.btn{
+    background-color: rgb(16, 111, 16);
+    color: azure;
+    font-family: 'Press Start 2P', sans-serif;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 25vw;
+    height: 10vh;
+    border:  6px dashed red;
+
+}
+.btn2{
+    display: none;
+}
+.buttonarea{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+   
+    width: 20vw;
+    height: 5vh;
+}
