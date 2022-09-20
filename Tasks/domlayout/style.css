@@ -99,11 +99,18 @@ section:last-child {
   position: fixed;
   bottom: 2rem;
 }
+.modalhide {
+  display: none;
+}
+
+.showmodal
+{
+  display: block;
+}
 .modal {
   position: fixed;
   top: 0;
   bottom: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -112,6 +119,9 @@ section:last-child {
 }
 .modal-contents {
   position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   min-height: 50vh;
   min-width: 50vw;
@@ -124,14 +134,7 @@ section:last-child {
   right: 20px;
   background-color: red;
 }
-.backtoptop {
-  display: none;
-}
-.modal,
-.modal-contents,
-.close {
-  display: none;
-}
+
 @media only screen and (max-width: 800px) {
   header {
     flex-direction: column;

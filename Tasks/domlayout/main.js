@@ -4,6 +4,9 @@ const mobilebtn = document.querySelector('#mobilebtn');
 let links = document.querySelectorAll('nav ul li a');
 let list = document.querySelectorAll('nav ul li');
 const nav = document.querySelector('nav');
+const modalbtnc = document.querySelector('#modalbtn');
+const modal = document.querySelector('#modal');
+const closemodal = document.querySelector('#close');
 
 window.onscroll = function () {
     scrollfunction();
@@ -47,6 +50,19 @@ for (const elem of links) {
 // e.addEventListener('click',amobileMenu);
 
 // });
-
+const modalbtn = ()=>{
+    modal.classList.toggle('modalhide');
+    // if (modal.classList.contains('modalhide'))
+    // {
+    //     modal.classList.remove('modalhide')
+    //     modal.style.add('showmodal')
+    // }
+}
+// const hidemodalcontent = () =>{
+// modal.classList.add('modalhide');
+// }
+// close
 backtoptop.addEventListener('click', getToTop);
 mobilebtn.addEventListener('click', mobileMenu);
+modalbtnc.addEventListener('click',modalbtn)
+closemodal.addEventListener('click', modalbtn)
