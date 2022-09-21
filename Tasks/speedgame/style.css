@@ -63,31 +63,45 @@
     height: 50vh;
     
 }
-.press > div{
+.gamespeed{
     
     margin-bottom: 0.5em;
-    background-color: rgb(206, 14, 14);
+    cursor: pointer;
     width: 150px;
     height: 150px;
     text-align: center;
    margin-left: 2rem;
     border-radius: 75px;
 }
-.gamespeed{
-    background: url('assets/autumn.jpeg') no-repeat center ;
-    cursor: pointer;
+.active{
+    /* background-size: 0 !important; */
+    background-image: none !important;
+    background-color: #106f10;
+    cursor:crosshair;
+    border: dashed red 5px;
+}
+.gamespeed1{
+    background-image: url('assets/autumn.jpeg') ;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .gamespeed2{
-background: url('assets/winter.jpeg') no-repeat center ;
+background-image: url('assets/winter.jpeg') ;
+background-repeat: no-repeat;
+background-size:cover;
 }
 .gamespeed3{
-background: url('assets/Spring.webp') no-repeat center ;
+background-image: url('assets/Spring.webp') ;
+background-repeat: no-repeat;
+background-size:cover;
 }
 .gamespeed4{
-background: url('assets/summer.jpeg') no-repeat center ;
-}
+background-image: url('assets/summer.jpeg');
+  background-repeat: no-repeat;
+    background-size:cover;
+} 
 .btn{
-    background-color: rgb(16, 111, 16);
+    background-color: #106f10;
     color: azure;
     font-family: 'Press Start 2P', sans-serif;
     border-radius: 20px;
@@ -104,4 +118,7 @@ background: url('assets/summer.jpeg') no-repeat center ;
     margin-top: 2rem;
    
     height: 5vh;
+}
+.overlay{
+    background: white;
 }
