@@ -195,10 +195,12 @@ section:last-child {
 
   nav.responsive ul li a {
     color: black;
+    display: block;
   }
 
   nav.responsive ul li:hover {
     background: #546cac;
     color: white;
+    display: block;
   }
 }

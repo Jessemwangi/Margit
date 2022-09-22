@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+:root{
+--primary-color:#401b41a2;
+--secondary-color:#373764b7;
+--nuetral-color:#99b74d;
+--dark-color:#111111;
+--light-color:#f5f575b7;
+--font:'roboto',"Helvetica Neue","Open Sans";
+--font-white:white;
+
+}
+body{
+    background-color:var(--dark-color) ;
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+    padding: 4rem;
+
+}
+.grid > div{
+    background-color: var(--light-color);
+    min-height: 300px;
+    border-radius: 3px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 3px var(--font-white) ;
+    box-shadow: 2px 2px 3px var(--font-white);
+    transition: all 2s ease-in-out;
+}
+.grid > div:hover{
+    box-shadow: inset 0 0 500px var(--font-white);
+
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--nuetral-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 10px var(--font-white);
+    inset: 0px 3px 10px var(--dark-color);
+}
+.circle:hover{
+    
+}

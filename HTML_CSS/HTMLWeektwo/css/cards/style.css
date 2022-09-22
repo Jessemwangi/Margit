@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+:root{
+--primary-color:#ce95d0a2;
+--secondary-color:#5050a3b7;
+--nuetral-color:#99b74d;
+--dark-color:#111111;
+--light-color:#f5f575b7;
+--font:'roboto',"Helvetica Neue","Open Sans";
+--font-white:rgb(255, 255, 255);
+--gradient:linear-gradient(to right top, 
+#f3f376b7,
+#2f2f10b7,
+#ad2709ee,
+#40e459e6,
+#4014d0b7,
+#f592ca);
+}
+body{
+    background: var(--gradient);
+    font-family:var(--font);
+    height: 100vh;
+    display: grid;
+}
+.card{
+    display: grid;
+    justify-items: center;
+    height: 400px;
+    margin: 0 auto;
+    width: 450px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: -15px -15px 20px var(--dark-color), inset 0px 0px 20px var(--secondary-color);
+   
+}

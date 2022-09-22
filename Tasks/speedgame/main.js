@@ -22,13 +22,14 @@ const startgame = () =>{
    olddiv = randomgen;
    gamesdivs[randomgen].classList.toggle('active');
    gamesdivs[conadvice].classList.remove('active');
-
     console.log('old',conadvice ,' newnumbe', randomgen);
     gametimeout = setTimeout(startgame, pace);
     pace= pace - 50;
+    
     counter ++
     startButton.style.display='none';
     endButton.style.display='block'
+    
 }
 
 const EndGame = () =>{
@@ -41,6 +42,7 @@ const EndGame = () =>{
 
 const divclicked = (index) =>{
     console.log(index, randomgen);
+    gamesdivs[index].toggle(focus());
     if (index == randomgen)
     {         
         scores =scores + 5; 
