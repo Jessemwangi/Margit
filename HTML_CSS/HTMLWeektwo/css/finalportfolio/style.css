@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+:root {
+  --blue-color: #1d91ed;
+  --light-yellow: #f5f3c4;
+  --pinkish-color: #d6cae8;
+  --logo: url("assets/Logo.png");
+  --gradient: linear-gradient(
+    to right top,
+    #f3f376b7,
+    #2f2f10b7,
+    #ad2709ee,
+    #40e459e6,
+    #4014d0b7,
+    #f592ca
+  );
+  --font-article:verdana,"lucida grande",futura,'Courier New';
+  --font-header:Georgia,Arial,Helvetica;
+  --font-otherheader:'Helvetica Neue',sans-serif ;
+  --font-button:sans-serif,verdana;
+  --font-body:roboto,helvetica, calibri,garamond, electra;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+  }
+  body{
+	font-family: var(--font-body);
+  }
+  #mobilebtn {
+	display: none;
+  }
+
+
+ 
+  /* _____________________________________newsletter subscription_____________________________ */
+  .Contact_box {
+	
+	position: absolute;
+	display: block;
+	top: 35%;
+	left: 50%;
+	width: 35%;
+	padding: 40px;
+	transform: translate(-50%, -0%);
+	background: #6cb7f5;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+	margin-bottom: 2%;
+	margin-top: 2rem;
+  }
+   
+  .Contact_box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+  }
+  
+  .Contact_box .user-box {
+	position: relative;
+  }
+  .Contact_box .user-box textarea
+  {
+overflow: hidden;
+border-bottom: #038188 solid 3px;
+color:#03e9f4;
+width: 100%;
+box-sizing: border-box;
+  }
+  .Contact_box .user-box input {
+	width: 97%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+  }
+  .Contact_box .user-box label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .Contact_box .user-box input:focus ~ label
+  {
+	top: -20px;
+	left: 0;
+	color: #000000;
+	font-size: 12px;
+  }
+
+  .Contact_box form .send {
+	position: relative;
+	
+	padding: 10px 20px;
+	color: #03e9f4;
+	font-size: 16px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 40px;
+	letter-spacing: 4px;
+	width:70%;
+	margin-left: 12%;
+	border-radius: 5px;
+	text-align: center;
+  }
+  
+  .Contact_box .send:hover {
+	background: #03e9f4;
+	color: #fff;
+	border-radius: 5px;
+	
+  }
+  
+  .Contact_box .send span {
+	position: absolute;
+	display: block;
+  }
+  
+  .Contact_box .send span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+	0% {
+	  left: -100%;
+	}
+	50%,100% {
+	  left: 100%;
+	}
+  }
+
+
+  .Contact_box .send span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #03e9f4);
+	animation: btn-anim2 1s linear infinite;
+	animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+	0% {
+	  top: -100%;
+	}
+	50%,100% {
+	  top: 100%;
+	}
+  }
+  .disclaimer a
+  {
+text-decoration: none;
+color: red;
+  }
+  /* _____________________________________newsletter subscription_____________________________ */
