@@ -8,7 +8,7 @@ let fillzone = displaygrad.getContext('2d');
 let colorgrade; let direction;
 
 allradios.forEach(function (elem) {
-    elem.addEventListener('change', function (e) {
+    elem.addEventListener('change',  (e) =>{
         selectedcolor(e.target.value);
     });
 });
@@ -76,3 +76,4 @@ const backgroundcolor = (Colordirection) => {
 
 
 }
+

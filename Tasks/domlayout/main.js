@@ -39,17 +39,6 @@ const mobileMenu = () => {
         document.body.style.overflow = 'hidden';
     }
 }
-const amobileMenu = () => { 
-
-}
-
-for (const elem of links) {
-    elem.addEventListener('click', mobileMenu);
-}
-// list.forEach(elems =(e) =>{
-// e.addEventListener('click',amobileMenu);
-
-// });
 const modalbtn = ()=>{
     modal.classList.toggle('modalhide');
     // if (modal.classList.contains('modalhide'))

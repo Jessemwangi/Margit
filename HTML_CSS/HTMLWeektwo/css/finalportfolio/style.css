@@ -34,12 +34,171 @@
   body{
 	font-family: var(--font-body);
   }
-  #mobilebtn {
-	display: none;
+  .containter{
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin: 0 auto;
   }
 
-
+  /*___****************************this section for header start*****__________*/
  
+  header {
+	display: grid;
+	grid-template-columns: repeat(6 1fr);
+	color: #ffffff; 
+   background: url("assets/wallpaper.jpg") no-repeat black; 
+   background-size: 45%;
+   background-position: right;
+   width:100%;
+   justify-content: space-between;
+   margin-bottom: 2vh;
+}
+#logo
+{
+	display: grid;
+	grid-column: 1/ span 2;
+	grid-row: 1 / span 2;
+	background-image: var(--logo);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.myname{
+	text-align: center;
+	display: grid;
+	grid-column: 2 / span 6;
+	grid-row: 1 / 1;
+}
+nav{
+	display: grid;
+	grid-column: 2 / span 6;
+	justify-items: center;
+}
+#mobilebtn {
+	display: none;
+  }
+nav ul {
+	list-style: none;
+	display: flex;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 2rem;
+}
+nav ul li:hover {
+	cursor: pointer;
+	font-size: 16px;
+	background-color: var(--light-yellow);
+	border-bottom: double 1px solid var(--blue-color);
+	color: black;
+  }
+  li a:hover{
+	color: black;
+  }
+
+  /*___**
+  **************************header ends here      *****__________*/
+  .banner{
+	text-align: center;
+	padding: 2rem;
+	background-color: var(--pinkish-color);
+	border-radius: 10px;
+	margin-bottom: 2vh;
+	border: 3px solid var(--blue-color);
+  }
+ /* _____________________________________upper wrapper ____________ */
+ section{
+	display:grid ;
+	grid-template-columns: repeat(5, 2fr);
+	grid-template-rows: repeat(12, 35px);
+	grid-template-areas: 
+	"article1  article2 article3 article4 article5"
+	"article1  article2 article3 article4 article5"
+	"article1  article2 article3 article4 article5"
+	"article1  article2 article3 article4 article5"
+	"article1  article2 . article4 article5"
+	"article1  . . . article5"
+	"article6  . . . article10"
+	"article6  article7 . article9 article10"
+	"article6  article7 article8 article9 article10"
+	"article6  article7 article8 article9 article10"
+	"article6  article7 article8 article9 article10"
+	"article6  article7 article8 article9 article10"
+	;
+	gap: 1rem;
+	background: url('assets/Logobg.png') no-repeat center;
+	background-size: contain;
+	margin-bottom: 2vh;
+  }
+  article{
+	background-color: var(--light-yellow);
+	border-radius: 10px;
+	width:98%;
+	border: 3px solid var(--blue-color);
+  }
+  .article1{
+	display: grid;
+grid-area: article1;
+
+  }
+  .article2{
+	display: grid;
+	grid-area: article2;
+}
+.article3{
+	display: grid;
+	grid-area: article3;
+}
+.article4{
+	display: grid;
+	grid-area: article4;
+}
+.article5{
+	display: grid;
+	grid-area: article5;
+}
+.article6{
+	display: grid;
+	grid-area: article6;
+}
+.article7{
+	display: grid;
+	grid-area: article7;
+}
+.article8{
+	display: grid;
+	grid-area: article8;
+}
+.article9{
+	display: grid;
+	grid-area: article9;
+}
+.article10{
+	display: grid;
+	grid-area: article10;
+}
+/* ------------------------------------------upper wrapper end here ------------------ */
+.lowerWrapper{
+	display:  flex;
+	flex-direction: column;
+	margin-bottom: 2vh;
+}
+.statistics
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 70px);
+	grid-gap: 1rem;
+	background-color: var(--pinkish-color);
+	border-radius: 10px;
+	}
+	footer{
+		background-color: black;
+		border-radius: 0 0 10px 10px;
+		height: 10vh;
+	}
   /* _____________________________________newsletter subscription_____________________________ */
   .Contact_box {
 	
