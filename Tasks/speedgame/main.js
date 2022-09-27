@@ -1,79 +1,138 @@
-const gamesdivs=document.querySelectorAll('.gamespeed')
-const startButton=document.querySelector('.btn1');
+const gamesdivs = document.querySelectorAll('.gamespeed')
+const startButton = document.querySelector('.btn1');
 const endButton = document.querySelector('.btn2');
 const displayscore = document.querySelector('#scoredisplay');
-let scores=0;
+const modaldisplay = document.querySelector('#modaldisplay');
+const overlay = document.querySelector('#overlay')
+const closemodalbtn = document.querySelector('#closemodalbtn');
+
+
+let scores = 0;
 let randomgen;
 let gamemode = 0;
 let gametimeout;
-let pace=4000;
-let counter=0;
-let olddiv=0
+let pace = 2000;
+let counter = 0;
+let olddiv = 0
+let scorearray = [];
+let prevscore = 0
 
-const startgame = () =>{
+const mybgsoung = new Audio("assets/background.wav");
+const goal = new Audio('assets/goal.wav');
+const scoresound = new Audio('assets/rain.wav');
+const gamestart = new Audio('assets/start.wav');
+const loadmusic = new Audio('assets/opened.wav');
 
-    if (counter >=12)
-    {
-       return EndGame ();
+
+// Create aclass to store data locally
+class Gamescore {
+    constructor(Scored) {
+        this.score = Scored;
     }
-    randomgen=olddiv;
+}
+
+const startgame = () => {
+    mybgsoung.pause();
+    gamestart.play();
+    // if (scorearray.length >= 1){
+    //     displayscore.textContent=`Previous scores ${scorearray.Gamescore[0].score}, `;
+    // }
+    // else{
+    //     displayscore.textContent=`Previous scores 0 `;
+    // }
+
+    if (counter >= 12) {
+        return EndGame();
+    }
+    randomgen = olddiv;
     let conadvice = olddiv;
-   randomgen = randomNo(randomgen);
-   olddiv = randomgen;
-   gamesdivs[randomgen].classList.toggle('active');
-   gamesdivs[conadvice].classList.remove('active');
-    console.log('old',conadvice ,' newnumbe', randomgen);
+    randomgen = randomNo(randomgen);
+    olddiv = randomgen;
+    gamesdivs[randomgen].classList.toggle('active');
+    gamesdivs[conadvice].classList.remove('active');
     gametimeout = setTimeout(startgame, pace);
-    pace= pace - 50;
-    
-    counter ++
-    startButton.style.display='none';
-    endButton.style.display='block'
-    
+    pace = pace - 50; // set time increment value
+    counter++
+    startButton.style.display = 'none';
+    endButton.style.display = 'block'
+
+    // Enable clicking of the div, clicking was disabled in css at initial
+    gamesdivs.forEach((item) => {
+        item.classList.add('autopointer');
+    })
 }
 
-const EndGame = () =>{
+const EndGame = () => {
+    gamesdivs[randomgen].classList.remove('active');
+    goal.play();
+    gamestart.pause();
     clearTimeout(gametimeout);
-    console.log(`Timeout your score is ${scores} has been cleared`);
-    startButton.style.display='block';
-    endButton.style.display='none'
-    // location.reload();
+    modaldisplay.textContent = `Hurray!!, you scored ${scores} has been cleared`;
+
+    const Gamescores = new Gamescore; //initialize new class
+    Gamescores.score = scores; // addd data to the class constructor
+    scorearray.unshift(Gamescores); // add to the front of the array
+
+    console.log(scorearray);
+    scores = 0; // reset scores to 0
+    pace = 2000;
+    //   Disable the clicking of the divs circles till game start is clicked
+    gamesdivs.forEach((item) => {
+        item.classList.remove('autopointer');
+
+    });
+
+    startButton.style.display = 'block'; // display start button
+    endButton.style.display = 'none' // hide start button
+    overlay.style.display = 'block'; // display overlay
+
 }
 
-const divclicked = (index) =>{
+
+const divclicked = (index) => {
+    mybgsoung.play();
     console.log(index, randomgen);
-    gamesdivs[index].toggle(focus());
-    if (index == randomgen)
-    {         
-        scores =scores + 5; 
+    if (index == randomgen) {
+        scores = scores + 5;
+        scoresound.play();
         counter--;
-        displayscore.textContent=`Season saved ${scores}, `;
-        console.log(scores , counter);
-        
+        displayscore.textContent = `Trees Planted ${scores}, `;
+        console.log(scores, counter);
+
     }
-    else{
-        displayscore.textContent=`Checked, Season saved ${scores}, `;
+    else {
+        displayscore.textContent = `Checked, Season Watered ${scores}, `;
         EndGame();
         return false;
     }
- }
+}
 
- const randomNo = (currentvalue) =>{
+// function to hide the modal. 
+const closemodalbtnF = () => {
+    overlay.style.display = 'none';
+    console.log('modal close clicked');
+    goal.pause();
+    mybgsoung.pause();
+}
+
+// generate value and check if it the same as passed value, loop it till its not like the first value
+const randomNo = (currentvalue) => {
     let randomno = Math.floor(Math.random() * 4);
-    if (randomno != currentvalue)
-    {
-       
-     return randomno;
+    if (randomno != currentvalue) {
+        return randomno;
     }
-    else{
-    return randomNo(currentvalue);
+    else {
+        return randomNo(currentvalue);
     }
- }
+}
 
-startButton.addEventListener('click',startgame);
-endButton.addEventListener('click',EndGame);
+//add event listeners to the html elements
+startButton.addEventListener('click', startgame);
+endButton.addEventListener('click', EndGame);
+closemodalbtn.addEventListener('click', closemodalbtnF);
 
-gamesdivs.forEach((e , index)=>{
-    e.addEventListener('click', () => divclicked(index ));
+// add even to all circle div through a loop, then we pass the element and index position to a function
+gamesdivs.forEach((e, index) => {
+    e.addEventListener('click', () => divclicked(index));
 });
 

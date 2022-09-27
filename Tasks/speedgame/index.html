@@ -10,20 +10,17 @@
 <body>
     <div id="container" class="container">
 <div id="introtext" class="introtext">
-    <h2> Save The Seasons</h2>
+    <h2> Let it Rain To Grow</h2>
 </div>
 <div id="scores" class="modal"> 
     <p id="scoredisplay"></p>
 </div>
-<div id="getiphone">
+<div id="divgamescontrol">
 <div id="press" class="press">
-    <div tabindex="-1" class="gamespeed1 gamespeed" id="gamespeed">1</div>
-  
-    <div tabindex="-1" class="gamespeed2 gamespeed" id="gamespeed2">2</div>
-   
-    <div tabindex="-1" class="gamespeed3 gamespeed" id="gamespeed3">3</div>
-  
-    <div tabindex="-1" class="gamespeed4 gamespeed" id="gamespeed4">4</div>
+    <div tabindex="-1" class="gamespeed1 gamespeed" id="gamespeed"></div>
+    <div tabindex="-1" class="gamespeed2 gamespeed" id="gamespeed2"></div>
+    <div tabindex="-1" class="gamespeed3 gamespeed" id="gamespeed3"></div>
+    <div tabindex="-1" class="gamespeed4 gamespeed" id="gamespeed4"></div>
    
 </div>
 </div>
@@ -34,7 +31,14 @@
     </div>
     
     <div id="overlay" class="overlay"> 
-        <p id="modaldisplay"></p>
+       
+       
+        <div id="finalscore" class="finalscore">
+           
+            <p id="modaldisplay"></p>
+            <span class="closemodalbtn" id="closemodalbtn">&times;</span>
+        </div> 
+    </div>
     </div>
     <script src="main.js"></script>
 </body>

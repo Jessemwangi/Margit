@@ -1,129 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  html {
-    font-size: 14px;
-  }
-  body {
-    font-family: Roboto, "Open Sans", sans-serif, system-ui,
-      -apple-system, BlinkMacSystemFont, "Segoe UI",  "Helvetica Neue";
-       background:url('assets/rainy.gif') no-repeat center/cover; */
-      /* opacity: 0.8; */
-  }
-.introtext{
-    padding-top: 3rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 14px;
+}
+body {
+  font-family: Roboto, "Open Sans", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Helvetica Neue";
     transition: all 2s ease-in-out;
+   /* background: url("assets/grow.gif") no-repeat center/cover; 
+   background-size: 50%; */
+  /* opacity: 0.8; */
 }
-  h2{
-    font-family:'Press Start 2P', sans-serif;
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  .container{
+.introtext {
+  padding-top: 3rem;
+  transition: all 2s ease-in-out;
+}
+h2 {
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
 
-    padding: 2rem;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  
-  }
+.container {
+  padding: 2rem;
 
-.modal{
-    margin-top: 5rem;
-    text-align: center;
-    font-weight: 800;
-    text-transform: uppercase;
-    width: 100%;
-    color: white;
-    background-color: #382929;
-    border:  dashed red 4px;
-    padding: 1rem;
-    border-right: none;
-    border-left: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.modal p{
-    font-size: 26px;
-    font-family:'Press Start 2P', sans-serif;
+
+.modal {
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 100%;
+  color: white;
+  background-color: #382929;
+  border: dashed red 4px;
+  padding: 1rem;
+  border-right: none;
+  border-left: none;
 }
-.press{
-    margin: 2rem 0rem 0rem 0rem;
-    padding-top: 8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 50vh;
-    
+.modal p {
+  font-size: 26px;
+  font-family: "Press Start 2P", sans-serif;
 }
-.gamespeed{
-    
-    margin-bottom: 0.5em;
-    cursor: pointer;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-   margin-left: 2rem;
-    border-radius: 75px;
+.press {
+  margin: 2rem 0rem 0rem 0rem;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50vh;
 }
-.gamespeed:focus{
+.gamespeed {
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin-left: 2rem;
+  border-radius: 75px;
+  pointer-events:none;
+}
+.autopointer{
+  pointer-events:auto;
+}
+.gamespeed:focus {
   background-image: none !important;
   background-color: Aqua;
 }
-.active{
-    /* background-size: 0 !important; */
-    background-image: none !important;
-    background-color: #106f10;
-    cursor:crosshair;
-    border: dashed red 5px;
+.active {
+  /* background-size: 0 !important; */
+  background-image: none !important;
+  background-color: #106f10;
+  cursor: crosshair;
+  border: dashed red 5px;
 }
-.gamespeed1{
-    background-image: url('assets/autumn.jpeg') ;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-.gamespeed2{
-background-image: url('assets/winter.jpeg') ;
-background-repeat: no-repeat;
-background-size:cover;
-}
-.gamespeed3{
-background-image: url('assets/Spring.webp') ;
-background-repeat: no-repeat;
-background-size:cover;
-}
-.gamespeed4{
-background-image: url('assets/summer.jpeg');
+.gamespeed1 {
+  background-image: url("assets/autumn.jpeg");
   background-repeat: no-repeat;
-    background-size:cover;
-} 
-.btn{
-    background-color: #106f10;
-    color: azure;
-    font-family: 'Press Start 2P', sans-serif;
-    border-radius: 20px;
-    font-size: 20px;
-    width: 25vw;
-    height: 10vh;
-    border:  6px dashed red;
+  background-size: cover;
+}
+.gamespeed2 {
+  background-image: url("assets/winter.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gamespeed3 {
+  background-image: url("assets/Spring.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gamespeed4 {
+  background-image: url("assets/summer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  background-color: #106f10;
+  color: azure;
+  font-family: "Press Start 2P", sans-serif;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 25vw;
+  height: 10vh;
+  border: 6px dashed red;
+}
+.btn2 {
+  display: none;
+}
 
+.buttonarea {
+  margin-top: 2rem;
+  height: 5vh;
 }
-.btn2{
-    display: none;
+.overlay {
+  top: 0;
+  bottom: 0;
+  display: none;
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+  transition: ease-in-out 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
-.buttonarea{
-    margin-top: 2rem;
-   
-    height: 5vh;
+.finalscore {
+  display: flex;
+  margin: 0 auto;
+  top: 25%;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  height: 30%;
+  width: 50%;
+  background-color: aliceblue;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 3rem;
+  justify-content: space-around;
 }
-.overlay{
-    background: white;
+.closemodalbtn {
+  position: absolute;
+  top: 1px;
+  right: 1rem;
+  color: #f30606;
+  font-size: 50px;
+  cursor: pointer;
+}
+#modaldisplay {
+  padding: 1rem;
+  border: 3px dashed black;
+  color: #f30606;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Press Start 2P", sans-serif;
 }
