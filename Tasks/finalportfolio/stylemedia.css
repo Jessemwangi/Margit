@@ -7,39 +7,37 @@
     font-family: Arial;
   }
   
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
+  .thumbnail {
     float: left;
     width: 25%;
     padding: 10px;
   }
   
-  /* Style the images inside the grid */
-  .column img {
+
+  .thumbnail img {
     opacity: 0.8; 
     cursor: pointer; 
   }
   
-  .column img:hover {
+  .thumbnail img:hover {
     opacity: 1;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
+ 
+  .thumbnails:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* The expanding image container */
-  .container {
+  .BigImg {
     position: relative;
     display: none;
+    transition: ease-in-out 2s;
     animation-name: fade;
     animation-duration: 2s;
   }
   
-  /* Expanding image text */
   #imgtext {
     position: absolute;
     bottom: 15px;
@@ -48,7 +46,6 @@
     font-size: 20px;
   }
   
-  /* Closable button inside the expanded image */
   .closebtn {
     position: absolute;
     top: 10px;

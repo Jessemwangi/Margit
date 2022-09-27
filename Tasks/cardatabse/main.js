@@ -86,11 +86,8 @@ const valueReset = (e) => {
 }
 let searchcar = (e) => {
        e.preventDefault;
-       //        for(const searchedcar to carArrays)
-       console.table(carArrays);
        const searchObject = carArrays.findIndex(car => car.cllicence == searchPlate.value)
        if (searchObject != -1) {
-              // console.log(searchObject, carArrays[searchObject].clcarcolor);
 
               const { cllicence, clmaker, clowner, clcarprice, clmodel, carcolor } = carArrays[searchObject];
               displaysearch.style.background = "green";

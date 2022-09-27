@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+:root {
+  --blue-color: #1d91ed;
+  --light-yellow: #f5f3c4;
+  --pinkish-color: #d6cae8;
+  --logo: url("assets/Logo.png");
+  --gradient: linear-gradient(
+    to right top,
+    #f3f376b7,
+    #2f2f10b7,
+    #ad2709ee,
+    #40e459e6,
+    #4014d0b7,
+    #f592ca
+  );
+  --font-article: verdana, "lucida grande", futura, "Courier New";
+  --font-header: Georgia, Arial, Helvetica;
+  --font-otherheader: "Helvetica Neue", sans-serif;
+  --font-button: sans-serif, verdana;
+  --font-body: roboto, helvetica, calibri, garamond, electra;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h2 {
+  padding: 2rem;
+  font-family: Georgia, Arial, Helvetica;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.containter {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*___****************************this section for header start*****__________*/
+
+header {
+  display: grid;
+  grid-template-columns: repeat(6 1fr);
+  color: #ffffff;
+  background: url("assets/wallpaper.jpg") no-repeat black;
+  background-size: 45%;
+  background-position: right;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  top: 0;
+  position: sticky;
+}
+
+#logo {
+  display: grid;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myname {
+  text-align: center;
+  display: grid;
+  grid-column: 2 / span 6;
+  grid-row: 1 / 1;
+}
+
+nav {
+  display: grid;
+  grid-column: 2 / span 6;
+  justify-items: center;
+}
+
+#mobilebtn {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 2rem;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--light-yellow);
+  border-bottom: double 1px solid var(--blue-color);
+  color: black;
+}
+
+li a:hover {
+  color: black;
+}
+
+/*___**
+  **************************header ends here      *****__________*/
+.banner {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--pinkish-color);
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  border: 3px solid var(--blue-color);
+}
+/* _____________________________________upper wrapper ____________ */
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(12, 35px);
+  grid-template-areas:
+    "article1  article2 article3 article4 article5"
+    "article1  article2 article3 article4 article5"
+    "article1  article2 article3 article4 article5"
+    "article1  article2 article3 article4 article5"
+    "article1  article2 . article4 article5"
+    "article1  . . . article5"
+    "article6  . . . article10"
+    "article6  article7 . article9 article10"
+    "article6  article7 article8 article9 article10"
+    "article6  article7 article8 article9 article10"
+    "article6  article7 article8 article9 article10"
+    "article6  article7 article8 article9 article10";
+  gap: 1rem;
+  background: url("assets/Logobg.png") no-repeat center;
+  background-size: contain;
+  margin-bottom: 2vh;
+}
+
+article {
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  width: 98%;
+  border: 3px solid var(--blue-color);
+}
+
+.article1 {
+  display: grid;
+  grid-area: article1;
+}
+
+.article2 {
+  display: grid;
+  grid-area: article2;
+}
+.article3 {
+  display: grid;
+  grid-area: article3;
+}
+.article4 {
+  display: grid;
+  grid-area: article4;
+}
+.article5 {
+  display: grid;
+  grid-area: article5;
+}
+.article6 {
+  display: grid;
+  grid-area: article6;
+}
+.article7 {
+  display: grid;
+  grid-area: article7;
+}
+.article8 {
+  display: grid;
+  grid-area: article8;
+}
+.article9 {
+  display: grid;
+  grid-area: article9;
+}
+.article10 {
+  display: grid;
+  grid-area: article10;
+}
+/* ------------------------------------------upper wrapper end here ------------------ */
+.lowerWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 70px);
+  grid-gap: 1rem;
+  background-color: var(--pinkish-color);
+  border-radius: 10px;
+}
+
+.statisticsdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 2px solid var(--blue-color);
+  border-radius: 10px;
+}
+
+.circle {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 22%;
+  border-radius: 10rem;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--light-yellow);
+  border: var(--blue-color) 2px solid;
+}
+
+footer {
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+/* ---------------------------------------Project page ---------------------- */
+.statistics2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 90px);
+  grid-gap: 1rem;
+  background-color: var(--blue-color);
+  border-radius: 10px;
+  color: white;
+}
+.big {
+  width: 28%;
+  color: black;
+}
+
+.projectlist {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 250px);
+  background-color: #ffe8e8;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.projectlist > div {
+  background-color: white;
+  border-radius: 10px;
+  border: black solid 2px;
+}
+/* --------------------------------------project end here ---------------------- */
+/* _____________________________________Contact page_____________________________ */
+.Contact_box {
+  background: #6cb7f5;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.msginputside {
+  padding: 2rem;
+  width: 30%;
+}
+.user-box {
+  position: relative;
+}
+
+.Contact_box .user-box input {
+  width: 100%;
+  padding: 10px 0 0 90px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.Contact_box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.Contact_box .user-box input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #000000;
+  font-size: 12px;
+}
+
+.text_area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+textarea {
+  overflow: hidden;
+  border-bottom: #038188 solid 3px;
+  color: #03e9f4;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+.sendbtn {
+  position: relative;
+  display: flex;
+  background-color: red;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.send {
+  position: relative;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.send:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.send span {
+  position: absolute;
+  display: block;
+}
+
+.send span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.send span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+/* _____________________________________Contact me ends here_____________________________ */
+
+/* --------------------------------------media starts here------------------------------------- */
+
+/* image gallery css */
+.thumbnail {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+
+  .thumbnail img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .thumbnail img:hover {
+    opacity: 1;
+  }
+  
+ .expandedImg{
+	width:90%
+ }
+  .thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .BigImg {
+    position: relative;
+    display: none;
+    transition: ease-in-out 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+	
+  }
+  
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10rem;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  /* image gallery css ends here */
