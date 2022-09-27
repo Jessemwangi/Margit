@@ -5,7 +5,7 @@ const displayscore = document.querySelector('#scoredisplay');
 const modaldisplay = document.querySelector('#modaldisplay');
 const overlay = document.querySelector('#overlay')
 const closemodalbtn = document.querySelector('#closemodalbtn');
-
+const bodyload = document.querySelector('body');
 
 let scores = 0;
 let randomgen;
@@ -15,6 +15,7 @@ let pace = 2000;
 let counter = 0;
 let olddiv = 0
 let scorearray = [];
+let scoresobject = {};
 let prevscore = 0
 
 const mybgsoung = new Audio("assets/background.wav");
@@ -31,16 +32,23 @@ class Gamescore {
     }
 }
 
+const getprevscores = () => {
+    if (scorearray.length >= 1){
+        scoresobject=scorearray[0];
+        const {score}=scoresobject
+         displayscore.textContent=`Previous scores ${score}, `;
+    }
+ else{
+        displayscore.textContent=`Previous scores 0 `;
+       
+     }
+}
+
+
+
 const startgame = () => {
     mybgsoung.pause();
     gamestart.play();
-    // if (scorearray.length >= 1){
-    //     displayscore.textContent=`Previous scores ${scorearray.Gamescore[0].score}, `;
-    // }
-    // else{
-    //     displayscore.textContent=`Previous scores 0 `;
-    // }
-
     if (counter >= 12) {
         return EndGame();
     }
@@ -113,6 +121,7 @@ const closemodalbtnF = () => {
     console.log('modal close clicked');
     goal.pause();
     mybgsoung.pause();
+    getprevscores();
 }
 
 // generate value and check if it the same as passed value, loop it till its not like the first value
@@ -135,4 +144,9 @@ closemodalbtn.addEventListener('click', closemodalbtnF);
 gamesdivs.forEach((e, index) => {
     e.addEventListener('click', () => divclicked(index));
 });
+
+bodyload.onload = ()=>{
+    getprevscores();
+      
+};
 
