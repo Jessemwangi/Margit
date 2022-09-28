@@ -1,55 +1,53 @@
-const displayarea = document.querySelector('.box');
+const displayArea = document.querySelector('.box');
+const search = document.querySelector('#searchpokedex');
 let pokemoNames = [];
-let disstring;
+let types = [];
 let returnarray =[];
 
-class phtml{
-    constructor (pname,image,powers){
+// Class to construct array for holding data
+class pokedexs{
+    constructor (pname,image,ptype){
         this.pname = pname,
         this.image=image,
-        this.powers=powers
+        this.ptype=ptype
     }
 }
+// function to get name and main end-point url then pass them to pokecards function, 
+// async ensures that data is available before calling putToHtml()
 const getPokedex = async () => {
-    const Pokedex = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10&offset=0')
+    const Pokedex = await fetch('https://pokeapi.co/api/v2/pokemon?limit=15&offset=0')
     const data = await Pokedex.json();
     pokemoNames = (data.results);
 pokemoNames.forEach(async pokemoName => {
   await pokeCards(pokemoName.url,pokemoName.name);
-  puttohtml();
+  putToHtml(returnarray);
 });
-
 }
-
+// fetch for other details of an individual pokedex pass from the function getPokedex
 const  pokeCards = async  (url,name) => {
-    // console.log(url);
     const Pokedexurl =  await fetch(url);
     const data = await Pokedexurl.json();
-    let temparr=[];
-     console.log(data.types);
-    temparr=data.sprites.other.dream_world;
     const  {front_default} = data.sprites.other.dream_world;
-     const types= ({slot, type}=data.types);
-     console.table(slot, type);
-    let p = new phtml
-    p.pname=name;
-    p.image=front_default;
-returnarray.push(p);
-
+      types = data.types.map(type => type.type.name).join(", ");;
+     console.log(types);
+    let Pokedex = new pokedexs
+    Pokedex.pname=name;
+    Pokedex.image=front_default;
+    Pokedex.ptype=types;
+returnarray.push(Pokedex);
 }
 
-const puttohtml = () => {
-    // console.log('you are here');
-    const datas = returnarray.map( poked =>{
-        // console.log (poked.image,poked.pname);
+// display to the div with display grid css property
+const putToHtml = (Passedarray) => {
+    const datas = Passedarray.map( pokedetails =>{
         return `<div class="card">
         <div class="imgBx">
-            <img src="${poked.image}" alt="images"/>
+            <img src="${pokedetails.image}" alt="images"/>
         </div>
         <div class="details">
             <p>
-                ${poked.pname} <br />
-                <span class="material-symbols-outlined">Fireplace</span>
+                ${pokedetails.pname} <br />
+                <span> ${pokedetails.ptype} </span>
                 <span class="material-symbols-outlined">local_fire_department</span>
                 <span class="material-symbols-outlined"> detector_smoke </span>
             </p>
@@ -57,6 +55,14 @@ const puttohtml = () => {
         </div>` 
         
     }).join('');
-      displayarea.innerHTML =  datas;
+    displayArea.innerHTML =  datas;
+    }
+
+    const filterPokedex = () =>{
+        console.log(returnarray);
+// let filtered = returnarray.filter(el => el > 4);
+// console.log(filtered)
     }
 getPokedex()
+
+search.addEventListener('onkeyup',filterPokedex)
