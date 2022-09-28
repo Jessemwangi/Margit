@@ -1,8 +1,10 @@
 const displayArea = document.querySelector('.box');
 const search = document.querySelector('#searchpokedex');
+const btnSearch= document.querySelector('#btnSearch');
 let pokemoNames = [];
 let types = [];
 let returnarray =[];
+let filteredPokedex = [];
 
 // Class to construct array for holding data
 class pokedexs{
@@ -22,6 +24,7 @@ pokemoNames.forEach(async pokemoName => {
   await pokeCards(pokemoName.url,pokemoName.name);
   putToHtml(returnarray);
 });
+
 }
 // fetch for other details of an individual pokedex pass from the function getPokedex
 const  pokeCards = async  (url,name) => {
@@ -29,7 +32,7 @@ const  pokeCards = async  (url,name) => {
     const data = await Pokedexurl.json();
     const  {front_default} = data.sprites.other.dream_world;
       types = data.types.map(type => type.type.name).join(", ");;
-     console.log(types);
+    //  console.log(types);
     let Pokedex = new pokedexs
     Pokedex.pname=name;
     Pokedex.image=front_default;
@@ -38,7 +41,7 @@ returnarray.push(Pokedex);
 }
 
 // display to the div with display grid css property
-const putToHtml = (Passedarray) => {
+const putToHtml = (Passedarray=returnarray) => {
     const datas = Passedarray.map( pokedetails =>{
         return `<div class="card">
         <div class="imgBx">
@@ -59,10 +62,29 @@ const putToHtml = (Passedarray) => {
     }
 
     const filterPokedex = () =>{
-        console.log(returnarray);
-// let filtered = returnarray.filter(el => el > 4);
-// console.log(filtered)
+let filtered = returnarray.filter(pokedexName => pokedexName.pname.toUpperCase() == search.value.toUpperCase());
+console.log(filtered);
+
+    }
+
+    function searchedPokedex(myStr) {	
+        if (myStr === '') return 'cannot be empty'
+        else return returnarray.filter(entry => {
+            return entry.pname.trim().toUpperCase().includes(myStr.trim().toUpperCase())
+        })
     }
 getPokedex()
 
-search.addEventListener('onkeyup',filterPokedex)
+search.addEventListener('keyup',async (e)=>{
+    if (e.target.value.length>0){
+        filteredPokedex = await searchedPokedex(e.target.value);
+    }
+    else
+    {
+        filteredPokedex=returnarray;
+    }
+    
+    putToHtml(filteredPokedex);
+});
+
+btnSearch.addEventListener('click', filterPokedex);
