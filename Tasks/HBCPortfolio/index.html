@@ -11,27 +11,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div id="container" class="container">
         <header>
-            
-            <div id="logo" class="logo"><a href="" type="image/x-icon">
-            <img src="assets/logo.png" alt="LOGO" class="imglogo" id="imglogo" srcset="">
-        </a>
-    <h2>the logo</h2>
-    </div>
+            <div id="logo" class="logo">
+              <a href="" type="image/x-icon">
+                <img src="assets/logo.png" alt="LOGO" class="imglogo" id="imglogo" srcset="">
+            </a>
+            </div>
+            <div class="myname"><h1>jesse mwangi</h1></div>
             <nav>
-                <button id="mobilebtn">
-                   <span class="material-icons">menu</span></button>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#first">First</a></li>
-                    <li><a href="#second">Second</a></li>
-                    <li><a href="#three">Third</a></li>
-                    <li><a href="">Contact</a></li>
-
-                </ul>
+              <button id="mobilebtn">
+                  <span class="material-icons">menu</span></button>
+               <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="aboutme.html">About ME</a></li>
+                   <li><a href="projects.html">Projects</a></li>
+                   <li><a href="media.html">MultiMeadia</a></li>
+                   <li><a href="#">Say Hello</a></li>
+  
+               </ul>
             </nav>
-        </header>
+          </header>
         <div id="wrapper" class="wrapper">
 
             <section class="first" id="first">
@@ -39,15 +39,135 @@
                 <input type="button" id="modalbtn" class="modalbtn btn" value="Do not click me" ></button>
             </section>
             <section class="second" id="second">
-                <h3>second</h3>
+                <h2>Projects list</h2>
+                <div class="statistics2 statistics2mobile">
+                  <div class="statisticsdiv"> 
+                    <p>Completed Deployed Projects</p>
+                    <div class="circle">5</div>
+                </div>
+                  <div class="statisticsdiv">
+                    <p>Number of Ongoing Projects</p>
+                    <div class="circle">3</div></div>
+                  <div class="statisticsdiv">
+                    <p>Happy and sastified Clients</p>  
+                    <div class="circle">6</div></div>
+                  <div class="statisticsdiv">
+                    <p>Award of quality Work</p>  
+                    <div class="circle">5</div></div>
+                </div>
+                
+                <div class="projectlist">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    
+                </div>
             </section>
+
+
+
             <section class="three" id="three">
-                <h3>third</h3>
+                <h2>Media and Gallery</h2>
+               <div class="BigImg">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg" class="expandedImg" />
+          <div id="imgtext"></div>
+        </div>
+        <div class="thumbnails">
+          <div class="thumbnail">
+            <img
+              src="https://www.w3schools.com/howto/img_nature.jpg"
+              alt="Nature"
+              style="width: 100%"
+              class="imgs"/>
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://www.w3schools.com/howto/img_snow.jpg"
+              alt="Snow"
+              style="width: 100%"
+              class="imgs"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://www.w3schools.com/howto/img_mountains.jpg"
+              alt="Mountains"
+              style="width: 100%"
+              class="imgs"
+            />
+          </div>
+          <div class="thumbnail">
+            <img
+              src="https://www.w3schools.com/howto/img_lights.jpg"
+              alt="Lights"
+              style="width: 100%"
+              class="imgs"
+            />
+          </div>
+            </section>
+
+
+
+            <section id="contact">
+             
+                    <div class="Contact_box">
+                      <h2>contact me</h2>
+                      <div style="text-align:center;"><p>
+                        Hi whats your name and let me have email and phone to reach you
+                      </p></div> 
+                    <div class="message">
+                      <div class="msginputside">
+                        <div class="user-box">
+                          <input type="text" name="" required>
+                          <label>First name:</label>
+                        </div>
+                        <div class="user-box">
+                          <input type="text" name="" required>
+                          <label>Last name:</label>
+                        </div>
+                      </div>
+                      <div class="msginputside">
+                        <div class="user-box">
+                          <input type="email" name="" required>
+                          <label>Email:</label>
+                        </div>
+                        <div class="user-box">
+                          <input type="tel" name="" required>
+                          <label>phone:</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text_area">
+                      <textarea name="" id="" cols="30" rows="10">
+            
+                      </textarea>
+                    <Div class="sendbtn"> 
+                        <button class="send" >
+                       
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          SEND MESSAGE 
+                          
+                      </button>
+                    </Div>
+                    </div>
+            
+                   
             </section>
         </div>
         <footer>
 <p>copyright &copy; 2022</p>
-<button    id="backtoptop" id="backtoptop" class="backtoptop btn">back to top
+<button    id="backtoptop" id="backtoptop" class="backtoptop btn">
     <span class="material-icons"> arrow_upward </span>
 </button>
         </footer>

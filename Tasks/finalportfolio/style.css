@@ -57,7 +57,7 @@ header {
   display: grid;
   grid-template-columns: repeat(6 1fr);
   color: #ffffff;
-  background: url("assets/wallpaper.jpg") no-repeat black;
+  background: url("assets/headertr.png") no-repeat black;
   background-size: 45%;
   background-position: right;
   width: 100%;
