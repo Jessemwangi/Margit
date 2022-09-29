@@ -171,6 +171,12 @@ h2 {
   padding: 3rem;
   justify-content: space-around;
 }
+.overlay::after,
+.overlay::before,
+.finalscore::after,
+.finalscore::before{
+  transition: 0.8s;
+}
 .closemodalbtn {
   position: absolute;
   top: 1px;

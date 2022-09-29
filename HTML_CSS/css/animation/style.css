@@ -1,0 +1,140 @@
+:root {
+    --background-color: cornsilk;
+    --primary-color: skyblue;
+    --secondary-color: sandybrown;
+  }
+  
+  body {
+    background: var(--background-color);
+    /* display: grid;
+    justify-items: center;
+    align-items: center; */
+    /* height: 100vh; */
+    font-family: "Spartan", sans-serif;
+    margin: 3rem;
+  }
+  
+ /* body {
+You can use an additional body selector to complete the background animation challenge.
+  }*/
+  
+/*  @keyframes gradient {
+
+Note that you are not changing from one gradient to another!
+
+  }*/
+  
+  .box {
+    background: var(--primary-color);
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 5px #333;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .first-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 2s;
+animation: circle1 4s;
+
+  }
+  
+  .first-task:hover
+  {
+    background: var(--primary-color);
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+  }
+
+  @keyframes circle1{
+    0%{
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background: red;
+    }
+    25%{
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      background: green;
+    }
+    50%{
+      height: 220px;
+      width: 220px;
+      border-radius: 50%;
+      background: rgb(57, 18, 212);
+    }
+    75%{
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      background: #f329fe;
+    }
+    100%{
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background: var(--secondary-color);
+    }
+  }
+
+  .second-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+    transition: 2s;
+  }
+  .second-task:hover {
+    transform: rotate(-90deg);
+    background: red;
+    height: 150px;
+width: 150px;
+box-shadow: 0px 9px 9px black;
+  }
+
+  
+  .third-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+    transition: all 2s;
+    padding: 1rem;
+  }
+
+
+  
+  .fourth-task {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background: goldenrod;
+  }
+  
+  .fourth-task h3 {
+    padding: 25px;
+  }
+  
+
+  
+  .animated-circle {
+    background: var(--primary-color);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 5px #333;
+  }
+  
+

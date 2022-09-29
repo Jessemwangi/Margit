@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"
+      rel="stylesheet">
+    <title>Dom Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            
+            <div id="logo" class="logo"><a href="" type="image/x-icon">
+            <img src="assets/logo.png" alt="LOGO" class="imglogo" id="imglogo" srcset="">
+        </a>
+    <h2>the logo</h2>
+    </div>
+            <nav>
+                <button id="mobilebtn">
+                   <span class="material-icons">menu</span></button>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#first">First</a></li>
+                    <li><a href="#second">Second</a></li>
+                    <li><a href="#three">Third</a></li>
+                    <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="wrapper" class="wrapper">
+
+            <section class="first" id="first">
+                <h3>first</h3>
+                <input type="button" id="modalbtn" class="modalbtn btn" value="Do not click me" ></button>
+            </section>
+            <section class="second" id="second">
+                <h3>second</h3>
+            </section>
+            <section class="three" id="three">
+                <h3>third</h3>
+            </section>
+        </div>
+        <footer>
+<p>copyright &copy; 2022</p>
+<button    id="backtoptop" id="backtoptop" class="backtoptop btn">back to top
+    <span class="material-icons"> arrow_upward </span>
+</button>
+        </footer>
+    </div>
+    <div class="modal modalhide" id="modal">
+        <div class="modal-contents" id="modal-contents">
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
+    tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
+    blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
+    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
+    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
+    tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
+    blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
+    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
+    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
+</p>
+<button id="close" class="close btn">X</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
