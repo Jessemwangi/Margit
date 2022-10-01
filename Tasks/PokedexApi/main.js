@@ -34,7 +34,7 @@ const pokeCards = async (url, name) => {
   const {
     front_default
   } = data.sprites.other.dream_world;
-  types = data.types.map(type => type.type.name).join(", ");
+  types = data.types.map(type => `<img class="outlined" src="assets/${type.type.name}.png" alt="${type.type.name}"></img>`).join('');
   ; //  console.log(types);
 
   let Pokedex = new pokedexs();
@@ -55,8 +55,8 @@ const putToHtml = (Passedarray = returnarray) => {
             <p>
                 ${pokedetails.pname} <br />
                 <span> ${pokedetails.ptype} </span>
-                <span class="material-symbols-outlined">local_fire_department</span>
-                <span class="material-symbols-outlined"> detector_smoke </span>
+               
+                
             </p>
         </div>
         </div>`;
