@@ -14,19 +14,24 @@
   <body>
     <div class="container">
       <div class="searcharea">
+        <div style="border-right: 2px solid white; padding-right:2rem;"><label for="displaylimit" style="color: white; padding-right: 1rem;">Set display limit  </label>
+          <input type="number" name="displaylimit" id="displaylimit" />
+          <input type="submit" id="btnLimit" value="Fetch" class="button" />
+        </div>
         <div>
           <input type="text" name="searchpokedex" id="searchpokedex" />
           <input type="button" id="btnSearch" value="Search" />
         </div>
         
         <div>
-          <input type="button" value="version1" />
-          <input type="button" value="version2" />
-          <input type="button" value="version3" />
-          <input type="button" value="version4" />
-          <input type="button" value="version5" />
-          <input type="button" value="version6" />
-          <input type="button" value="version7" />
+          <input type="button" value="Gen1" id="Generation1" class="genBtn"/>
+          <input type="button" value="Gen2" id="Generation2" class="genBtn"/>
+          <input type="button" value="Gen3" id="Generation3" class="genBtn"/>
+          <input type="button" value="Gen4" id="Generation4" class="genBtn"/>
+          <input type="button" value="Gen5" id="Generation5" class="genBtn"/>
+          <input type="button" value="Gen6" id="Generation6" class="genBtn"/>
+          <input type="button" value="Gen7" id="Generation7" class="genBtn"/>
+          <input type="button" value="Gen8" id="Generation8" class="genBtn"/>
         </div>
       </div>
 
