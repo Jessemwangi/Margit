@@ -102,9 +102,9 @@ const divclicked = index => {
     scores = scores + 5;
     scoresound.play();
     counter--;
-    displayscore.textContent = `Trees Planted ${scores}, `;
+    displayscore.textContent = `Collecting Seasons  ${scores}, `;
   } else {
-    displayscore.textContent = `Checked, Season Watered ${scores}, `;
+    displayscore.textContent = `Checked, Season Collected ${scores}, `;
     EndGame();
     return false;
   }

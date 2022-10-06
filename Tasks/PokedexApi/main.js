@@ -31,7 +31,8 @@ const getPokedex = async (displayLimitValue=0, offset) => {
   if (displaylimit.value){
     displayLimitValue=displaylimit.value;
   }
-  const Pokedex = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${displayLimitValue}&offset=${offset}`);
+  const Pokedex = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=
+  ${displayLimitValue}&offset=${offset}`);
   const data = await Pokedex.json();
   pokemoNames = data.results;
 
@@ -45,15 +46,11 @@ const getPokedex = async (displayLimitValue=0, offset) => {
 const pokeCards = async (url, name) => {
   const Pokedexurl = await fetch(url);
   const data = await Pokedexurl.json();
-  gen=  flattenObj(data.sprites.versions);
-  // const {generation} =  data.sprites.versions;
-  
   const {
     front_default
   } = data.sprites.other['official-artwork'];
   types = data.types.map(type => `<img class="outlined" src="assets/${type.type.name}.png" alt="${type.type.name}"></img>`).join('');
   ; //  console.log(types);
-
   let Pokedex = new pokedexs();
   Pokedex.pname = name;
   Pokedex.image = front_default;
@@ -95,7 +92,7 @@ function searchedPokedex(myStr) {
 search.addEventListener('keyup', async e => {
   
   if (e.target.value.length > 0) {
-    filteredPokedex = await searchedPokedex(e.target.value);
+    filteredPokedex = searchedPokedex(e.target.value);
   } else {
     filteredPokedex = pokedexStoredArray;
   }

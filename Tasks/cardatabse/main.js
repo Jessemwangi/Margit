@@ -90,8 +90,9 @@ let searchcar = (e) => {
        if (searchObject != -1) {
 
               const { cllicence, clmaker, clowner, clcarprice, clmodel, carcolor } = carArrays[searchObject];
-              displaysearch.style.background = "green";
-              displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}€`;
+              displaysearch.style.background = "white";
+              displaysearch.innerHTML = `Car with plate ${cllicence} is a ${clmaker} owned by ${clowner} 
+              and its color is ${carcolor}, model is ${clmodel} and is priced at ${clcarprice}€`;
        }
        else {
               displaysearch.style.background = "red";

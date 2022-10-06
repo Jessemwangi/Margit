@@ -65,13 +65,13 @@ let displaystatistics=(namevalue,agecost,healthvalue,healthtext,habbitvalue,habb
 {
     advertarea.style.height="29vh";
     outputinfo.style.display='block';
-    outputinfo.style.background="red";
+    outputinfo.style.background="white";
     var totalcost=Number.parseInt(insurancepct) +Number.parseInt(agecost)+Number.parseInt(healthvalue)+Number.parseInt(habbitvalue);
     let testing="Hello "+namevalue +", the following details will be used to create your insuarance Profile :- Your Age "
-    + agevalue +" : this cost for this age category is " + agecost +", Habbits : "
-    + habbittext + " which will cost you additional "+ habbitvalue+". The status of your relative Health as indicated by you :" 
-    +  healthtext +" an addition of "+ healthvalue +"E, your total cost is: "
-    +totalcost+ ", Thank you for taking your."
+    + agevalue +"€ : this cost for this age category is " + agecost +"€, Habbits : "
+    + habbittext + " which will cost you additional "+ habbitvalue+"€. The status of your relative Health as indicated by you :" 
+    +  healthtext +" an addition of "+ healthvalue +"€, your total cost is: "
+    +totalcost+ "€, Thank you for taking your."
 outputinfo.textContent=testing;
 console.log(testing);
 }
