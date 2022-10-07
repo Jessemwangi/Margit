@@ -18,11 +18,43 @@
 You can use an additional body selector to complete the background animation challenge.
   }*/
   
-/*  @keyframes gradient {
+ @keyframes animated-circle {
 
-Note that you are not changing from one gradient to another!
+/* Note that you are not changing from one gradient to another! */
+0%{
+  top: 0;
+  left: 0;
 
-  }*/
+}
+25%{
+  background-color: #f329fe;
+  top: 0px;
+  left: 300px;
+  border-radius: 0px;
+  
+}
+50%{
+  background-color: aquamarine;
+  top: 300px;
+  left: 300px;
+  border-radius: 50%;
+  
+}
+75%{
+  background-color: blue;
+  top: 300px;
+  left: 0;
+  border-radius: 0px;
+  
+}
+100%{
+  background-color: crimson;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  
+}
+  }
   
   .box {
     background: var(--primary-color);
@@ -93,7 +125,7 @@ animation: circle1 4s;
     transition: 2s;
   }
   .second-task:hover {
-    transform: rotate(-90deg);
+    transform: rotateY(-90deg);
     background: red;
     height: 150px;
 width: 150px;
@@ -135,6 +167,11 @@ box-shadow: 0px 9px 9px black;
     align-items: center;
     position: relative;
     box-shadow: 0 0 5px #333;
+    animation: animated-circle 4s;
+    animation-iteration-count: 4;
+  }
+  .animated-circle:hover{
+    animation-play-state: paused;
   }
   
 
