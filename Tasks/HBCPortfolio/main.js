@@ -54,11 +54,11 @@ const modalbtn = ()=>{
 
 const imgss = document.querySelectorAll('.imgs');
 const myFunction = (imgs) =>{
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
+    let expandImg = document.getElementById("expandedImg");
+    let imgText = document.getElementById("imgtext");
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
+    expandImg.parentElement.style.display = "flex";
   }
 
   imgss.forEach((elem) =>{

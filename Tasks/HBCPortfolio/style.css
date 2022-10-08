@@ -170,12 +170,7 @@ section:first-child {
   padding: 1rem;
   border-radius: 5px;
 }
-section:nth-child(2) {
-  background-color: #0e0e2bde;
-}
-section:last-child {
-  background-color: #5050dfde;
-}
+
 footer {
   background-color: black;
   border-radius: 0 0 10px 10px;
@@ -247,7 +242,7 @@ footer {
 }
 
 .expandedImg{
-width:90%
+width:60%
 }
 .thumbnails:after {
   content: "";
@@ -261,24 +256,51 @@ width:90%
   transition: ease-in-out 2s;
   animation-name: fade;
   animation-duration: 2s;
-
+  justify-content: space-evenly;
 }
 
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 #imgtext {
   position: absolute;
   bottom: 15px;
-  left: 15px;
+  width: 55%;
+  text-align: left;
   color: white;
   font-size: 20px;
 }
 
 .closebtn {
   position: absolute;
+  padding-left: 2rem;
   top: 10px;
-  right: 10rem;
+  text-align: right;
+  width: 55%;
   color: white;
-  font-size: 35px;
+  font-size: 80px;
   cursor: pointer;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 21%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 21%;
+  border-radius: 3px 0 0 3px;
 }
 /* -----------------------image gallery css ends here -----------------------------*/
 
@@ -423,7 +445,7 @@ textarea {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   
 }
@@ -438,15 +460,18 @@ padding: 2rem;
   display: inline-flex;
 }
 .socialmedia{
+  width:250px;
   display: flex;
   flex-direction: column;
+  align-content: stretch;
+  align-items: center;
 }
 .fa {
   padding: 4px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
-  margin:  5px 220px 0px 0px;
+  margin:  5px 0px 0px 0px;
   border-radius: 50%;
 }
 
@@ -760,9 +785,7 @@ display: grid;
 
 /* /////////////////////////////////////media and gallery //////////////// */
 
-.closebtn{
-  right: 5rem;
-}
+
 
 /* ////////////////////////////////////media and gallery ends  ///////////////// */
 /* ////////////////////////////// Contact page /////////////////// */
