@@ -218,10 +218,47 @@ footer {
   right: 20px;
   background-color: red;
 }
+.classcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
 .three{
   background-color:#8F1C1C;
 }
 /* --------------------------------------media starts here------------------------------------- */
+
+/* -------------------------------------About me section --------------------------- */
+
+.skill {
+  width: 100%;
+  background-color: #ddd;
+}
+.skillStatus{
+  width:70%;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%; 
+  background-color: black;}
+
+.css {width: 85%; 
+  background-color: #2196F3;}
+.js {width: 75%; 
+  background-color: #2196F3;}
+.figma {width: 60%; 
+  background-color: #2196F3;}
+  .skillname{
+    margin-top: 2rem;
+
+  }
+/* -------------------------------------About me section end--------------------------- */
 
 /*---------------------------------- image gallery css---------------------------------------------- */
 
@@ -755,6 +792,10 @@ animation: circle 8s;
     color: white;
     display: block;
   }
+  .bannerintro h1{
+    font-size: large;
+    padding-top: 4rem;
+  }
 
 /* //////////////////////////////////header ends////////////////////  */
 
@@ -776,7 +817,7 @@ display: grid;
 }
 .projectlist{
   grid-template-columns: auto;
-      grid-template-rows: repeat(6, 10vh);
+      /* grid-template-rows: repeat(6, 10vh); */
       grid-auto-flow: row dense;
       width: 100%;
       grid-gap: 7px;
