@@ -182,6 +182,7 @@ footer {
 .backtoptop {
   position: fixed;
   bottom: 2rem;
+  display: none;
 }
 .modalhide {
   display: none;
@@ -218,18 +219,36 @@ footer {
   right: 20px;
   background-color: red;
 }
-.classcontainer{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-}
+
 .three{
   background-color:#8F1C1C;
 }
 /* --------------------------------------media starts here------------------------------------- */
 
 /* -------------------------------------About me section --------------------------- */
-
+.skillsection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+ }
+.skillsection h2{
+  color: #000000;
+}
+.whoam_i{
+  color: #000000;
+  padding: 2rem;
+  border: 2px #6cb7f5 solid;
+}
+.classcontainer{
+  color: #6cb7f5;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+}
 .skill {
   width: 100%;
   background-color: #ddd;
@@ -244,16 +263,22 @@ footer {
   color: white;
 }
 
+.classcontainer:hover .skills{
+  animation-name: spinning;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+}
+
 .html {
-  width: 90%; 
+  width: 95%; 
   background-color: black;}
 
 .css {width: 85%; 
-  background-color: #2196F3;}
+  background-color: #6cb7f5;}
 .js {width: 75%; 
-  background-color: #2196F3;}
-.figma {width: 60%; 
-  background-color: #2196F3;}
+  background-color: #6cb7f5;}
+.figma {width: 72%; 
+  background-color: #6cb7f5;}
   .skillname{
     margin-top: 2rem;
 
