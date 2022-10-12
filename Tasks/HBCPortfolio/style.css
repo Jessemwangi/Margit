@@ -52,10 +52,11 @@ h3 {
   margin: 2rem;
 }
 header {
+  z-index: 100;
   display: grid;
   grid-template-columns: repeat(6 1fr);
   color: #ffffff;
-  background: url("assets/headertr.png") no-repeat black;
+  background: url("Assets/headertr.png") no-repeat black;
   background-size: 45%;
   background-position: right;
   width: 100%;
@@ -77,9 +78,6 @@ header {
 .logo {
   display: grid;
   grid-row: 1 / span 2;
-  /* background-image: var(--logo);
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 .imglogo {
   border-radius: 45%;
@@ -87,7 +85,6 @@ header {
   animation-name: spinning;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  /* linear | ease | ease-in | ease-out | ease-in-out */
   animation-timing-function: linear;
 }
 @keyframes spinning {
@@ -135,8 +132,10 @@ nav ul li a:hover {
   flex-direction: column;
 }
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 section:first-child {
   background-color: #546cac;
@@ -279,6 +278,9 @@ footer {
   background-color: #6cb7f5;}
 .figma {width: 72%; 
   background-color: #6cb7f5;}
+  .Sqls {width: 90%; 
+    background-color: #6cb7f5;}
+    
   .skillname{
     margin-top: 2rem;
 
@@ -768,6 +770,11 @@ animation: circle 8s;
   .imglogo {
     width: 30%;
     border-radius: 40px;
+    animation: none;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
   }
   nav ul {
     display: none;
