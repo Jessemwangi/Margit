@@ -39,6 +39,20 @@ const mobileMenu = () => {
         document.body.style.overflow = 'hidden';
     }
 }
+list.forEach(elem =>{
+    elem.addEventListener('click', (e)=>{
+        // if (nav.classList.contains('responsive')) {
+        //     switch (e){
+        //         case'kkfdfk':
+        //         break;
+        //     }
+        // } 
+        console.log(e.target.innerText);
+        mobileMenu();
+    });
+   
+    // elem.addEventListener('click',mobileMenu());
+});
 const modalbtn = ()=>{
     modal.classList.toggle('modalhide');
     // if (modal.classList.contains('modalhide'))

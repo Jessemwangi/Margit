@@ -87,6 +87,7 @@ const valueReset = (e) => {
 let searchcar = (e) => {
        e.preventDefault;
        const searchObject = carArrays.findIndex(car => car.cllicence == searchPlate.value)
+       console.log(carArrays,searchObject);
        if (searchObject != -1) {
 
               const { cllicence, clmaker, clowner, clcarprice, clmodel, carcolor } = carArrays[searchObject];
