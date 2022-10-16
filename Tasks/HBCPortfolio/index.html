@@ -1,306 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon" />
     <title>Jesse Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="container" class="container">
-        <header>
-            <div id="logo" class="logo">
-              <a href="" type="image/x-icon">
-                <img src="Assets/Logo.png" alt="LOGO" class="imglogo" id="imglogo">
-            </a>
+      <header>
+        <div id="logo" class="logo">
+          <a href="" type="image/x-icon">
+            <img
+              src="Assets/Logo.png"
+              alt="LOGO"
+              class="imglogo"
+              id="imglogo"
+            />
+          </a>
+        </div>
+        <div class="myname"><h1>jesse mwangi</h1></div>
+        <nav>
+          <button id="mobilebtn">
+            <span class="material-icons">menu</span>
+          </button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a>Projects</a></li>
+            <li><a>About ME</a></li>
+            <li><a>MultiMeadia</a></li>
+            <li><a>Say Hello</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="wrapper" class="wrapper">
+        <section class="first" id="first">
+          <div class="bannerintro">
+            <h1>Welcome to my portfolio</h1>
+          </div>
+
+          <!-- <input type="button" id="modalbtn" class="modalbtn btn" value="Do not click me"> -->
+        </section>
+        <section class="second" id="projects">
+          <h2 style="color: black">Projects list</h2>
+          <div class="statistics2 statistics2mobile">
+            <div class="statisticsdiv">
+              <p>Completed Deployed Projects</p>
+              <div class="circle">5</div>
             </div>
-            <div class="myname"><h1>jesse mwangi</h1></div>
-            <nav>
-              <button id="mobilebtn">
-                  <span class="material-icons">menu</span></button>
-               <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a>Projects</a></li>
-                   <li><a >About ME</a></li>                  
-                   <li><a >MultiMeadia</a></li>
-                   <li><a >Say Hello</a></li>
-  
-               </ul>
-            </nav>
-          </header>
-        <div id="wrapper" class="wrapper">
-            <section class="first" id="first">
-              <div class ="bannerintro">
-                <h1>Welcome to my portfolio</h1>
-              </div>
-                
-                <!-- <input type="button" id="modalbtn" class="modalbtn btn" value="Do not click me"> -->
-            </section>
-            <section class="second" id="projects">
-                <h2 style="color: black;">Projects list</h2>
-                <div class="statistics2 statistics2mobile">
-                  <div class="statisticsdiv"> 
-                    <p>Completed Deployed Projects</p>
-                    <div class="circle">5</div>
+            <div class="statisticsdiv">
+              <p>Number of Ongoing Projects</p>
+              <div class="circle">3</div>
+            </div>
+            <div class="statisticsdiv">
+              <p>Happy and sastified Clients</p>
+              <div class="circle">6</div>
+            </div>
+            <div class="statisticsdiv">
+              <p>Award of quality Work</p>
+              <div class="circle">5</div>
+            </div>
+          </div>
+
+          <div class="projectlist">
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/Pokedex.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Pokedex Api</div>
                 </div>
-                  <div class="statisticsdiv">
-                    <p>Number of Ongoing Projects</p>
-                    <div class="circle">3</div></div>
-                  <div class="statisticsdiv">
-                    <p>Happy and sastified Clients</p>  
-                    <div class="circle">6</div></div>
-                  <div class="statisticsdiv">
-                    <p>Award of quality Work</p>  
-                    <div class="circle">5</div></div>
-                </div>
-                
-                <div class="projectlist">
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/Pokedex.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Pokedex Api</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/speed game.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Speed Game</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/Pizza.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Pizza Order</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/cardatabase.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Car Database</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/bgGen.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Background Generator</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="Projectcard">
-                        <img src="Assets/Pizza.png" alt="project one" class="Projectimage">
-                        <div class="Projectoverlay">
-                          <div class="Projecttext">Speed Game</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <section class="skillsection" id="skills">
-              <h2>About me</h2>
-              <div class="whoam_i">who am i
-                <br><br>
-                <div>I'm Jesse Mwangi a full stack developer student at business college helsinki 🚀
-                  <br>
-                  🔭 I’m currently working as a freelance
-                  <br>
-                  🌱 I’m currently learning Javascript, Node and React at [https://www.bc.fi/ ) Helsinki
-                  <br>
-                  ❓ Ask me about anything related to Javascript, c# , VB.net, sql server, mysql, Git and scrum
-                  <br>
-                  ⚡ Fun fact: I am a manga person, and I can re-watch anime more than once</div>
               </div>
- <div class="classcontainer">
-                
-                  <h2>My Skills</h2>
-<div class="skillStatus">
-<p class="skillname">HTML</p>
-<div class="skill">
-  <div class="skills html">95%</div>
-</div>
-
-<p class="skillname">CSS</p>
-<div class="skill">
-  <div class="skills css">80%</div>
-</div>
-
-<p class="skillname">JavaScript</p>
-<div class="skill">
-  <div class="skills js">75%</div>
-</div>
-
-<p class="skillname">Figma</p>
-<div class="skill">
-  <div class="skills figma">72%</div>
-</div>
-<p class="skillname">Sql server</p>
-<div class="skill">
-  <div class="skills Sqls">90%</div>
-</div>
-<p class="skillname">mysql</p>
-<div class="skill">
-  <div class="skills Sqls">90%</div>
-</div>
-</div>
-               
+            </div>
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/speed game.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Speed Game</div>
+                </div>
               </div>
-            </section>
-
-            <section class="three" id="multimedia">
-                <h2>Media and Gallery</h2><small>Click on image to expand the view</small>
-               <div class="BigImg">
-             
-          <span
-            onclick="this.parentElement.style.display='none'"
-            class="closebtn"
-            >&times;</span>
-          <img id="expandedImg" class="expandedImg" alt="image">
-          <div id="imgtext"></div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-        <div class="thumbnails">
-          <div class="thumbnail">
-            <img
-              src="https://www.w3schools.com/howto/img_nature.jpg"
-              alt="Nature"
-              style="width: 100%"
-              class="imgs">
+            </div>
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/Pizza.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Pizza Order</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/cardatabase.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Car Database</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/bgGen.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Background Generator</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="Projectcard">
+                <img
+                  src="Assets/Pizza.png"
+                  alt="project one"
+                  class="Projectimage"
+                />
+                <div class="Projectoverlay">
+                  <div class="Projecttext">Speed Game</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="thumbnail">
-            <img
-              src="https://www.w3schools.com/howto/img_snow.jpg"
-              alt="Snow"
-              style="width: 100%"
-              class="imgs"
+        </section>
+        <section class="skillsection" id="skills">
+          <h2>About me</h2>
+          <div class="whoam_i">
+            who am i <br /><br />
+            <div>
+              I'm Jesse Mwangi a full stack developer student at business
+              college helsinki 🚀
+              <br />
+              🔭 I’m currently working as a freelance
+              <br />
+              🌱 I’m currently learning Javascript, Node and React at
+              [https://www.bc.fi/ ) Helsinki
+              <br />
+              ❓ Ask me about anything related to Javascript, c# , VB.net, sql
+              server, mysql, Git and scrum
+              <br />
+              ⚡ Fun fact: I am a manga person, and I can re-watch anime more
+              than once
+            </div>
+          </div>
+          <div class="classcontainer">
+            <h2>My Skills</h2>
+            <div class="skillStatus">
+              <p class="skillname">HTML</p>
+              <div class="skill">
+                <div class="skills html">95%</div>
+              </div>
+
+              <p class="skillname">CSS</p>
+              <div class="skill">
+                <div class="skills css">80%</div>
+              </div>
+
+              <p class="skillname">JavaScript</p>
+              <div class="skill">
+                <div class="skills js">75%</div>
+              </div>
+
+              <p class="skillname">Figma</p>
+              <div class="skill">
+                <div class="skills figma">72%</div>
+              </div>
+              <p class="skillname">Sql server</p>
+              <div class="skill">
+                <div class="skills Sqls">90%</div>
+              </div>
+              <p class="skillname">mysql</p>
+              <div class="skill">
+                <div class="skills Sqls">90%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="three" id="multimedia">
+          <h2>Media and Gallery</h2>
+          <small>Click on image to expand the view</small>
+          <div class="BigImg">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="closebtn"
+              >&times;</span
             >
+            <img id="expandedImg" class="expandedImg" alt="image" />
+            <div id="imgtext"></div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
           </div>
-          <div class="thumbnail">
-            <img
-              src="https://www.w3schools.com/howto/img_mountains.jpg"
-              alt="Mountains"
-              style="width: 100%"
-              class="imgs"
-            >
+          <div class="thumbnails">
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1664709099226-9b0e7e52981c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+                alt="Nature"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1664573747268-f6a9237aed5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                alt="Snow"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1664645670176-2688b1d06527?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                alt="Mountains"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1664359587464-1257bc5a575d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                alt="Lights"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1663510234722-b6fe8cc28caa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ4fHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                alt="Lights"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
+            <div class="thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1658271636703-8bc6590b824b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUzfHFQWXNEenZKT1ljfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                alt="Lights"
+                style="width: 100%"
+                class="imgs"
+              />
+            </div>
           </div>
-          <div class="thumbnail">
-            <img
-              src="https://www.w3schools.com/howto/img_lights.jpg"
-              alt="Lights"
-              style="width: 100%"
-              class="imgs"
-            >
+        </section>
+
+        <section id="contact">
+          <div class="Contact_box">
+            <h2>contact me</h2>
+            <div style="text-align: center">
+              <p>
+                Hi whats your name and let me have email and phone to reach you
+              </p>
+            </div>
+            <div class="message">
+              <div class="msginputside">
+                <div class="user-box">
+                  <input type="text" name="" placeholder="eg. Jesse" required />
+                  <label>First name:</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" name="" placeholder="eg. Matte" required />
+                  <label>Last name:</label>
+                </div>
+              </div>
+              <div class="msginputside">
+                <div class="user-box">
+                  <input
+                    type="email"
+                    name=""
+                    placeholder="eg. Jesse@gmail.com"
+                    required
+                  />
+                  <label>Email:</label>
+                </div>
+                <div class="user-box">
+                  <input
+                    type="tel"
+                    name=""
+                    placeholder="eg. +35841991123"
+                    required
+                  />
+                  <label>phone:</label>
+                </div>
+              </div>
+            </div>
+            <div class="text_area">
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Type your message ....."
+              ></textarea>
+              <div class="sendbtn">
+                <button class="send">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+            <div class="social">
+              <div class="contactinfo">
+                <div class="phone">
+                  <p>Telephone number :</p>
+                  <span>+35812345678</span>
+                </div>
+                <div class="phone">
+                  <p>email Address :</p>
+                  <span>jessejzee@gmail.com</span>
+                </div>
+                <div class="phone">
+                  <p>Postal:</p>
+                  <span>helsinki 00550</span>
+                </div>
+                <div class="phone">
+                  <p>availability:</p>
+                  <span>24 / 7 via above</span>
+                </div>
+              </div>
+              <div class="socialmedia">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+              </div>
+            </div>
           </div>
-        </div>
-            </section>
-
-     <section id="contact">
-             
-                    <div class="Contact_box">
-                      <h2>contact me</h2>
-                      <div style="text-align:center;"><p>
-                        Hi whats your name and let me have email and phone to reach you
-                      </p></div> 
-                    <div class="message">
-                      <div class="msginputside">
-                        <div class="user-box">
-                          <input type="text" name="" required>
-                          <label>First name:</label>
-                        </div>
-                        <div class="user-box">
-                          <input type="text" name="" required>
-                          <label>Last name:</label>
-                        </div>
-                      </div>
-                      <div class="msginputside">
-                        <div class="user-box">
-                          <input type="email" name="" required>
-                          <label>Email:</label>
-                        </div>
-                        <div class="user-box">
-                          <input type="tel" name="" required>
-                          <label>phone:</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text_area">
-                      <textarea name="" id="message" cols="30" rows="10">
-            
-                      </textarea>
-                    <Div class="sendbtn"> 
-                        <button class="send" >
-                       
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          SEND MESSAGE 
-                          
-                      </button>
-                    </Div>
-
-                    </div>
-                    <Div class="social">
-                      <div class="contactinfo">
-                        <div class="phone"><p>Telephone number :</p> <span>?358</span></div>
-                        <div class="phone"><p>email Address :</p> <span>jessejzee@gmail.com</span></div>
-                        <div class="phone"><p>Postal:</p> <span>helsinki 00550</span></div>
-                        <div class="phone"><p>availability:</p> <span>24 / 7 via above</span></div>
-                      </div>
-                      <div class="socialmedia">
-                        <a href="#" class="fa fa-facebook"></a>
-                          <a href="#" class="fa fa-twitter"></a>
-                          <a href="#" class="fa fa-google"></a>
-                          <a href="#" class="fa fa-linkedin"></a>
-                          <a href="#" class="fa fa-youtube"></a>
-                      </div>
-                    </Div>
-                    </div>
-                   
-            </section>
-        </div>
-        <footer>
-<p>copyright &copy; 2022</p>
-<button id="backtoptop" class="backtoptop btn">
-    <span class="material-icons"> arrow_upward </span>
-</button>
-        </footer>
-    </div>
-    <div class="modal modalhide" id="modal">
-        <div class="modal-contents" id="modal-contents">
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
-    tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
-    blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
-    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
-    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur laudantium sit vero, 
-    tempora eveniet, doloremque dolorem aspernatur, architecto eaque officia dolore
-    blanditiis eum vel saepe suscipit recusandae similique distinctio fugiat.
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, esse ducimus 
-    non nostrum cumque odit fugit dolor reiciendis saepe inventore magnam 
-    quos eius magni illum dolorum perspiciatis consequuntur voluptate itaque!
-</p>
-<button id="close" class="close btn">X</button>
-        </div>
+        </section>
+      </div>
+      <footer>
+        <p>copyright &copy; 2022</p>
+        <button id="backtoptop" class="backtoptop btn">
+          <span class="material-icons"> arrow_upward </span>
+        </button>
+      </footer>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

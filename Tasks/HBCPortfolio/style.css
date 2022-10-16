@@ -232,8 +232,9 @@ footer {
   align-items: center;
   margin-bottom: 2rem;
  }
-.skillsection h2{
+.skillsection > h2:nth-child(1){
   color: #000000;
+  width: 100%;
 }
 .whoam_i{
   color: #000000;
@@ -251,9 +252,11 @@ footer {
 .skill {
   width: 100%;
   background-color: #ddd;
+  margin-bottom: 1rem;
 }
 .skillStatus{
   width:70%;
+ 
 }
 .skills {
   text-align: right;
@@ -281,10 +284,6 @@ footer {
   .Sqls {width: 90%; 
     background-color: #6cb7f5;}
     
-  .skillname{
-    margin-top: 2rem;
-
-  }
 /* -------------------------------------About me section end--------------------------- */
 
 /*---------------------------------- image gallery css---------------------------------------------- */
@@ -293,12 +292,14 @@ footer {
   float: left;
   width: 25%;
   padding: 10px;
+ height: 22vh;
+  display: block;
 }
-
 
 .thumbnail img {
   opacity: 0.8; 
   cursor: pointer; 
+  max-height: 20vh;
 }
 
 .thumbnail img:hover {
@@ -402,6 +403,11 @@ width:60%
   outline: none;
   background: transparent;
 }
+.user-box input::placeholder {
+  font-weight: bold;
+  opacity: .5;
+  color: #ffffff;
+}
 
 .Contact_box .user-box label {
   position: absolute;
@@ -433,7 +439,8 @@ textarea {
   border-bottom: #038188 solid 3px;
   color: #03e9f4;
   width: 40%;
-  box-sizing: border-box;
+  padding: 0;
+  
 }
 
 .sendbtn {

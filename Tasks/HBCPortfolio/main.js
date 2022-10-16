@@ -83,6 +83,7 @@ const myFunction = (imgs) =>{
                         window.scrollTo({top:top,left:0,behavior: 'smooth'});
                             break;
                 default:
+                    window.scrollTop(0,0);
                     break;
             }
        
