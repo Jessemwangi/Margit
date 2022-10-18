@@ -92,5 +92,4 @@ const myFunction = (imgs) =>{
 });
 backtoptop.addEventListener('click', getToTop);
 mobilebtn.addEventListener('click', mobileMenu);
-// modalbtnc.addEventListener('click',modalbtn);
-// closemodal.addEventListener('click', modalbtn);
+

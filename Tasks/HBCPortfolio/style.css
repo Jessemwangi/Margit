@@ -377,7 +377,9 @@ width:60%
   border-radius: 10px;
   margin-top: 2rem;
 }
-
+.wavehand{
+  font-size: 32px;
+}
 .message {
   display: flex;
   flex-direction: row;
@@ -742,6 +744,8 @@ animation: circle 8s;
   transform: rotate3d(90deg);
 }
 .Projecttext{
+  width: 100%;
+  padding: 1rem;
   color: white;
   font-size: 20px;
   position: absolute;
