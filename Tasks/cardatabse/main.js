@@ -58,7 +58,7 @@ let savecar = (e) => {
               cars.cllicence = licence; cars.clmaker = maker; cars.clmodel = model; cars.clowner = owner; cars.clcarprice = carprice;
               cars.clcarcolor = carcolor;
               carArrays.push(cars);
-
+              console.log(carArrays);
               e.preventDefault();
               // console.log(licence, maker, model, owner);
               let rows = table1.insertRow();
