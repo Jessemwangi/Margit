@@ -40,7 +40,13 @@ body{
     border-radius: 5px;
     cursor:grab;
   }
- 
+  input[type=text],input[type=number]{
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+  }
+
   input[type=button]:hover{
     border: solid 3px #ffffff;
     background: #212121; ;
@@ -56,7 +62,7 @@ body{
     padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-gap: 25px;
     margin: 0 auto;
   }
   .card{
